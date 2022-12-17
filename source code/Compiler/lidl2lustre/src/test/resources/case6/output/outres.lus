@@ -1,0 +1,47 @@
+type Number =
+struct
+{
+	act: bool;
+	value: real;
+};
+
+const real_default = 0.0;
+
+type Activation = bool;
+
+type Boolean =
+struct
+{
+	act: bool;
+	value: bool;
+};
+
+type Char =
+struct
+{
+	code: int;
+};
+
+type string = Char^200;
+
+const string_default = Char{code=0}^200;
+
+type Text =
+struct
+{
+	act: bool;
+	value: string;
+};
+
+node My_Simple_User_Interface() returns (theInterface: Number);
+
+let
+theInterface = Test_arg__arg_(Number { act = true; value = 1.0 }, Number { act = true; value = 2.0 });
+tel
+
+node Test_arg__arg_(a: Number; b: Number) returns (theInterface: Number);
+
+let
+theInterface = Number { act = true; value = 12.0 };
+tel
+

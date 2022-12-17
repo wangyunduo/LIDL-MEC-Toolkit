@@ -1,0 +1,88 @@
+func: TypeA -> TypeB out
+
+apply(afunc)to(x)and get(y) : Behaviour
+
+node ApplyToAndGet_<<simpleFunc>>(active_flag:bool, x:TypeA) return (y:TypeB);
+let
+    y = if (active_flag) then simpleFunc(x) else TypeB { activation = false ; value = ?default };
+tel
+
+node simpleFunc(x: TypeA) return (y: TypeB);
+let
+    ......
+tel
+
+struct DataType
+{
+    activation: boolean,
+    value: ?
+}
+
+================================================================
+simpleInterface: simpleData out
+
+({
+    theNumber:  (x),
+    theResult:  (y)
+})
+With Behaviour
+(Apply (function addOne) To (x) And Get (y) )
+
+node My_Simple_User_Interface(out_theNumber: Number) return (out_theResult: Number)
+var ident_x, ident_y;
+let
+    ident_x = out_theNumber;
+    ident_y = ApplyToAndGet_addOne(true, ident_x);
+tel
+
+node ApplyToAndGet_addOne(active_flag:bool, in:Number) return (out:Number);
+let
+    y = if (active_flag) then addOne(in) else Number { activation = false ; value = <<default>> };
+tel
+
+
+
+================================================================
+Interaction Call Structure          (InterfaceExpansion)
+
+(a interaction in (x: Type1 in) out (y: Type2 out)): outInterface
+
+(a interaction in (type1value) out (type2recv))
+^
+|
+v
+a_interaction_in_out([id]: outDataIn, x: Type1) return ([id]: outDataOut, y: Type2);
+(a_interaction_in__X_Type1_in__out__Y_Type2__([id]: outDataIn, x: Type1) return ([id]: outDataOut, y: Type2);)
+
+(outDataOut, type2recv) = a_interaction_in_out(outDataIn, type1value);
+
+
+=================================================================
+
+interface x1
+is
+{
+    a: Number in
+    b: Text out
+}
+
+interface x2
+is
+{
+    c: Number in
+    d: x1
+}
+
+struct x1_st
+{
+    a__dir_in: Number,
+    b__dir_out: Text
+}
+
+struct x2_st
+{
+    c__dir_in: Number,
+    d__inf_ref: x1_st
+}
+
+d.a     <--->       d__inf_ref.a__dir_in

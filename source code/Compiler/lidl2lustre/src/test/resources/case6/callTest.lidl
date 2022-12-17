@@ -1,0 +1,13 @@
+interaction
+  (My Simple User Interface): Number out
+is
+(
+    Test(1)(2)
+)
+
+interaction
+    (Test(a: Number in)(b: Number in)): Number out
+is
+(
+    12
+)

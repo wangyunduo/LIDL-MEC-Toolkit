@@ -1,0 +1,46 @@
+type Number =
+struct
+{
+	act: bool;
+	value: real;
+};
+
+const real_default = 0.0;
+
+type Activation = bool;
+
+type Boolean =
+struct
+{
+	act: bool;
+	value: bool;
+};
+
+type Char =
+struct
+{
+	code: int;
+};
+
+type string = Char^200;
+
+const string_default = Char{code=0}^200;
+
+type Text =
+struct
+{
+	act: bool;
+	value: string;
+};
+
+node If_Then_Else_Number(flag: bool; expT: Number; expF: Number) returns (out: Number);
+let
+	out = if (flag) then (expT) else (expF);
+tel
+
+node My_Simple_User_Interface_arg_(theFlag: Activation) returns (theInterface: Number);
+
+let
+theInterface = If_Then_Else_Number(theFlag, Number { act = true; value = 0.0 }, Number { act = true; value = 1.0 });
+tel
+

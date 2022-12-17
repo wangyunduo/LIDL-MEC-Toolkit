@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated LIDLGUI -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="org.eclipse.sirius.LIDLGUI.presentation.LIDLGUIModelWizardID"
+            name="%_UI_LIDLGUIModelWizard_label"
+            class="org.eclipse.sirius.LIDLGUI.presentation.LIDLGUIModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/LIDLGUIModelFile.gif">
+         <description>%_UI_LIDLGUIModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated LIDLGUI -->
+      <editor
+            id="org.eclipse.sirius.LIDLGUI.presentation.LIDLGUIEditorID"
+            name="%_UI_LIDLGUIEditor_label"
+            icon="icons/full/obj16/LIDLGUIModelFile.gif"
+            extensions="lidlgui"
+            class="org.eclipse.sirius.LIDLGUI.presentation.LIDLGUIEditor"
+            contributorClass="org.eclipse.sirius.LIDLGUI.presentation.LIDLGUIActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

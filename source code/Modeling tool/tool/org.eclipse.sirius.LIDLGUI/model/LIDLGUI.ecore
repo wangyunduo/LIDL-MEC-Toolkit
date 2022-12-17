@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="LIDLGUI" nsURI="http://www.example.org/LIDLGUI" nsPrefix="LIDLGUI">
+  <eClassifiers xsi:type="ecore:EClass" name="GUI" eSuperTypes="#//ComboWidget">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="main_interaction" upperBound="-1"
+        eType="#//Interaction" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="BasicWidget" eSuperTypes="#//Widget">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="index" eType="#//Number"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="#//Text"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Container" eSuperTypes="#//ComboWidget"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Button" eSuperTypes="#//BasicWidget">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Enable" eType="#//Boolean"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Panel" eSuperTypes="#//Container">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="SizeX" eType="#//Number"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="SizeY" eType="#//Number"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Indicator" eSuperTypes="#//BasicWidget"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Sensor" eSuperTypes="#//BasicWidget"/>
+  <eClassifiers xsi:type="ecore:EClass" name="RadioBox" eSuperTypes="#//Button">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="SizeX" eType="#//Number"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="SizeY" eType="#//Number"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="LabelStringArray" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//ENTITIES"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="RotarySwitch" eSuperTypes="#//Button">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Radius" eType="#//Number"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Legend" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Labels" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//ENTITIES"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ComboBox" eSuperTypes="#//Button">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="SizeX" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Double"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="SizeY" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Double"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="LabelString" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Knob" eSuperTypes="#//Button">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Radius" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Double"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Legend" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Min" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Double"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Max" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Double"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="PushButton" eSuperTypes="#//Button">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="SizeX" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Double"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="SizeY" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Double"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="LabelString" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Selection" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Boolean"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ToggleButton" eSuperTypes="#//Button">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="SizeX" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Double"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="SizeY" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Double"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="LabelString" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Slider" eSuperTypes="#//Button">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="SizeX" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Double"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="SizeY" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Double"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Value" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Double"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="MinValue" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Double"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ScrollList" eSuperTypes="#//Container">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="SizeX" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Double"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="SizeY" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Double"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="InnerX" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Double"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="InnerY" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Double"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Counter" eSuperTypes="#//Indicator">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Radius" eType="#//Number"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Value" eType="#//Number"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="MinValue" eType="#//Number"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="MaxValue" eType="#//Number"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TextDisplay" eSuperTypes="#//Indicator">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Text" eType="#//Text"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Legend" eType="#//Text"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="LED" eSuperTypes="#//Indicator">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="SizeX" eType="#//Number"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="SizeY" eType="#//Number"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="LEDOn" eType="#//Activation"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Legend" eType="#//Text"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="NumberDisplay" eSuperTypes="#//Indicator">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Value" eType="#//Number"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Legend" eType="#//Number"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Gauge" eSuperTypes="#//Indicator">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="SizeX" eType="#//Number"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="SizeY" eType="#//Number"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Value" eType="#//Number"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DateAndTime" eSuperTypes="#//Sensor">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dateAndTime" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//DateTime"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Number" instanceClassName="double"/>
+  <eClassifiers xsi:type="ecore:EDataType" name="Boolean" instanceClassName="java.lang.Boolean"/>
+  <eClassifiers xsi:type="ecore:EDataType" name="Text" instanceClassName="java.lang.String"/>
+  <eClassifiers xsi:type="ecore:EDataType" name="Activation" instanceClassName="activationStat"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ComboWidgetFactory">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="myComboWidget" upperBound="-1"
+        eType="#//ComboWidget" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="gui" upperBound="-1" eType="#//GUI"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="interaction_diagram" upperBound="-1"
+        eType="#//Interaction" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ComboWidget" eSuperTypes="#//Widget">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="basicwidget" upperBound="-1"
+        eType="#//BasicWidget" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="combowidget" upperBound="-1"
+        eType="#//ComboWidget" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="index" eType="#//Number"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="#//Text"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="InteractionURL" eType="#//Text"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Interface">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="#//Text"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="scope" eType="#//Scope"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="interface" eType="#//MetaInterface"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="label" eType="#//Text"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="direction" eType="#//Direction"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="datatype" eType="#//Datatype"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="candidate_interfaces" upperBound="-1"
+        eType="#//Interface" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="from" upperBound="-1" eType="#//InterfaceConnector"
+        eOpposite="#//InterfaceConnector/source"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="to" upperBound="-1" eType="#//InterfaceConnector"
+        eOpposite="#//InterfaceConnector/target"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="actualPar" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="activationStat">
+    <eLiterals name="active"/>
+    <eLiterals name="inactive" value="1"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="Direction">
+    <eLiterals name="in"/>
+    <eLiterals name="out" value="1"/>
+    <eLiterals name="io" value="2"/>
+    <eLiterals name="null" value="3"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="MetaDatatype">
+    <eLiterals name="Composite"/>
+    <eLiterals name="Number" value="1"/>
+    <eLiterals name="Boolean" value="2"/>
+    <eLiterals name="Text" value="3"/>
+    <eLiterals name="Activation" value="4"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Datatype">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="#//Text"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="label" eType="#//Text"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="datatype" eType="#//MetaDatatype"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="candidate_datatypes" upperBound="-1"
+        eType="#//Datatype" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DatatypeTable">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="datatypes" upperBound="-1"
+        eType="#//Datatype" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="index" eType="#//Number"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="#//Text"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="InterfaceTable">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="interfaces" upperBound="-1"
+        eType="#//Interface" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="index" eType="#//Number"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="#//Text"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Interaction">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="signature_interfaces" upperBound="-1"
+        eType="#//Interface" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="candidates_interactions"
+        upperBound="-1" eType="#//Interaction" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="label" eType="#//Text"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="#//Text"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="signature" eType="#//Text"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="interface" lowerBound="1"
+        eType="#//Interface" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="expression" eType="#//Text"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="interfaceConnectors" upperBound="-1"
+        eType="#//InterfaceConnector" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="index" eType="#//Number"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="MetaInterface">
+    <eLiterals name="Composite" literal="Composite"/>
+    <eLiterals name="Atomic" value="1"/>
+    <eLiterals name="Simple" value="2"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="Scope">
+    <eLiterals name="Global"/>
+    <eLiterals name="Local" value="1"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="InterfaceConnector">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="source" eType="#//Interface"
+        eOpposite="#//Interface/from"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="target" eType="#//Interface"
+        eOpposite="#//Interface/to"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="InteractionTable">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="index" eType="#//Number"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="#//Text"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="interactions" upperBound="-1"
+        eType="#//Interaction" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TableFactory">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="interactiontable" upperBound="-1"
+        eType="#//InteractionTable" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="interfacetable" upperBound="-1"
+        eType="#//InterfaceTable" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="datatypetable" upperBound="-1"
+        eType="#//DatatypeTable" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Widget">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="Implement_interaction"
+        upperBound="-1" eType="#//Interaction" containment="true"/>
+  </eClassifiers>
+</ecore:EPackage>

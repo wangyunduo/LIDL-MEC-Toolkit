@@ -1,0 +1,146 @@
+node operatorPlus(x: Number; y: Number) returns (z: Number)
+var
+	activated: bool;
+	val: real;
+let
+	activated = x.act and y.act;
+	val = x.value + y.value;
+	z = if activated
+		then Number {act = true ; value = val}
+		else Number {act = false; value = 0.0};
+tel
+
+type Number =
+struct
+{
+	act: bool;
+	value: real;
+};
+
+const real_default = 0.0;
+
+type Activation = bool;
+
+type Boolean =
+struct
+{
+	act: bool;
+	value: bool;
+};
+
+type Char =
+struct
+{
+	code: int;
+};
+
+type string = Char^200;
+
+const string_default = Char{code=0}^200;
+
+type Text =
+struct
+{
+	act: bool;
+	value: string;
+};
+
+node operatorMinus(x: Number; y: Number) returns (z: Number)
+var
+	activated: bool;
+	val: real;
+let
+	activated = x.act and y.act;
+	val = x.value - y.value;
+	z = if activated
+		then Number {act = true ; value = val}
+		else Number {act = false; value = 0.0};
+tel
+
+node If_Then_Else_Number(flag: bool; expT: Number; expF: Number) returns (out: Number);
+let
+	out = if (flag) then (expT) else (expF);
+tel
+
+node ApplyToAndGet_operatorPlus(active_flag: bool; arg0: Number;arg1: Number) returns (ret0: Number);
+let
+    ret0 = if (active_flag) then operatorPlus(arg0, arg1) else Number { act = false; value = 0.0 };
+tel
+
+node ApplyToAndGet_operatorMinus(active_flag: bool; arg0: Number;arg1: Number) returns (ret0: Number);
+let
+    ret0 = if (active_flag) then operatorMinus(arg0, arg1) else Number { act = false; value = 0.0 };
+tel
+
+node Assignment_Activation(active_flag: bool; in: Activation) returns (out: Activation);
+let
+	out = if (active_flag) then (in) else Activation { act = false };
+tel
+
+node Assignment_Number(active_flag: bool; in: Number) returns (out: Number);
+let
+	out = if (active_flag) then (in) else Number { act = false; value = 0.0 };
+tel
+
+node NumberDisplay_Displayed_When_arg_With_Value_arg_(activated: Activation; theValue: Number) returns (theInterface: Number);
+
+let
+theInterface = If_Then_Else_Number(activated, theValue, inactive);
+tel
+
+node Button_Displayed_By_arg_With_Title_arg_Triggers_arg_(pushed: Activation; activated: Activation; theTitle: Text) returns (title: Text; clicked: Activation);
+var
+ident_inPushed: Activation;
+ident_outTitle: Text;
+let
+ident_inPushed = pushed;
+clicked = Assignment_Activation(activated, ident_inPushed);
+ident_outTitle = Assignment_Activation(activated, theTitle: Text);
+title = ident_outTitle;
+tel
+
+node Counter_Initialized_To_arg_Answer_Click_On_arg_Or_arg_Or_arg_Buttons_And_Displays_arg_(init: Number; pActive: Activation; mActive: Activation; rActive: Activation) returns (counterDisplay: Number);
+var
+ident_counter: Number;
+ident_edge_938_node_374: Number;
+ident_node_383_edge_801: Number;
+ident_node_391_edge_803: Number;
+ident_node_399_edge_945: Number;
+let
+ident_node_721_node_939 = _arg_Ox2b_arg_(ident_node_383_edge_801, Number { act = true; value = 1.0 });
+ident_node_738_node_944 = _arg_Ox2d_arg_(ident_node_391_edge_803, Number { act = true; value = 1.0 });
+ident_node_949_node_944 = If_Then_Else_Number(rActive, Number { act = true; value = 0.0 }, ident_node_399_edge_945);
+ident_edge_938_node_374 = If_Then_Else_Number(pActive, ident_node_721_node_939, ident_node_944_node_939);
+ident_node_944_node_939 = If_Then_Else_Number(mActive, ident_node_738_node_944, ident_node_949_node_944);
+ident_counter = init -> Assignment_Number(true, ident_edge_938_node_374);
+counterDisplay = Assignment_Number(true, ident_counter);
+ident_node_383_edge_801 = pre(ident_counter);
+ident_node_391_edge_803 = pre(ident_counter);
+ident_node_399_edge_945 = pre(ident_counter);
+tel
+
+node MainUI(plusBut.pushed: Activation; minusBut.pushed: Activation; resetBut.pushed: Activation) returns (plusBut.title: Text; minusBut.title: Text; resetBut.title: Text; display.theInterface: Number);
+
+let
+plusBut.title = Button_Displayed_By_arg_With_Title_arg_Triggers_arg_(plusBut.pushed, active, Text { act = true; value = + }, <:call_params=3:>);
+minusBut.title = Button_Displayed_By_arg_With_Title_arg_Triggers_arg_(minusBut.pushed, active, Text { act = true; value = - }, <:call_params=3:>);
+resetBut.title = Button_Displayed_By_arg_With_Title_arg_Triggers_arg_(resetBut.pushed, active, Text { act = true; value = r }, <:call_params=3:>);
+display.theInterface = NumberDisplay_Displayed_When_arg_With_Value_arg_(active, <:call_params=2:>);
+tel
+
+node _arg_Ox2b_arg_(a: Number; b: Number) returns (theInterface: Number);
+var
+ident_APlusBRet: Number;
+let
+ident_APlusBRet = ApplyToAndGet_operatorPlus(true, a,b);
+theInterface = ident_APlusBRet;
+tel
+
+node _arg_Ox2d_arg_(a: Number; b: Number) returns (theInterface: Number);
+var
+ident_AMinusBRet: Number;
+let
+ident_AMinusBRet = ApplyToAndGet_operatorMinus(true, a,b);
+theInterface = ident_AMinusBRet;
+tel
+

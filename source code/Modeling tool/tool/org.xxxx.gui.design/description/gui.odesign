@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:properties="http://www.eclipse.org/sirius/properties/1.0.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" name="gui" version="12.0.0.2017041100">
+  <ownedViewpoints name="gui" modelFileExtension="LIDLGUI">
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="Interaction Diagram" domainClass="LIDLGUI::Interaction" enablePopupBars="true">
+      <defaultLayer name="Default">
+        <edgeMappings name="Interface Exchange" sourceMapping="//@ownedViewpoints[name='gui']/@ownedRepresentations[name='Interaction%20Diagram']/@defaultLayer/@containerMappings[name='Interaction']/@subContainerMappings[name='Sub%20Interaction']/@borderedNodeMappings[name='Sub%20Interface']" targetMapping="//@ownedViewpoints[name='gui']/@ownedRepresentations[name='Interaction%20Diagram']/@defaultLayer/@containerMappings[name='Interaction']/@subContainerMappings[name='Sub%20Interaction']/@borderedNodeMappings[name='Sub%20Interface']" targetFinderExpression="feature:target" sourceFinderExpression="feature:source" domainClass="LIDLGUI::InterfaceConnector" useDomainElement="true">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <containerMappings name="Interaction" semanticCandidatesExpression="var:self" domainClass="LIDLGUI::Interaction">
+          <borderedNodeMappings name="Interface" semanticCandidatesExpression="feature:signature_interfaces" domainClass="LIDLGUI::Interface">
+            <style xsi:type="style:LozengeNodeDescription" labelSize="12" labelPosition="node" resizeKind="NSEW">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_orange']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_orange']"/>
+            </style>
+          </borderedNodeMappings>
+          <subContainerMappings name="Sub Interaction" semanticCandidatesExpression="feature:candidates_interactions" domainClass="LIDLGUI::Interaction">
+            <borderedNodeMappings name="Sub Interface" semanticCandidatesExpression="feature:signature_interfaces" domainClass="LIDLGUI::Interface">
+              <style xsi:type="style:SquareDescription" labelSize="12" labelPosition="node" resizeKind="NSEW">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+              </style>
+              <conditionnalStyles predicateExpression="service:isIOGlobalIntf()">
+                <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelExpression="service:getIntfNameOrLabel()" sizeComputationExpression="2">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelFormat>italic</labelFormat>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_green']"/>
+                </style>
+              </conditionnalStyles>
+              <conditionnalStyles predicateExpression="service:isInGlobalIntf()">
+                <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelExpression="service:getIntfNameOrLabel()" sizeComputationExpression="2">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelFormat>italic</labelFormat>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+                </style>
+              </conditionnalStyles>
+              <conditionnalStyles predicateExpression="service:isOutGlobalIntf()">
+                <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelExpression="service:getIntfNameOrLabel()" sizeComputationExpression="2">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelFormat>italic</labelFormat>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_yellow']"/>
+                </style>
+              </conditionnalStyles>
+              <conditionnalStyles predicateExpression="service:isIOLocalIntf()">
+                <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelExpression="service:getIntfNameOrLabel()" sizeComputationExpression="2">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_green']"/>
+                </style>
+              </conditionnalStyles>
+              <conditionnalStyles predicateExpression="service:isInLocalIntf()">
+                <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelExpression="service:getIntfNameOrLabel()" sizeComputationExpression="2">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+                </style>
+              </conditionnalStyles>
+              <conditionnalStyles predicateExpression="service:isOutLocalIntf()">
+                <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelExpression="service:getIntfNameOrLabel()" sizeComputationExpression="2">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_yellow']"/>
+                </style>
+              </conditionnalStyles>
+            </borderedNodeMappings>
+            <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="aql:self.label+' : '+self.name">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+            <conditionnalStyles predicateExpression="service:isButton()">
+              <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="aql:self.label+' : '+self.name">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelFormat>bold</labelFormat>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+                <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_green']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="service:isDisplay()">
+              <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="aql:self.label+' : '+self.name">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelFormat>bold</labelFormat>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_purple']"/>
+                <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_purple']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="service:isCounter()">
+              <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="aql:self.label+' : '+self.name">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelFormat>bold</labelFormat>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_yellow']"/>
+                <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_yellow']"/>
+              </style>
+            </conditionnalStyles>
+          </subContainerMappings>
+          <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="aql:self.label+' : '+self.name">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+          </style>
+        </containerMappings>
+        <toolSections name="Interaction">
+          <ownedTools xsi:type="tool:SelectionWizardDescription" name="Select Interaction" candidatesExpression="service:getInteractionDefinitions()" windowTitle="Interaction Definition Selection Wizard">
+            <element name="element"/>
+            <containerView name="containerView"/>
+            <container name="container"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="service:insertSelectedInteraction(element)"/>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+        <toolSections name="Interface Connector">
+          <ownedTools xsi:type="tool_1:EdgeCreationDescription" name="Create Interface Connector" precondition="service:isTwoInterfaceBelongToDifferInteraction(preSource, preTarget)" forceRefresh="true" edgeMappings="//@ownedViewpoints[name='gui']/@ownedRepresentations[name='Interaction%20Diagram']/@defaultLayer/@edgeMappings[name='Interface%20Exchange']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="service:createInterfaceConnector(source,target)"/>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+        <toolSections name="Code Generation">
+          <ownedTools xsi:type="tool:GroupMenu" name="editGroup" locationURI="menu">
+            <itemDescriptions xsi:type="tool:OperationAction" name="Generate LIDL Code" forceRefresh="true">
+              <view name="views"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="service:generateLIDLCode()"/>
+              </initialOperation>
+            </itemDescriptions>
+          </ownedTools>
+        </toolSections>
+      </defaultLayer>
+    </ownedRepresentations>
+    <ownedJavaExtensions qualifiedClassName="org.xxxx.gui.design.Services"/>
+  </ownedViewpoints>
+  <userColorsPalettes>
+    <entries xsi:type="description:UserFixedColor" red="255" green="232" blue="232" name="com_pink"/>
+    <entries xsi:type="description:UserFixedColor" red="156" green="207" blue="249" name="com_blue"/>
+  </userColorsPalettes>
+  <extensions xsi:type="properties:ViewExtensionDescription" name="Properties">
+    <categories name="Interaction">
+      <pages name="Interaction Page" labelExpression="General" domainClass="LIDLGUI::Interaction" semanticCandidateExpression="var:self" groups="//@extensions.0/@categories.0/@groups.0 //@extensions.0/@categories.0/@groups.1"/>
+      <groups name="Interaction Label" labelExpression="Configure label" domainClass="LIDLGUI::Interaction" semanticCandidateExpression="var:self">
+        <controls xsi:type="properties:TextDescription" name="Label" labelExpression="Label:" isEnabledExpression="aql:true" valueExpression="feature:label">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="service:setInteractionLabel(newValue)"/>
+          </initialOperation>
+        </controls>
+      </groups>
+      <groups name="Interaction Group" labelExpression="Properties" domainClass="LIDLGUI::Interaction" semanticCandidateExpression="var:self">
+        <controls xsi:type="properties:TextDescription" name="Name" labelExpression="Name:" valueExpression="feature:name">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:self"/>
+          </initialOperation>
+        </controls>
+        <controls xsi:type="properties:TextDescription" name="Signature" labelExpression="Signature:" isEnabledExpression="aql:true" valueExpression="feature:signature">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:self"/>
+          </initialOperation>
+        </controls>
+        <controls xsi:type="properties:TextDescription" name="Expression" labelExpression="Expression:" valueExpression="feature:expression">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:self"/>
+          </initialOperation>
+        </controls>
+        <controls xsi:type="properties:TextDescription" name="Index" labelExpression="Index:" valueExpression="feature:index">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:self"/>
+          </initialOperation>
+        </controls>
+      </groups>
+    </categories>
+    <categories name="InterfaceConnector">
+      <pages name="InterfaceConnector Page" labelExpression="General" domainClass="LIDLGUI::InterfaceConnector" semanticCandidateExpression="var:self" groups="//@extensions.0/@categories.1/@groups.0"/>
+      <groups name="InterfaceConnector Group" labelExpression="Properties" domainClass="LIDLGUI::InterfaceConnector" semanticCandidateExpression="var:self">
+        <controls xsi:type="properties:LabelDescription" name="ConnectorSource" labelExpression="Source:" isEnabledExpression="aql:true" valueExpression="var:self" displayExpression="service:getConnectorSource()"/>
+        <controls xsi:type="properties:LabelDescription" name="ConnectorTarget" labelExpression="Target:" isEnabledExpression="aql:true" valueExpression="var:self" displayExpression="service:getConnectorTarget()"/>
+      </groups>
+    </categories>
+    <categories name="Interface">
+      <pages name="Interface Page" labelExpression="General" domainClass="LIDLGUI::Interface" semanticCandidateExpression="var:self" groups="//@extensions.0/@categories.2/@groups.0 //@extensions.0/@categories.2/@groups.1 //@extensions.0/@categories.2/@groups.3 //@extensions.0/@categories.2/@groups.4 //@extensions.0/@categories.2/@groups.2"/>
+      <groups name="Interface Gourp ActualPara" labelExpression="Configure actual parameter" domainClass="LIDLGUI::Interface" semanticCandidateExpression="var:self">
+        <controls xsi:type="properties:TextDescription" name="InterfaceActualPar" labelExpression="Actuall Parameter:" valueExpression="feature:actualPar">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="service:changeActualPar(newValue)"/>
+          </initialOperation>
+        </controls>
+      </groups>
+      <groups name="Interface Gourp" labelExpression="Properties" domainClass="LIDLGUI::Interface" semanticCandidateExpression="var:self">
+        <controls xsi:type="properties:TextDescription" name="InterfaceName" labelExpression="Name:" isEnabledExpression="aql:true" valueExpression="feature:name">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:self"/>
+          </initialOperation>
+        </controls>
+        <controls xsi:type="properties:RadioDescription" name="InterfaceScope" labelExpression="Scope:" isEnabledExpression="aql:true" valueExpression="service:getScopeString()" candidatesExpression="service:getScopeList()" candidateDisplayExpression="aql:candidate">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:self"/>
+          </initialOperation>
+        </controls>
+        <controls xsi:type="properties:RadioDescription" name="InterfaceType" labelExpression="Interface:" isEnabledExpression="aql:true" valueExpression="service:getInterfaceString()" candidatesExpression="service:getInterfaceList()" candidateDisplayExpression="aql:candidate">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:self"/>
+          </initialOperation>
+        </controls>
+        <controls xsi:type="properties:TextDescription" name="InterfaceFormalPar" labelExpression="Formal Parameter:" valueExpression="feature:label">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:self"/>
+          </initialOperation>
+        </controls>
+        <controls xsi:type="properties:RadioDescription" name="InterfaceDirection" labelExpression="Direction:" isEnabledExpression="aql:true" valueExpression="service:getDirectionString()" candidatesExpression="service:getDirectionList()" candidateDisplayExpression="aql:candidate">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:self"/>
+          </initialOperation>
+        </controls>
+      </groups>
+      <groups name="Interface No Relation" labelExpression="Relationships of the interface" semanticCandidateExpression="var:self" preconditionExpression="service:isNoRelation()">
+        <controls xsi:type="properties:LabelDescription" name="NoRelation" labelExpression="No relationships"/>
+      </groups>
+      <groups name="Interface Relations Source" labelExpression="Relationships of the interface" semanticCandidateExpression="var:self" preconditionExpression="service:isInIntf2()">
+        <controls xsi:type="properties:LabelDescription" name="SourceIntf" labelExpression="Source:" displayExpression="service:displaySource()"/>
+      </groups>
+      <groups name="Interface Relations Target" labelExpression="Group" semanticCandidateExpression="var:self" preconditionExpression="service:isOutIntf2()">
+        <controls xsi:type="properties:LabelDescription" name="TargetIntf" labelExpression="Target:" displayExpression="service:displayTarget()"/>
+      </groups>
+    </categories>
+    <categories name="GUI">
+      <pages name="GUIPage" labelExpression="Test" domainClass="LIDLGUI::GUI" semanticCandidateExpression="var:self" groups="//@extensions.0/@categories.2/@groups.1"/>
+      <groups name="GUI Group" labelExpression="Group" domainClass="LIDLGUI::GUI" semanticCandidateExpression="var:self">
+        <controls xsi:type="properties:SelectDescription">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:self"/>
+          </initialOperation>
+        </controls>
+      </groups>
+    </categories>
+  </extensions>
+</description:Group>

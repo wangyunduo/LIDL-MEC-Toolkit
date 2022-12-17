@@ -1,0 +1,148 @@
+grammar lab.buaa.software.lidl.Lidl with org.eclipse.xtext.common.Terminals
+
+generate lidl "http://www.buaa.lab/software/lidl/Lidl"
+
+LidlProgram returns LidlProgram:
+	(pack?='package' name=QualifiedName ';')?
+	imports+=LidlImport*
+	definitions+=LidlDefinition*;
+
+QualifiedName:
+	ID ('.' ID)*;
+
+LidlImport:
+	'import' importedNamespace=QualifiedNameWithWildcard ';';
+
+QualifiedNameWithWildcard:
+	QualifiedName '.*'?;
+
+LidlDefinition returns LidlDefinition:
+	LidlData | LidlInterface | LidlInteraction;
+
+LidlData returns LidlData:
+	'data' name=ID
+	(nested?='with' nestedDef+=LidlData+)?
+	'is'
+	(definition=LidlDataType | defined?='Undefined');
+
+LidlDataType returns LidlDataType:
+	CompositeDataType | RefDataType;
+
+CompositeDataType returns LidlDataType:
+	{CompositeDataType} '{'
+	items+=CompositeDataTypeElement (',' items+=CompositeDataTypeElement)*
+	'}';
+
+RefDataType returns LidlDataType:
+	{RefDataType} items+=RefDataTypeElement;
+
+TypeElement returns TypeElement:
+	CompositeDataTypeElement | RefDataTypeElement;
+
+CompositeDataTypeElement returns TypeElement:
+	{CompositeDataTypeElement} name=ID ':'
+	(type=[LidlData|QualifiedName] |
+	isArray?='[' type=[LidlData|QualifiedName] ']');
+
+RefDataTypeElement returns TypeElement:
+	{RefDataTypeElement}
+	type=[LidlData|QualifiedName] |
+	isArray?='[' type=[LidlData|QualifiedName] ']';
+
+LidlInterface returns LidlInterface:
+	'interface' name=ID
+	(nested?='with' nestedDef+=LidlInterface+)?
+	'is'
+	(definition=LidlInterfaceType | defined?='Undefined');
+
+LidlInterfaceType returns LidlInterfaceType:
+	(AtomInterfaceType) | (CompositeInterfaceType) | (RefInterfaceType (conjugate?='\'')?);
+
+InterfaceElement returns InterfaceElement:
+	AtomInterfaceTypeElement | CompositeInterfaceTypeElement | RefInterfaceTypeElement;
+
+AtomInterfaceTypeElement returns InterfaceElement:
+	{AtomInterfaceTypeElement} type=[LidlData|QualifiedName] direction=DataDirection;
+
+CompositeInterfaceTypeElement returns InterfaceElement:
+	{CompositeInterfaceTypeElement} name=ID ':' (type=[LidlData|QualifiedName] direction=DataDirection |
+	type=[LidlInterface|QualifiedName]);
+
+RefInterfaceTypeElement returns InterfaceElement:
+	{RefInterfaceTypeElement} type=[LidlInterface|QualifiedName];
+
+AtomInterfaceType returns LidlInterfaceType:
+	{AtomInterfaceType} items=AtomInterfaceTypeElement;
+
+CompositeInterfaceType returns LidlInterfaceType:
+	{CompositeInterfaceType} '{'
+	items+=CompositeInterfaceTypeElement (',' items+=CompositeInterfaceTypeElement)*
+	'}';
+
+RefInterfaceType returns LidlInterfaceType:
+	{RefInterfaceType} items=RefInterfaceTypeElement;
+
+enum DataDirection:
+	IN='in' | OUT='out';
+
+LidlInteraction returns LidlInteraction:
+	'interaction'
+	id=LidlInteractionID ':' interface=LidlInterfaceType
+	(nested?='with' nestedDef+=LidlInteraction+)?
+	'is'
+	'('
+	definition=LidlExpression
+	')';
+
+LidlInteractionID returns LidlInteractionID:
+	'(' items+=IDPart+ ')';
+
+IDPart returns IDPart:
+	LidlText | LidlParameter;
+
+LidlParameter returns IDPart:
+	{LidlParameter} '(' name=ID ':' interface=LidlInterfaceType ')';
+
+LidlText returns IDPart:
+	{LidlText} text=(ID | LIDLIDSYMBOL);
+
+LidlExpression returns LidlExpresson:
+	LidlCallExpression | LidlTerminalExpression | LidlArray;
+
+LidlCallExpression returns LidlExpression:
+	{LidlCallExpression} items+=CallPart+;
+
+CallPart returns CallPart:
+	{TextCallPart} text=(ID | LIDLIDSYMBOL | ',' | '.') | {ParamCallPart} '(' param=LidlExpression ')';
+
+LidlTerminalExpression returns LidlExpression:
+	{LidlStringConstant} value=STRING |
+	{LidlNumberConstant} value=NUMBER |
+	{LidlBoolConstant} value=('true' | 'false') |
+	{LidlAvtivationConstant} value=('active' | 'inactive') |
+	{LidlComposition} body=LidlComposition
+;
+
+LidlArray returns LidlExpression:
+	{LidlExpression} '[' (item+=LidlArrayItem (',' item+=LidlArrayItem)*)* ']';
+
+LidlArrayItem:
+	'(' value=LidlExpression ')';
+
+LidlSymbol:
+	LidlParameter | LidlCompositionElement | CompositeInterfaceTypeElement;
+
+LidlCompositionElement:
+	(param=ID) ':' '(' value=LidlExpression ')';
+
+LidlComposition returns LidlExpression:
+	'{'
+	items+=LidlCompositionElement (',' items+=LidlCompositionElement)*
+	'}';
+
+terminal LIDLIDSYMBOL:
+	('?' | '!' | '+' | '-' | '*' | '/' | '\\' | '=' | '@' | '`' | '~' | '%' | '^' | '&' | '_' | '|' | '\'' | '\"' | '<'
+	| '>')+;
+
+terminal NUMBER:
+	INT ('.' INT)?;

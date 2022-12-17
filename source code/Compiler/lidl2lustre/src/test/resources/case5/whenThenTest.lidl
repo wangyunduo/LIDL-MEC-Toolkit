@@ -1,0 +1,7 @@
+interaction
+  (My Simple User Interface(theFlag: Activation in) (theResult: Number out)): Activation in
+is
+  (
+    When (theFlag)
+    Then ((theResult) = (5))
+  )

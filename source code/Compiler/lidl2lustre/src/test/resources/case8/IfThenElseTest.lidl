@@ -1,0 +1,8 @@
+interaction
+  (My Simple User Interface(theFlag: Activation in)): Number out
+is
+(
+    If(theFlag)
+    Then(0)
+    Else(1)
+)

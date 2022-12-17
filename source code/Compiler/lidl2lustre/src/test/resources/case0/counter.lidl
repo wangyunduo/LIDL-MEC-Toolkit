@@ -1,0 +1,93 @@
+// counter.lidl
+package default;
+
+import lidl.lang.*;
+import utils.*;
+
+interaction
+    (
+        NumberDisplay Displayed When (activated: Activation in)
+        With Value (theValue: Number in)
+    ): Display
+is
+(
+    If (activated)
+    Then (theValue)
+    Else (inactive)
+)
+
+interaction
+    (
+        Button Displayed By (activated: Activation in)
+        With Title (theTitle: Text in)
+        Triggers (clicked: Activation out)
+    ): Button
+is
+(
+    ({
+        title: (outTitle),
+        pushed: (inPushed)
+    })
+    With Behaviour
+    (
+        When (activated)
+        Then
+        (
+            All
+            ((outTitle) = (theTitle))
+            ((clicked) = (inPushed))
+        )
+    )
+)
+
+interaction
+    (
+        Counter Initialized To (init: Number in)
+        Answer Click On (pActive: Activation in)
+        Or (mActive: Activation in)
+        Or (rActive: Activation in) Buttons
+        And Displays (counterDisplay: Number out)
+    ): Activation in
+is
+(
+    (All
+        ((counterDisplay) = (counter))
+        (
+            (counter) =
+                (
+                    If (pActive)
+                    Then ((Previous(counter))+(1))
+                    Else
+                    (
+                        If (mActive)
+                        Then ((Previous(counter))-(1))
+                        Else
+                        (
+                            If (rActive)
+                            Then (0)
+                            Else (Previous(counter))
+                        )
+                    )
+                )
+            )
+    )
+    With Behaviour
+    (Make (counter) Is A Flow Initially (init))
+)
+
+interaction (MainUI): { plusBut: Button, minusBut: Button, resetBut: Button, display: Display }
+is
+(
+    ({
+        plusBut: (Button Displayed By (active) With Title ("+") Triggers (plusClicked)),
+        minusBut: (Button Displayed By (active) With Title ("-") Triggers (minusClicked)),
+        resetBut: (Button Displayed By (active) With Title ("r") Triggers (resetClicked)),
+        display: (NumberDisplay Displayed When (active) With Value (counterDisplay)),
+    })
+    With Behaviour
+    (
+        Counter Initialized To (0)
+        Answer Click On (plusClicked) Or (minusClicked) Or (resetClicked)
+        Buttons And Displays (counterDisplay)
+    )
+)

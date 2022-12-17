@@ -1,0 +1,15 @@
+interface SimpleInterface
+is
+{theNumber: Number in, theResult: Number out}
+
+interaction
+  (My Simple User Interface): SimpleInterface
+is
+  (
+    ({
+      theNumber:  (x),
+      theResult:  (y)
+    })
+    With Behaviour
+    (Apply (function addOne) To (x) And Get (y) )
+  )

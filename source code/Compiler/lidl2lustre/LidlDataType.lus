@@ -1,0 +1,23 @@
+struct Activation
+{
+    active: boolean,
+    value: boolean
+}
+
+struct Boolean
+{
+    active: boolean,
+    value: boolean
+}
+
+struct Text
+{
+    active: boolean,
+    value: boolean
+}
+
+struct Number
+{
+    active: boolean,
+    value: real
+}

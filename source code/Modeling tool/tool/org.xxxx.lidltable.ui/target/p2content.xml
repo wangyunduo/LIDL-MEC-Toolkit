@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<units size='1'>
+  <unit id='org.xxxx.lidltable.ui' version='1.0.0.202212150352' generation='2'>
+    <update id='org.xxxx.lidltable.ui' range='[0.0.0,1.0.0.202212150352)' severity='0'/>
+    <properties size='4'>
+      <property name='org.eclipse.equinox.p2.name' value='Ui'/>
+      <property name='maven-groupId' value='org.xxxx.lidltable.ui'/>
+      <property name='maven-artifactId' value='org.xxxx.lidltable.ui'/>
+      <property name='maven-version' value='1.0.0-SNAPSHOT'/>
+    </properties>
+    <provides size='4'>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='org.xxxx.lidltable.ui' version='1.0.0.202212150352'/>
+      <provided namespace='osgi.bundle' name='org.xxxx.lidltable.ui' version='1.0.0.202212150352'/>
+      <provided namespace='osgi.identity' name='org.xxxx.lidltable.ui' version='1.0.0.202212150352'>
+        <properties size='1'>
+          <property name='type' value='osgi.bundle'/>
+        </properties>
+      </provided>
+      <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+    </provides>
+    <requires size='17'>
+      <required namespace='osgi.bundle' name='org.eclipse.ui' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.emf.transaction' range='1.9.1'/>
+      <required namespace='osgi.bundle' name='org.eclipse.ui.navigator' range='3.9.200'/>
+      <required namespace='osgi.bundle' name='org.eclipse.ui.navigator.resources' range='3.7.200'/>
+      <required namespace='osgi.bundle' name='com.google.guava' range='27.1.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.sirius' range='6.3.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.sirius.ui' range='6.3.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.sirius.common' range='6.3.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.core.expressions' range='3.6.700'/>
+      <required namespace='osgi.bundle' name='org.eclipse.sirius.table.ui' range='6.3.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.sirius.LIDLGUI' range='1.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.e4.ui.model.workbench' range='2.1.700'/>
+      <required namespace='osgi.bundle' name='org.eclipse.sirius.LIDLGUI.ui' range='1.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.sirius.diagram.ui' range='6.3.0'/>
+      <required namespace='java.package' name='org.eclipse.ui.views.properties' range='0.0.0'/>
+      <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version=1.8))'/>
+    </requires>
+    <artifacts size='1'>
+      <artifact classifier='osgi.bundle' id='org.xxxx.lidltable.ui' version='1.0.0.202212150352'/>
+    </artifacts>
+    <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+    <touchpointData size='1'>
+      <instructions size='1'>
+        <instruction key='manifest'>
+          Bundle-SymbolicName: org.xxxx.lidltable.ui;singleton:=true&#xA;Bundle-Version: 1.0.0.202212150352&#xA;
+        </instruction>
+      </instructions>
+    </touchpointData>
+  </unit>
+</units>

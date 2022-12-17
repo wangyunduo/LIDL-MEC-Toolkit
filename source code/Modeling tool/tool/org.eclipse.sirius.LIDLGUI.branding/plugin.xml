@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension-point id="org.eclipse.core.runtime.products" name="product" schema="schema/org.eclipse.core.runtime.products.exsd"/>
+   <extension
+         id="application"
+         point="org.eclipse.core.runtime.applications">
+      <application
+            cardinality="singleton-global"
+            thread="main"
+            visible="true">
+         <run
+               class="org.eclipse.sirius.lidlgui.branding.Application">
+         </run>
+      </application>
+   </extension>
+   <extension
+         id="product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="org.eclipse.sirius.LIDLGUI.branding.application"
+            name="LIDLGUI Product">
+         <property
+               name="appName"
+               value="LIDLGUI Product">
+         </property>
+      </product>
+   </extension>
+
+
+</plugin>

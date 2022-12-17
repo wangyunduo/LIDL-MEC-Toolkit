@@ -1,0 +1,1 @@
+counterDisplay = if(pActive) then (previous(counter)

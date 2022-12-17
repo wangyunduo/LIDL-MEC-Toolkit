@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/org.eclipse.sirius.LIDLGUI/src-gen" creationIcons="false"
+    editDirectory="/org.eclipse.sirius.LIDLGUI.edit/src-gen" editorDirectory="/org.eclipse.sirius.LIDLGUI.editor/src-gen"
+    modelPluginID="org.eclipse.sirius.LIDLGUI" modelName="LIDLGUI" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    codeFormatting="true" importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0"
+    copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>LIDLGUI.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="LIDLGUI" basePackage="org.eclipse.sirius" disposableProviderFactory="true"
+      ecorePackage="LIDLGUI.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="LIDLGUI.ecore#//activationStat">
+      <genEnumLiterals ecoreEnumLiteral="LIDLGUI.ecore#//activationStat/active"/>
+      <genEnumLiterals ecoreEnumLiteral="LIDLGUI.ecore#//activationStat/inactive"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="LIDLGUI.ecore#//Direction">
+      <genEnumLiterals ecoreEnumLiteral="LIDLGUI.ecore#//Direction/in"/>
+      <genEnumLiterals ecoreEnumLiteral="LIDLGUI.ecore#//Direction/out"/>
+      <genEnumLiterals ecoreEnumLiteral="LIDLGUI.ecore#//Direction/io"/>
+      <genEnumLiterals ecoreEnumLiteral="LIDLGUI.ecore#//Direction/null"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="LIDLGUI.ecore#//MetaDatatype">
+      <genEnumLiterals ecoreEnumLiteral="LIDLGUI.ecore#//MetaDatatype/Composite"/>
+      <genEnumLiterals ecoreEnumLiteral="LIDLGUI.ecore#//MetaDatatype/Number"/>
+      <genEnumLiterals ecoreEnumLiteral="LIDLGUI.ecore#//MetaDatatype/Boolean"/>
+      <genEnumLiterals ecoreEnumLiteral="LIDLGUI.ecore#//MetaDatatype/Text"/>
+      <genEnumLiterals ecoreEnumLiteral="LIDLGUI.ecore#//MetaDatatype/Activation"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="LIDLGUI.ecore#//MetaInterface">
+      <genEnumLiterals ecoreEnumLiteral="LIDLGUI.ecore#//MetaInterface/Composite"/>
+      <genEnumLiterals ecoreEnumLiteral="LIDLGUI.ecore#//MetaInterface/Atomic"/>
+      <genEnumLiterals ecoreEnumLiteral="LIDLGUI.ecore#//MetaInterface/Simple"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="LIDLGUI.ecore#//Scope">
+      <genEnumLiterals ecoreEnumLiteral="LIDLGUI.ecore#//Scope/Global"/>
+      <genEnumLiterals ecoreEnumLiteral="LIDLGUI.ecore#//Scope/Local"/>
+    </genEnums>
+    <genDataTypes ecoreDataType="LIDLGUI.ecore#//Number"/>
+    <genDataTypes ecoreDataType="LIDLGUI.ecore#//Boolean"/>
+    <genDataTypes ecoreDataType="LIDLGUI.ecore#//Text"/>
+    <genDataTypes ecoreDataType="LIDLGUI.ecore#//Activation"/>
+    <genClasses ecoreClass="LIDLGUI.ecore#//GUI">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference LIDLGUI.ecore#//GUI/main_interaction"/>
+    </genClasses>
+    <genClasses ecoreClass="LIDLGUI.ecore#//BasicWidget">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LIDLGUI.ecore#//BasicWidget/index"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LIDLGUI.ecore#//BasicWidget/name"/>
+    </genClasses>
+    <genClasses ecoreClass="LIDLGUI.ecore#//Container"/>
+    <genClasses ecoreClass="LIDLGUI.ecore#//Button">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LIDLGUI.ecore#//Button/Enable"/>
+    </genClasses>
+    <genClasses ecoreClass="LIDLGUI.ecore#//Panel">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LIDLGUI.ecore#//Panel/SizeX"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LIDLGUI.ecore#//Panel/SizeY"/>
+    </genClasses>
+    <genClasses ecoreClass="LIDLGUI.ecore#//Indicator"/>
+    <genClasses ecoreClass="LIDLGUI.ecore#//Sensor"/>
+    <genClasses ecoreClass="LIDLGUI.ecore#//RadioBox">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LIDLGUI.ecore#//RadioBox/SizeX"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LIDLGUI.ecore#//RadioBox/SizeY"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LIDLGUI.ecore#//RadioBox/LabelStringArray"/>
+    </genClasses>
+    <genClasses ecoreClass="LIDLGUI.ecore#//RotarySwitch">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LIDLGUI.ecore#//RotarySwitch/Radius"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LIDLGUI.ecore#//RotarySwitch/Legend"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LIDLGUI.ecore#//RotarySwitch/Labels"/>
+    </genClasses>
+    <genClasses ecoreClass="LIDLGUI.ecore#//ComboBox">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LIDLGUI.ecore#//ComboBox/SizeX"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LIDLGUI.ecore#//ComboBox/SizeY"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LIDLGUI.ecore#//ComboBox/LabelString"/>
+    </genClasses>
+    <genClasses ecoreClass="LIDLGUI.ecore#//Knob">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LIDLGUI.ecore#//Knob/Radius"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LIDLGUI.ecore#//Knob/Legend"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LIDLGUI.ecore#//Knob/Min"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LIDLGUI.ecore#//Knob/Max"/>
+    </genClasses>
+    <genClasses ecoreClass="LIDLGUI.ecore#//PushButton">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LIDLGUI.ecore#//PushButton/SizeX"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LIDLGUI.ecore#//PushButton/SizeY"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LIDLGUI.ecore#//PushButton/LabelString"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LIDLGUI.ecore#//PushButton/Selection"/>
+    </genClasses>
+    <genClasses ecoreClass="LIDLGUI.ecore#//ToggleButton">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LIDLGUI.ecore#//ToggleButton/SizeX"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LIDLGUI.ecore#//ToggleButton/SizeY"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LIDLGUI.ecore#//ToggleButton/LabelString"/>
+    </genClasses>
+    <genClasses ecoreClass="LIDLGUI.ecore#//Slider">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LIDLGUI.ecore#//Slider/SizeX"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LIDLGUI.ecore#//Slider/SizeY"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LIDLGUI.ecore#//Slider/Value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LIDLGUI.ecore#//Slider/MinValue"/>
+    </genClasses>
+    <genClasses ecoreClass="LIDLGUI.ecore#//ScrollList">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LIDLGUI.ecore#//ScrollList/SizeX"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LIDLGUI.ecore#//ScrollList/SizeY"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LIDLGUI.ecore#//ScrollList/InnerX"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LIDLGUI.ecore#//ScrollList/InnerY"/>
+    </genClasses>
+    <genClasses ecoreClass="LIDLGUI.ecore#//Counter">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LIDLGUI.ecore#//Counter/Radius"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LIDLGUI.ecore#//Counter/Value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LIDLGUI.ecore#//Counter/MinValue"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LIDLGUI.ecore#//Counter/MaxValue"/>
+    </genClasses>
+    <genClasses ecoreClass="LIDLGUI.ecore#//TextDisplay">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LIDLGUI.ecore#//TextDisplay/Text"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LIDLGUI.ecore#//TextDisplay/Legend"/>
+    </genClasses>
+    <genClasses ecoreClass="LIDLGUI.ecore#//LED">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LIDLGUI.ecore#//LED/SizeX"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LIDLGUI.ecore#//LED/SizeY"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LIDLGUI.ecore#//LED/LEDOn"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LIDLGUI.ecore#//LED/Legend"/>
+    </genClasses>
+    <genClasses ecoreClass="LIDLGUI.ecore#//NumberDisplay">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LIDLGUI.ecore#//NumberDisplay/Value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LIDLGUI.ecore#//NumberDisplay/Legend"/>
+    </genClasses>
+    <genClasses ecoreClass="LIDLGUI.ecore#//Gauge">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LIDLGUI.ecore#//Gauge/SizeX"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LIDLGUI.ecore#//Gauge/SizeY"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LIDLGUI.ecore#//Gauge/Value"/>
+    </genClasses>
+    <genClasses ecoreClass="LIDLGUI.ecore#//DateAndTime">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LIDLGUI.ecore#//DateAndTime/dateAndTime"/>
+    </genClasses>
+    <genClasses ecoreClass="LIDLGUI.ecore#//ComboWidgetFactory">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference LIDLGUI.ecore#//ComboWidgetFactory/myComboWidget"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference LIDLGUI.ecore#//ComboWidgetFactory/gui"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference LIDLGUI.ecore#//ComboWidgetFactory/interaction_diagram"/>
+    </genClasses>
+    <genClasses ecoreClass="LIDLGUI.ecore#//ComboWidget">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference LIDLGUI.ecore#//ComboWidget/basicwidget"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference LIDLGUI.ecore#//ComboWidget/combowidget"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LIDLGUI.ecore#//ComboWidget/index"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LIDLGUI.ecore#//ComboWidget/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LIDLGUI.ecore#//ComboWidget/InteractionURL"/>
+    </genClasses>
+    <genClasses ecoreClass="LIDLGUI.ecore#//Interface">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LIDLGUI.ecore#//Interface/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LIDLGUI.ecore#//Interface/scope"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LIDLGUI.ecore#//Interface/interface"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LIDLGUI.ecore#//Interface/label"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LIDLGUI.ecore#//Interface/direction"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference LIDLGUI.ecore#//Interface/datatype"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference LIDLGUI.ecore#//Interface/candidate_interfaces"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference LIDLGUI.ecore#//Interface/from"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference LIDLGUI.ecore#//Interface/to"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LIDLGUI.ecore#//Interface/actualPar"/>
+    </genClasses>
+    <genClasses ecoreClass="LIDLGUI.ecore#//Datatype">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LIDLGUI.ecore#//Datatype/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LIDLGUI.ecore#//Datatype/label"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LIDLGUI.ecore#//Datatype/datatype"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference LIDLGUI.ecore#//Datatype/candidate_datatypes"/>
+    </genClasses>
+    <genClasses ecoreClass="LIDLGUI.ecore#//DatatypeTable">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference LIDLGUI.ecore#//DatatypeTable/datatypes"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LIDLGUI.ecore#//DatatypeTable/index"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LIDLGUI.ecore#//DatatypeTable/name"/>
+    </genClasses>
+    <genClasses ecoreClass="LIDLGUI.ecore#//InterfaceTable">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference LIDLGUI.ecore#//InterfaceTable/interfaces"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LIDLGUI.ecore#//InterfaceTable/index"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LIDLGUI.ecore#//InterfaceTable/name"/>
+    </genClasses>
+    <genClasses ecoreClass="LIDLGUI.ecore#//Interaction">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference LIDLGUI.ecore#//Interaction/signature_interfaces"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference LIDLGUI.ecore#//Interaction/candidates_interactions"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LIDLGUI.ecore#//Interaction/label"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LIDLGUI.ecore#//Interaction/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LIDLGUI.ecore#//Interaction/signature"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference LIDLGUI.ecore#//Interaction/interface"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LIDLGUI.ecore#//Interaction/expression"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference LIDLGUI.ecore#//Interaction/interfaceConnectors"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LIDLGUI.ecore#//Interaction/index"/>
+    </genClasses>
+    <genClasses ecoreClass="LIDLGUI.ecore#//InterfaceConnector">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference LIDLGUI.ecore#//InterfaceConnector/source"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference LIDLGUI.ecore#//InterfaceConnector/target"/>
+    </genClasses>
+    <genClasses ecoreClass="LIDLGUI.ecore#//InteractionTable">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LIDLGUI.ecore#//InteractionTable/index"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LIDLGUI.ecore#//InteractionTable/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference LIDLGUI.ecore#//InteractionTable/interactions"/>
+    </genClasses>
+    <genClasses ecoreClass="LIDLGUI.ecore#//TableFactory">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference LIDLGUI.ecore#//TableFactory/interactiontable"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference LIDLGUI.ecore#//TableFactory/interfacetable"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference LIDLGUI.ecore#//TableFactory/datatypetable"/>
+    </genClasses>
+    <genClasses ecoreClass="LIDLGUI.ecore#//Widget">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference LIDLGUI.ecore#//Widget/Implement_interaction"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

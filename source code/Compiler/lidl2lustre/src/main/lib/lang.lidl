@@ -1,0 +1,37 @@
+package lidl.lang;
+
+interaction
+    ((flag: Activation in) Is Active): Boolean out
+is
+(
+    (IsActiveRet)
+    With Behaviour
+    (Apply (function isActive) To (flag) And Get (IsActiveRet))
+)
+
+interaction
+    ((flag: Activation in) Is Not Active): Boolean out
+is
+(
+    (IsNotActiveRet)
+    With Behaviour
+    (Apply (function isNotActive) To (flag) And Get (IsNotActiveRet))
+)
+
+interaction
+    ((a: Number in) + (b: Number in)): Number out
+is
+(
+    (APlusBRet)
+    With Behaviour
+    (Apply (function operatorPlus) To (a,b) And Get (APlusBRet))
+)
+
+interaction
+    ((a: Number in) - (b: Number in)): Number out
+is
+(
+    (AMinusBRet)
+    With Behaviour
+    (Apply (function operatorMinus) To (a,b) And Get (AMinusBRet))
+)

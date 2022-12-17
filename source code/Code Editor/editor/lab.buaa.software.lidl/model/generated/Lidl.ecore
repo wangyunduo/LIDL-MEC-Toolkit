@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="lidl" nsURI="http://www.buaa.lab/software/lidl/Lidl" nsPrefix="lidl">
+  <eClassifiers xsi:type="ecore:EClass" name="LidlProgram">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="pack" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="imports" upperBound="-1"
+        eType="#//LidlImport" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="definitions" upperBound="-1"
+        eType="#//LidlDefinition" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="LidlImport">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="importedNamespace" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="LidlDefinition">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nested" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="LidlData" eSuperTypes="#//LidlDefinition">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="nestedDef" upperBound="-1"
+        eType="#//LidlData" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="definition" eType="#//LidlDataType"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="defined" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="LidlDataType">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="items" upperBound="-1"
+        eType="#//TypeElement" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TypeElement">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="isArray" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="type" eType="#//LidlData"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="LidlInterface" eSuperTypes="#//LidlDefinition">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="nestedDef" upperBound="-1"
+        eType="#//LidlInterface" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="definition" eType="#//LidlInterfaceType"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="defined" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="LidlInterfaceType">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="conjugate" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="InterfaceElement" eSuperTypes="#//LidlSymbol"/>
+  <eClassifiers xsi:type="ecore:EEnum" name="DataDirection">
+    <eLiterals name="IN" literal="in"/>
+    <eLiterals name="OUT" value="1" literal="out"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="LidlInteraction" eSuperTypes="#//LidlDefinition">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="id" eType="#//LidlInteractionID"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="interface" eType="#//LidlInterfaceType"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="nestedDef" upperBound="-1"
+        eType="#//LidlInteraction" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="definition" eType="#//LidlExpresson"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="LidlInteractionID">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="items" upperBound="-1"
+        eType="#//IDPart" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="IDPart" eSuperTypes="#//LidlSymbol"/>
+  <eClassifiers xsi:type="ecore:EClass" name="LidlExpresson"/>
+  <eClassifiers xsi:type="ecore:EClass" name="LidlExpression" eSuperTypes="#//LidlExpresson">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="item" upperBound="-1" eType="#//LidlArrayItem"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="items" upperBound="-1"
+        eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="CallPart"/>
+  <eClassifiers xsi:type="ecore:EClass" name="LidlArrayItem">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="value" eType="#//LidlExpresson"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="LidlSymbol"/>
+  <eClassifiers xsi:type="ecore:EClass" name="LidlCompositionElement" eSuperTypes="#//LidlSymbol">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="param" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="value" eType="#//LidlExpresson"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="CompositeDataType" eSuperTypes="#//LidlDataType"/>
+  <eClassifiers xsi:type="ecore:EClass" name="RefDataType" eSuperTypes="#//LidlDataType"/>
+  <eClassifiers xsi:type="ecore:EClass" name="CompositeDataTypeElement" eSuperTypes="#//TypeElement">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="RefDataTypeElement" eSuperTypes="#//TypeElement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="AtomInterfaceTypeElement" eSuperTypes="#//InterfaceElement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="type" eType="#//LidlData"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="direction" eType="#//DataDirection"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="CompositeInterfaceTypeElement" eSuperTypes="#//InterfaceElement">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="type" eType="#//LidlDefinition"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="direction" eType="#//DataDirection"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="RefInterfaceTypeElement" eSuperTypes="#//InterfaceElement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="type" eType="#//LidlInterface"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AtomInterfaceType" eSuperTypes="#//LidlInterfaceType">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="items" eType="#//InterfaceElement"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="CompositeInterfaceType" eSuperTypes="#//LidlInterfaceType">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="items" upperBound="-1"
+        eType="#//InterfaceElement" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="RefInterfaceType" eSuperTypes="#//LidlInterfaceType">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="items" eType="#//InterfaceElement"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="LidlParameter" eSuperTypes="#//IDPart">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="interface" eType="#//LidlInterfaceType"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="LidlText" eSuperTypes="#//IDPart">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="text" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="LidlCallExpression" eSuperTypes="#//LidlExpression"/>
+  <eClassifiers xsi:type="ecore:EClass" name="TextCallPart" eSuperTypes="#//CallPart">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="text" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ParamCallPart" eSuperTypes="#//CallPart">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="param" eType="#//LidlExpresson"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="LidlStringConstant" eSuperTypes="#//LidlExpression">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="LidlNumberConstant" eSuperTypes="#//LidlExpression">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="LidlBoolConstant" eSuperTypes="#//LidlExpression">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="LidlAvtivationConstant" eSuperTypes="#//LidlExpression">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="LidlComposition" eSuperTypes="#//LidlExpression">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="body" eType="#//LidlExpression"
+        containment="true"/>
+  </eClassifiers>
+</ecore:EPackage>

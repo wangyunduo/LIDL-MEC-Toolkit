@@ -1,0 +1,26 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: lab.buaa.software.lidl.ui
+Bundle-ManifestVersion: 2
+Bundle-Name: lab.buaa.software.lidl.ui
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: lab.buaa.software.lidl.ui; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: lab.buaa.software.lidl,
+ lab.buaa.software.lidl.ide,
+ org.eclipse.xtext.ui,
+ org.eclipse.xtext.ui.shared,
+ org.eclipse.xtext.ui.codetemplates.ui,
+ org.eclipse.ui.editors;bundle-version="3.5.0",
+ org.eclipse.ui.ide;bundle-version="3.5.0",
+ org.eclipse.ui,
+ org.eclipse.compare,
+ org.eclipse.xtext.builder,
+ org.eclipse.xtext.xbase.lib;bundle-version="2.14.0",
+ org.eclipse.xtend.lib;bundle-version="2.14.0";resolution:=optional
+Import-Package: org.apache.log4j
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Export-Package: lab.buaa.software.lidl.ui.internal,
+ lab.buaa.software.lidl.ui.quickfix,
+ lab.buaa.software.lidl.ui.contentassist
+Bundle-Activator: lab.buaa.software.lidl.ui.internal.LidlActivator

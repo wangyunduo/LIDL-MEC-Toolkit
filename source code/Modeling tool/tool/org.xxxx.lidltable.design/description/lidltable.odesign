@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/table/description/1.1.0" xmlns:properties="http://www.eclipse.org/sirius/properties/1.0.0" xmlns:tool="http://www.eclipse.org/sirius/description/tool/1.1.0" name="lidltable" version="12.0.0.2017041100">
+  <ownedViewpoints name="lidltableViewpoint">
+    <ownedRepresentations xsi:type="description_1:EditionTableDescription" name="Datatype Table" domainClass="LIDLGUI::DatatypeTable">
+      <metamodel href="../../org.eclipse.sirius.LIDLGUI/model/LIDLGUI.ecore#/"/>
+      <ownedLineMappings name="Datatype Table Line" domainClass="LIDLGUI::DatatypeTable" semanticCandidatesExpression="var:self" headerLabelExpression="Composite data types">
+        <defaultForeground labelSize="10">
+          <foreGroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+        </defaultForeground>
+        <defaultBackground>
+          <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+        </defaultBackground>
+        <ownedSubLines name="Datatype Line" domainClass="LIDLGUI::Datatype" semanticCandidatesExpression="feature:datatypes" headerLabelExpression="aql:'Data type '+self.name">
+          <defaultForeground labelSize="10">
+            <foreGroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </defaultForeground>
+          <defaultBackground>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+          </defaultBackground>
+          <ownedSubLines name="Datatype Member Line" domainClass="LIDLGUI::Datatype" semanticCandidatesExpression="feature:candidate_datatypes" headerLabelExpression="aql:'Member '+self.label">
+            <defaultForeground labelSize="10">
+              <foreGroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </defaultForeground>
+            <defaultBackground>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            </defaultBackground>
+            <ownedSubLines name="Datatype Member Line" domainClass="LIDLGUI::Datatype" semanticCandidatesExpression="feature:candidate_datatypes" headerLabelExpression="aql:'Member ' + self.label">
+              <defaultForeground labelSize="10">
+                <foreGroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              </defaultForeground>
+              <defaultBackground>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              </defaultBackground>
+            </ownedSubLines>
+          </ownedSubLines>
+        </ownedSubLines>
+        <delete>
+          <variables name="element" documentation="The semantic currently edited element."/>
+          <variables name="root" documentation="The semantic root element of the table."/>
+          <firstModelOperation xsi:type="tool:ChangeContext" browseExpression="service:self.removeDatatypeName()"/>
+        </delete>
+      </ownedLineMappings>
+      <ownedColumnMappings name="Candidate Datatype Label Column" headerLabelExpression="Member name" featureName="label" labelExpression="service:cadidateDatatypeLabel()">
+        <directEdit>
+          <variables name="element" documentation="The current DCell."/>
+          <variables name="table" documentation="The current DTable."/>
+          <variables name="line" documentation="The DLine of the current DCell."/>
+          <variables name="lineSemantic" documentation="The semantic element corresponding to the line."/>
+          <variables name="root" documentation="The semantic root element of the table."/>
+          <firstModelOperation xsi:type="tool:ChangeContext" browseExpression="service:editDatatypeLabel(arg0)"/>
+          <mask mask="{0}"/>
+        </directEdit>
+        <defaultForeground labelSize="10">
+          <foreGroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+        </defaultForeground>
+        <defaultBackground>
+          <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+        </defaultBackground>
+      </ownedColumnMappings>
+      <ownedColumnMappings name="Candidate Datatype Name Column" headerLabelExpression="Member type" featureName="name" labelExpression="service:cadidateDatatypeName()">
+        <directEdit>
+          <variables name="element" documentation="The current DCell."/>
+          <variables name="table" documentation="The current DTable."/>
+          <variables name="line" documentation="The DLine of the current DCell."/>
+          <variables name="lineSemantic" documentation="The semantic element corresponding to the line."/>
+          <variables name="root" documentation="The semantic root element of the table."/>
+          <mask mask="{0}"/>
+        </directEdit>
+        <defaultForeground labelSize="10">
+          <foreGroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+        </defaultForeground>
+        <defaultBackground>
+          <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+        </defaultBackground>
+      </ownedColumnMappings>
+    </ownedRepresentations>
+    <ownedRepresentations xsi:type="description_1:EditionTableDescription" name="Interface Table" domainClass="LIDLGUI::InterfaceTable">
+      <metamodel href="../../org.eclipse.sirius.LIDLGUI/model/LIDLGUI.ecore#/"/>
+      <ownedLineMappings name="AtomInterface Table Line" domainClass="LIDLGUI::InterfaceTable" semanticCandidatesExpression="var:self" headerLabelExpression="Atomic interfaces">
+        <defaultForeground labelSize="10">
+          <foreGroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+        </defaultForeground>
+        <defaultBackground>
+          <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+        </defaultBackground>
+        <ownedSubLines name="AtomInterface Line" domainClass="LIDLGUI::Interface" semanticCandidatesExpression="aql:self.getAtomInterfaces()" headerLabelExpression="aql:'Interface '+self.name">
+          <defaultForeground labelSize="10">
+            <foreGroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </defaultForeground>
+          <defaultBackground>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+          </defaultBackground>
+        </ownedSubLines>
+      </ownedLineMappings>
+      <ownedLineMappings name="ComboInterface Table Line" domainClass="LIDLGUI::InterfaceTable" semanticCandidatesExpression="var:self" headerLabelExpression="Composite interfaces">
+        <defaultForeground labelSize="10">
+          <foreGroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+        </defaultForeground>
+        <defaultBackground>
+          <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+        </defaultBackground>
+        <ownedSubLines name="ComboInterface Line" domainClass="LIDLGUI::Interface" semanticCandidatesExpression="aql:self.getComboInterfaces()" headerLabelExpression="aql:'Interface '+self.name">
+          <defaultForeground labelSize="10">
+            <foreGroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </defaultForeground>
+          <defaultBackground>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+          </defaultBackground>
+          <ownedSubLines name="Candidate Interface Line" domainClass="LIDLGUI::Interface" semanticCandidatesExpression="feature:candidate_interfaces" headerLabelExpression="aql:self.getComboInterfaceTableLineLabel()">
+            <defaultForeground labelSize="10">
+              <foreGroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </defaultForeground>
+            <defaultBackground>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            </defaultBackground>
+          </ownedSubLines>
+        </ownedSubLines>
+      </ownedLineMappings>
+      <ownedColumnMappings name="Interface Label Column" headerLabelExpression="Member name" featureName="label" labelExpression="service:getCandidateInterfaceLabel()">
+        <defaultForeground labelSize="10">
+          <foreGroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+        </defaultForeground>
+        <defaultBackground>
+          <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+        </defaultBackground>
+      </ownedColumnMappings>
+      <ownedColumnMappings name="Interface Name Column" headerLabelExpression="Type" featureName="name" labelExpression="service:getCandidateInterfaceName()">
+        <defaultForeground labelSize="10">
+          <foreGroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+        </defaultForeground>
+        <defaultBackground>
+          <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+        </defaultBackground>
+      </ownedColumnMappings>
+      <ownedColumnMappings name="Interface Direction Column" headerLabelExpression="Direction" featureName="direction" labelExpression="service:getAtomInterfaceDirection()">
+        <defaultForeground labelSize="10">
+          <foreGroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+        </defaultForeground>
+        <defaultBackground>
+          <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+        </defaultBackground>
+      </ownedColumnMappings>
+    </ownedRepresentations>
+    <ownedRepresentations xsi:type="description_1:EditionTableDescription" name="Interaction Table" domainClass="LIDLGUI::InteractionTable">
+      <metamodel href="../../org.eclipse.sirius.LIDLGUI/model/LIDLGUI.ecore#/"/>
+      <ownedLineMappings name="Interaction Table Line" domainClass="LIDLGUI::InteractionTable" semanticCandidatesExpression="var:self" headerLabelExpression="Interactions">
+        <defaultForeground labelSize="10">
+          <foreGroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+        </defaultForeground>
+        <defaultBackground>
+          <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+        </defaultBackground>
+        <ownedSubLines name="Interation Line" domainClass="LIDLGUI::Interaction" semanticCandidatesExpression="feature:interactions" headerLabelExpression="aql:'Interaction '+self.name">
+          <defaultForeground labelSize="10">
+            <foreGroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </defaultForeground>
+          <defaultBackground>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+          </defaultBackground>
+          <ownedSubLines name="Interface Line" domainClass="LIDLGUI::Interface" semanticCandidatesExpression="feature:signature_interfaces" headerLabelExpression="service:parIntfName()">
+            <defaultForeground labelSize="10">
+              <foreGroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </defaultForeground>
+            <defaultBackground>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            </defaultBackground>
+            <delete name="deleteInterfaceLine" label="Delete line" precondition="service:isNameInterface()" forceRefresh="true" elementsToSelect="var:self">
+              <variables name="element" documentation="The semantic currently edited element."/>
+              <variables name="root" documentation="The semantic root element of the table."/>
+              <firstModelOperation xsi:type="tool:ChangeContext" browseExpression="service:deleteParameterIntf()"/>
+            </delete>
+          </ownedSubLines>
+        </ownedSubLines>
+      </ownedLineMappings>
+      <ownedColumnMappings name="Interface Label" headerLabelExpression="Parameter name" featureName="label"/>
+      <ownedColumnMappings name="Interface Name" headerLabelExpression="Type" featureName="name" labelExpression="service:getSignatureInterfaceName()"/>
+      <ownedColumnMappings name="Interaction Scope" headerLabelExpression="Scope" featureName="scope"/>
+      <ownedColumnMappings name="Interaction Signature" headerLabelExpression="Signature" featureName="signature" labelExpression="service:getInteractionSignature()"/>
+      <ownedColumnMappings name="Interaction Expression" headerLabelExpression="Expression" featureName="expression" labelExpression="service:getInteractionExpression()"/>
+    </ownedRepresentations>
+    <ownedJavaExtensions qualifiedClassName="org.xxxx.lidltable.design.Services"/>
+  </ownedViewpoints>
+  <extensions xsi:type="properties:ViewExtensionDescription" name="Properties">
+    <categories name="Datatype Table">
+      <pages name="Datatype Table Page" labelExpression="General" domainClass="LIDLGUI::DatatypeTable" semanticCandidateExpression="var:self" groups="//@extensions.0/@categories.0/@groups.0"/>
+      <groups name="Datatype Table Group" labelExpression="aql:'Define composite data type'" domainClass="LIDLGUI::DatatypeTable" semanticCandidateExpression="var:self">
+        <controls xsi:type="properties:ButtonDescription" name="create Datatype Button" labelExpression="New" isEnabledExpression="service:isDatatypeTableItem()" buttonLabelExpression="New a composite data type">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="service:createNewDatatype()"/>
+          </initialOperation>
+          <style>
+            <labelBackgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <labelForegroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </controls>
+      </groups>
+    </categories>
+    <categories name="Datatype">
+      <pages name="Datatype Page" labelExpression="General" domainClass="LIDLGUI::Datatype" semanticCandidateExpression="var:self" preconditionExpression="service:isTopDatatype()" groups="//@extensions.0/@categories.1/@groups.0 //@extensions.0/@categories.1/@groups.1"/>
+      <groups name="Datatype BasicInfo Group" labelExpression="aql:'Set composite data type name'" domainClass="LIDLGUI::Datatype" semanticCandidateExpression="var:self">
+        <controls xsi:type="properties:TextDescription" name="Datatype Name" labelExpression="Data type name:" isEnabledExpression="service:isDatatypeItem()" valueExpression="aql:self.name">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:self">
+              <subModelOperations xsi:type="tool:If" conditionExpression="service:checkMultipleName(newValue)">
+                <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="Repeat Datatype Name">
+                  <buttons labelExpression="Cancel" closeDialogOnClick="true" rollbackChangesOnClose="true">
+                    <initialOperation/>
+                  </buttons>
+                  <buttons labelExpression="OK" default="true" closeDialogOnClick="true">
+                    <initialOperation/>
+                  </buttons>
+                  <page name="Default Page" labelExpression="警告信息" semanticCandidateExpression="var:self" groups="//@extensions.0/@categories.1/@groups.0/@controls.0/@initialOperation/@firstModelOperations/@subModelOperations.0/@subModelOperations.0/@groups.0"/>
+                  <groups name="Default Group" labelExpression="Group" semanticCandidateExpression="var:self">
+                    <controls xsi:type="properties:LabelDescription" name="Repeat Label" labelExpression="aql:'不允许有重复的Datatype名称'"/>
+                  </groups>
+                </subModelOperations>
+              </subModelOperations>
+            </firstModelOperations>
+          </initialOperation>
+        </controls>
+      </groups>
+      <groups name="Datatype Candidate Group" labelExpression="aql:'Add member(s) to composite data type '+self.name" domainClass="LIDLGUI::Datatype" semanticCandidateExpression="var:self">
+        <controls xsi:type="properties:ButtonDescription" name="Create Candidate Datatype Button" labelExpression="New" isEnabledExpression="service:isDatatypeItem()" buttonLabelExpression="New a member data type">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:self">
+              <subModelOperations xsi:type="tool:CreateInstance" typeName="LIDLGUI::Datatype" referenceName="candidate_datatypes">
+                <subModelOperations xsi:type="tool:SetValue" featureName="label" valueExpression="service:newCandidateDatatypeLabel()"/>
+                <subModelOperations xsi:type="tool:SetValue" featureName="name"/>
+              </subModelOperations>
+            </firstModelOperations>
+          </initialOperation>
+        </controls>
+      </groups>
+    </categories>
+    <categories name="Candidate Datatype">
+      <pages name="Candidate Datatype Page" labelExpression="General" domainClass="LIDLGUI::Datatype" semanticCandidateExpression="var:self" preconditionExpression="service:isCandidateDatatype()" groups="//@extensions.0/@categories.2/@groups.0"/>
+      <groups name="Candidate Datatype Group" labelExpression="aql:'Configure member data type'" domainClass="LIDLGUI::Datatype" semanticCandidateExpression="var:self">
+        <controls xsi:type="properties:TextDescription" name="Edit Datatype Name" labelExpression="Name:" valueExpression="aql:self.label">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:self">
+              <subModelOperations xsi:type="tool:SetValue" featureName="label" valueExpression="var:newValue"/>
+            </firstModelOperations>
+          </initialOperation>
+        </controls>
+        <controls xsi:type="properties:RadioDescription" name="Select MetaDatatype" labelExpression="Type (choose from four basic data types):" isEnabledExpression="service:isCandidateDatatype()" valueExpression="aql:self.datatype" candidatesExpression="aql:self.getMetaDatatypeCandidates()" candidateDisplayExpression="aql:candidate.getMetaDatatypeLabel()">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:self">
+              <subModelOperations xsi:type="tool:SetValue" featureName="datatype" valueExpression="var:newValue"/>
+            </firstModelOperations>
+          </initialOperation>
+        </controls>
+        <controls xsi:type="properties:SelectDescription" name="Select Datatype Definition" labelExpression="Type (choose from defined composite data types):" isEnabledExpression="service:isCandidateComboDatatype()" valueExpression="aql:self.name" candidatesExpression="aql:self.getDatatypeCandidates()" candidateDisplayExpression="aql:candidate">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:self">
+              <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="var:newValue"/>
+            </firstModelOperations>
+          </initialOperation>
+          <style>
+            <labelBackgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <labelForegroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </controls>
+      </groups>
+    </categories>
+    <categories name="Interface Table">
+      <pages name="Interface Table Page" labelExpression="General" domainClass="LIDLGUI::InterfaceTable" semanticCandidateExpression="var:self" groups="//@extensions.0/@categories.3/@groups.0"/>
+      <groups name="Interface Table Group" labelExpression="Define interface" domainClass="LIDLGUI::InterfaceTable" semanticCandidateExpression="var:self">
+        <controls xsi:type="properties:ButtonDescription" name="Create AtomInterface Button" labelExpression="New" isEnabledExpression="service:isInterfaceTable()" buttonLabelExpression="New an atomic interface">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="service:createNewAtomInterfaceDefinition()"/>
+          </initialOperation>
+        </controls>
+        <controls xsi:type="properties:ButtonDescription" name="create ComboInterface Button" labelExpression="New" isEnabledExpression="service:isInterfaceTable()" buttonLabelExpression="New a composite interface">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="service:createNewComboInterfaceDefinition()"/>
+          </initialOperation>
+        </controls>
+      </groups>
+    </categories>
+    <categories name="Interface">
+      <pages name="Interface Page" labelExpression="General" domainClass="LIDLGUI::Interface" semanticCandidateExpression="var:self" preconditionExpression="service:isInterfaceDefinition()" groups="//@extensions.0/@categories.4/@groups.0 //@extensions.0/@categories.4/@groups.1 //@extensions.0/@categories.4/@groups.2"/>
+      <groups name="AtomInterface Definition BasicInfo Group" labelExpression="Configure atomic interface" domainClass="LIDLGUI::Interface" semanticCandidateExpression="var:self" preconditionExpression="service:isAtomInterfaceDefinition()">
+        <controls xsi:type="properties:TextDescription" name="Edit Interface Name" labelExpression="Name:" valueExpression="aql:self.name">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:self">
+              <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="var:newValue"/>
+            </firstModelOperations>
+          </initialOperation>
+        </controls>
+        <controls xsi:type="properties:RadioDescription" name="Select MetaDatatype" labelExpression="Type (choose from four basic data types):" valueExpression="service:getAtomInterfaceDatatypeMetaDatatype()" candidatesExpression="service:getMetaDatatypeCandidates()" candidateDisplayExpression="aql:candidate.getMetaDatatypeLabel()">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="service:setAtomInterfaceDatatypeMetaDatatype(newValue)"/>
+          </initialOperation>
+        </controls>
+        <controls xsi:type="properties:SelectDescription" name=" Select Datatype Definition" labelExpression="Type (choose from defined composite data types):" isEnabledExpression="aql:self.isAtomInterfaceDatatypeComboDatatype()" valueExpression="aql:self.getAtomInterfaceDatatypeName()" candidatesExpression="aql:self.getDatatypeCandidates()" candidateDisplayExpression="aql:candidate">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="aql:self.setAtomInterfaceComboDatatype(newValue)"/>
+          </initialOperation>
+          <style>
+            <labelBackgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <labelForegroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </controls>
+        <controls xsi:type="properties:RadioDescription" name="AtomInterface Datatype Direction" labelExpression="Direction:" isEnabledExpression="service:isAtomInterface()" valueExpression="aql:self.direction" candidatesExpression="aql:self.getInterfaceDirectionCandidates()" candidateDisplayExpression="aql:candidate.getInterfaceCandidateDirectionLabel()">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:self">
+              <subModelOperations xsi:type="tool:SetValue" featureName="direction" valueExpression="var:newValue"/>
+            </firstModelOperations>
+          </initialOperation>
+        </controls>
+      </groups>
+      <groups name="ComboInterface Definition BasicInfo Group" labelExpression="Set composite interface name" domainClass="LIDLGUI::Interface" semanticCandidateExpression="var:self" preconditionExpression="service:isComboInterfaceDefinition()">
+        <controls xsi:type="properties:TextDescription" name="Edit New Interface Name" labelExpression="Interface name:">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:self">
+              <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="var:newValue"/>
+            </firstModelOperations>
+          </initialOperation>
+        </controls>
+      </groups>
+      <groups name="ComboInterface Definition Createion Croup" labelExpression="aql:'Add member(s) to composite interface '+ self.name" domainClass="LIDLGUI::Interface" semanticCandidateExpression="var:self" preconditionExpression="service:isComboInterfaceDefinition()">
+        <controls xsi:type="properties:ButtonDescription" name="Create Candidate AtomInterface Button" labelExpression="New" buttonLabelExpression="New a member atomic interface">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="service:createNewCandidateAtomInterface()"/>
+          </initialOperation>
+        </controls>
+        <controls xsi:type="properties:ButtonDescription" name="Create Candidate ComboInterface Button" labelExpression="New" buttonLabelExpression="New a member composite interface">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="service:createNewCandidateComboInterface()"/>
+          </initialOperation>
+        </controls>
+      </groups>
+    </categories>
+    <categories name="Candidate Interface">
+      <pages name="Candidate Interface Page" labelExpression="General" domainClass="LIDLGUI::Interface" semanticCandidateExpression="var:self" preconditionExpression="service:isCandidateInterface()" groups="//@extensions.0/@categories.5/@groups.0 //@extensions.0/@categories.5/@groups.1"/>
+      <groups name="Candidate AtomInterface Group" labelExpression="Configure member atomic interface" domainClass="LIDLGUI::Interface" semanticCandidateExpression="var:self" preconditionExpression="service:isCandidateAtomInterface()">
+        <controls xsi:type="properties:TextDescription" name="Candidate Interface Element Label" labelExpression="Name:" valueExpression="aql:self.label">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:self">
+              <subModelOperations xsi:type="tool:SetValue" featureName="label" valueExpression="var:newValue"/>
+            </firstModelOperations>
+          </initialOperation>
+        </controls>
+        <controls xsi:type="properties:RadioDescription" name="Select MetaDatatype" labelExpression="Type (choose from four basic data types):" valueExpression="service:getAtomInterfaceDatatypeMetaDatatype()" candidatesExpression="service:getMetaDatatypeCandidates()" candidateDisplayExpression="aql:candidate.getMetaDatatypeLabel()">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="service:setAtomInterfaceDatatypeMetaDatatype(newValue)"/>
+          </initialOperation>
+        </controls>
+        <controls xsi:type="properties:SelectDescription" name=" Select Datatype Definition" labelExpression="Type (choose from defined composite data types):" isEnabledExpression="aql:self.isAtomInterfaceDatatypeComboDatatype()" valueExpression="aql:self.getAtomInterfaceDatatypeName()" candidatesExpression="aql:self.getDatatypeCandidates()" candidateDisplayExpression="aql:candidate">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="aql:self.setAtomInterfaceComboDatatype(newValue)"/>
+          </initialOperation>
+          <style>
+            <labelBackgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <labelForegroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </controls>
+        <controls xsi:type="properties:RadioDescription" name="Datatype Direction" labelExpression="Direction:" valueExpression="aql:self.direction" candidatesExpression="aql:self.getInterfaceDirectionCandidates()" candidateDisplayExpression="aql:candidate.getInterfaceCandidateDirectionLabel()" numberOfColumns="0">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="service:updateDirection(newValue)"/>
+          </initialOperation>
+        </controls>
+      </groups>
+      <groups name="Candidate ComboInterface Group" labelExpression="Configure member composite interface" domainClass="LIDLGUI::Interface" semanticCandidateExpression="var:self" preconditionExpression="service:isCandidateComboInterface()">
+        <controls xsi:type="properties:TextDescription" name="Candidate Interface Element Label" labelExpression="Name:" helpExpression="aql:'填写成员接口名称'" valueExpression="aql:self.label">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:self">
+              <subModelOperations xsi:type="tool:SetValue" featureName="label" valueExpression="var:newValue"/>
+            </firstModelOperations>
+          </initialOperation>
+        </controls>
+        <controls xsi:type="properties:SelectDescription" name="Select Interface Definition" labelExpression="Type (choose from defined interfaces):" valueExpression="aql:self.name" candidatesExpression="aql:self.getInterfaceCandidates()" candidateDisplayExpression="aql:candidate">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="service:changeComboInterface(newValue)"/>
+          </initialOperation>
+          <style>
+            <labelBackgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <labelForegroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </controls>
+      </groups>
+    </categories>
+    <categories name="Interaction Table">
+      <pages name="Interaction Table Page" labelExpression="General" domainClass="LIDLGUI::InteractionTable" semanticCandidateExpression="var:self" groups="//@extensions.0/@categories.6/@groups.0"/>
+      <groups name="Interaction Table Group" labelExpression="Define interaction" domainClass="LIDLGUI::InteractionTable" semanticCandidateExpression="var:self">
+        <controls xsi:type="properties:ButtonDescription" name="Create Interaction Button" labelExpression="New" buttonLabelExpression="New an interaction">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="service:createInteractionDefinition()"/>
+          </initialOperation>
+        </controls>
+      </groups>
+    </categories>
+    <categories name="Interaction">
+      <pages name="Interaction Page" labelExpression="General" domainClass="LIDLGUI::Interaction" semanticCandidateExpression="var:self" groups="//@extensions.0/@categories.7/@groups.0 //@extensions.0/@categories.7/@groups.1"/>
+      <groups name="Interaction Signature Group" labelExpression="Configure interaction" domainClass="LIDLGUI::Interaction" semanticCandidateExpression="var:self">
+        <controls xsi:type="properties:TextDescription" name="Edit Interaction Name" labelExpression="Name:" valueExpression="aql:self.name">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:self">
+              <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="var:newValue"/>
+            </firstModelOperations>
+          </initialOperation>
+        </controls>
+        <controls xsi:type="properties:TextAreaDescription" name="Edit Interaction Signature" labelExpression="Signature:" lineCount="3" valueExpression="aql:self.signature">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:self">
+              <subModelOperations xsi:type="tool:SetValue" featureName="signature" valueExpression="var:newValue"/>
+            </firstModelOperations>
+          </initialOperation>
+        </controls>
+        <controls xsi:type="properties:ButtonDescription" name="Create Interaction Argument" labelExpression="New" buttonLabelExpression="Add an interface parameter to the current interaction">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="service:createNewInteractionArgument()"/>
+          </initialOperation>
+        </controls>
+        <controls xsi:type="properties:ButtonDescription" name="Check Interaction Argument" labelExpression="Check" buttonLabelExpression="Check interface parameters used in the signature">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="service:checkInteractionArguments()">
+              <subModelOperations xsi:type="tool:If" conditionExpression="service:isCheckPassed()">
+                <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="Check Result">
+                  <buttons labelExpression="Cancel" closeDialogOnClick="true" rollbackChangesOnClose="true">
+                    <initialOperation/>
+                  </buttons>
+                  <buttons labelExpression="OK" default="true" closeDialogOnClick="true">
+                    <initialOperation/>
+                  </buttons>
+                  <page name="Default Page" labelExpression="Passed" semanticCandidateExpression="var:self" groups="//@extensions.0/@categories.7/@groups.0/@controls.3/@initialOperation/@firstModelOperations/@subModelOperations.0/@subModelOperations.0/@groups.0"/>
+                  <groups name="Default Group" labelExpression="Detailed information" semanticCandidateExpression="var:self">
+                    <controls xsi:type="properties:LabelDescription" name="CheckPassedInfo" labelExpression="Check passed"/>
+                  </groups>
+                </subModelOperations>
+              </subModelOperations>
+              <subModelOperations xsi:type="tool:If" conditionExpression="service:isCheckError()">
+                <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="Check Result">
+                  <buttons labelExpression="Cancel" closeDialogOnClick="true" rollbackChangesOnClose="true">
+                    <initialOperation/>
+                  </buttons>
+                  <buttons labelExpression="OK" default="true" closeDialogOnClick="true">
+                    <initialOperation/>
+                  </buttons>
+                  <page name="Default Page" labelExpression="Error" semanticCandidateExpression="var:self" groups="//@extensions.0/@categories.7/@groups.0/@controls.3/@initialOperation/@firstModelOperations/@subModelOperations.1/@subModelOperations.0/@groups.0"/>
+                  <groups name="Default Group" labelExpression="Detailed information" semanticCandidateExpression="var:self">
+                    <controls xsi:type="properties:LabelDescription" name="CheckErrorInfo" labelExpression="service:getCheckError()"/>
+                  </groups>
+                </subModelOperations>
+              </subModelOperations>
+            </firstModelOperations>
+          </initialOperation>
+        </controls>
+      </groups>
+      <groups name="Interaction Expression Group" labelExpression="Set interaction expression" domainClass="LIDLGUI::Interaction" semanticCandidateExpression="var:self">
+        <controls xsi:type="properties:TextAreaDescription" name="Edit Interaction Expression" labelExpression="Interaction expression:" valueExpression="aql:self.expression">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:self">
+              <subModelOperations xsi:type="tool:SetValue" featureName="expression" valueExpression="var:newValue"/>
+            </firstModelOperations>
+          </initialOperation>
+        </controls>
+      </groups>
+    </categories>
+    <categories name="Interaction-related Interface">
+      <pages name="Interaction Interface related Page" labelExpression="General" domainClass="LIDLGUI::Interface" semanticCandidateExpression="var:self" preconditionExpression="service:isSignatureInterface()" groups="//@extensions.0/@categories.8/@groups.0 //@extensions.0/@categories.8/@groups.1"/>
+      <groups name="Interaction Interface related Group" labelExpression="service:parIntfGroup()" domainClass="LIDLGUI::Interface" semanticCandidateExpression="var:self" preconditionExpression="service:isNameInterface()">
+        <controls xsi:type="properties:TextDescription" name="Edit Interface Label" labelExpression="Name:" helpExpression="service:nameInterfaceHelp()" isEnabledExpression="service:isNameInterface()" valueExpression="aql:self.label">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:self">
+              <subModelOperations xsi:type="tool:SetValue" featureName="label" valueExpression="var:newValue"/>
+            </firstModelOperations>
+          </initialOperation>
+        </controls>
+        <controls xsi:type="properties:SelectDescription" name="Select Interface Definition" labelExpression="Type (choose from defined interfaces):" valueExpression="aql:self.name" candidatesExpression="aql:self.getInteractionInterfaceCandidates()" candidateDisplayExpression="aql:candidate">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="service:changeInterface(newValue)"/>
+          </initialOperation>
+          <style>
+            <labelBackgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <labelForegroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </controls>
+      </groups>
+      <groups name="Interaction Interface Group" labelExpression="service:parIntfGroup()" domainClass="LIDLGUI::Interface" semanticCandidateExpression="var:self" preconditionExpression="service:isGlobalInterface()">
+        <controls xsi:type="properties:SelectDescription" name="Select Interface Definition" labelExpression="Type (choose from defined interfaces):" valueExpression="aql:self.name" candidatesExpression="aql:self.getInteractionInterfaceCandidates()" candidateDisplayExpression="aql:candidate">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="service:changeInterface(newValue)"/>
+          </initialOperation>
+          <style>
+            <labelBackgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <labelForegroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </controls>
+      </groups>
+    </categories>
+  </extensions>
+</description:Group>

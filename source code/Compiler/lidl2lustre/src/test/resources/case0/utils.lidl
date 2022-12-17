@@ -1,0 +1,17 @@
+// utils.lidl
+package utils;
+
+import lidl.lang.*;
+
+interface
+    Button
+is
+{
+    title : Text out,
+    pushed : Activation in
+}
+
+interface
+    Display
+is
+    Number out

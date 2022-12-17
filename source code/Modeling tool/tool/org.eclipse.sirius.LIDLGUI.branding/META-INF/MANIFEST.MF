@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Branding
+Bundle-SymbolicName: org.eclipse.sirius.LIDLGUI.branding;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: org.eclipse.sirius.lidlgui.branding.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.platform;bundle-version="4.15.0",
+ org.eclipse.sirius.LIDLGUI;bundle-version="1.0.0",
+ org.eclipse.sirius.LIDLGUI.ui;bundle-version="1.0.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Automatic-Module-Name: org.eclipse.sirius.LIDLGUI.branding
+Bundle-ActivationPolicy: lazy

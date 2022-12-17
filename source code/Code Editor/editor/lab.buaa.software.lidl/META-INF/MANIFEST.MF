@@ -1,0 +1,35 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: lab.buaa.software.lidl
+Bundle-ManifestVersion: 2
+Bundle-Name: lab.buaa.software.lidl
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: lab.buaa.software.lidl; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.eclipse.xtext,
+ org.eclipse.xtext.xbase,
+ org.eclipse.equinox.common;bundle-version="3.5.0",
+ org.eclipse.emf.ecore,
+ org.eclipse.xtext.xbase.lib;bundle-version="2.14.0",
+ org.eclipse.xtext.util,
+ org.eclipse.emf.common,
+ org.antlr.runtime;bundle-version="[3.2.0,3.2.1)",
+ org.eclipse.xtend.lib;bundle-version="2.14.0",
+ org.eclipse.ui,
+ org.eclipse.ui.console;bundle-version="3.9.100",
+ org.eclipse.core.resources
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Export-Package: lab.buaa.software.lidl.lidl,
+ lab.buaa.software.lidl.serializer,
+ lab.buaa.software.lidl.parser.antlr.internal,
+ lab.buaa.software.lidl.lidl.util,
+ lab.buaa.software.lidl.parser.antlr,
+ lab.buaa.software.lidl,
+ lab.buaa.software.lidl.generator,
+ lab.buaa.software.lidl.lidl.impl,
+ lab.buaa.software.lidl.scoping,
+ lab.buaa.software.lidl.validation,
+ lab.buaa.software.lidl.services,
+ lab.buaa.software.lidl.formatting2
+Import-Package: org.apache.log4j,
+ org.eclipse.core.runtime;version="3.5.0"

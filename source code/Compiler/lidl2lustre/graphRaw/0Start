@@ -1,0 +1,58 @@
+digraph g{
+node_0 [ shape="ellipse", style="filled", color="#ffd1d1", fontname="Times", label="ProgramRoot
+" ]
+node_1 [ shape="box", style="filled", color="#ffd1d1", fontname="Times", label="ModuleRoot
+File test.lidl
+Pkg default
+" ]
+node_2 [ shape="ellipse", style="filled", color="#ffd1d1", fontname="Times", label="Interaction
+My_Simple_User_Interface
+" ]
+node_3 [ shape="ellipse", style="filled", color="#ffd1d1", fontname="Times", label="Interface
+theInterface
+" ]
+node_4 [ shape="box", style="filled", color="#C0CCFF", fontname="Times", label="theNumber: Number in" ]
+node_5 [ shape="box", style="filled", color="#C0CCFF", fontname="Times", label="theResult: Number out" ]
+node_9 [ shape="plaintext", style="filled", color="#ffd1d1", fontname="Times", label="Expression
+$With_Behaviour$
+" ]
+node_10 [ shape="plaintext", style="filled", color="#ffd1d1", fontname="Times", label="Expression
+Composition" ]
+node_11 [ shape="plaintext", style="filled", color="#ffd1d1", fontname="Times", label="Expression
+x
+" ]
+node_13 [ shape="plaintext", style="filled", color="#ffd1d1", fontname="Times", label="CompositionElement
+theNumber" ]
+node_14 [ shape="plaintext", style="filled", color="#ffd1d1", fontname="Times", label="Expression
+y
+" ]
+node_16 [ shape="plaintext", style="filled", color="#ffd1d1", fontname="Times", label="CompositionElement
+theResult" ]
+node_20 [ shape="plaintext", style="filled", color="#ffd1d1", fontname="Times", label="Expression
+Apply$To$And_Get$
+" ]
+node_21 [ shape="plaintext", style="filled", color="#ffd1d1", fontname="Times", label="Expression
+function_addOne
+" ]
+node_23 [ shape="plaintext", style="filled", color="#ffd1d1", fontname="Times", label="Expression
+x
+" ]
+node_25 [ shape="plaintext", style="filled", color="#ffd1d1", fontname="Times", label="Expression
+y
+" ]
+node_3 -> node_4 [ dir="forward", style="normal", arrowHead="normal", fontname="Times-Italic", arrowsize="1", color="#d00000", label="", headlabel="", taillabel="" ]
+node_3 -> node_5 [ dir="forward", style="normal", arrowHead="normal", fontname="Times-Italic", arrowsize="1", color="#d00000", label="", headlabel="", taillabel="" ]
+node_2 -> node_3 [ dir="forward", style="normal", arrowHead="normal", fontname="Times-Italic", arrowsize="1", color="#BBFF00", label="", headlabel="", taillabel="" ]
+node_13 -> node_11 [ dir="forward", style="normal", arrowHead="normal", fontname="Times-Italic", arrowsize="1", color="#d00000", label="", headlabel="0", taillabel="1" ]
+node_16 -> node_14 [ dir="forward", style="normal", arrowHead="normal", fontname="Times-Italic", arrowsize="1", color="#d00000", label="", headlabel="0", taillabel="1" ]
+node_10 -> node_13 [ dir="forward", style="normal", arrowHead="normal", fontname="Times-Italic", arrowsize="1", color="#d00000", label="", headlabel="", taillabel="" ]
+node_10 -> node_16 [ dir="forward", style="normal", arrowHead="normal", fontname="Times-Italic", arrowsize="1", color="#d00000", label="", headlabel="", taillabel="" ]
+node_9 -> node_10 [ dir="forward", style="normal", arrowHead="normal", fontname="Times-Italic", arrowsize="1", color="#d00000", label="", headlabel="0", taillabel="1" ]
+node_20 -> node_21 [ dir="forward", style="normal", arrowHead="normal", fontname="Times-Italic", arrowsize="1", color="#d00000", label="", headlabel="0", taillabel="1" ]
+node_20 -> node_23 [ dir="forward", style="normal", arrowHead="normal", fontname="Times-Italic", arrowsize="1", color="#d00000", label="", headlabel="0", taillabel="2" ]
+node_20 -> node_25 [ dir="forward", style="normal", arrowHead="normal", fontname="Times-Italic", arrowsize="1", color="#d00000", label="", headlabel="0", taillabel="3" ]
+node_9 -> node_20 [ dir="forward", style="normal", arrowHead="normal", fontname="Times-Italic", arrowsize="1", color="#d00000", label="", headlabel="0", taillabel="2" ]
+node_2 -> node_9 [ dir="forward", style="normal", arrowHead="normal", fontname="Times-Italic", arrowsize="1", color="#d00000", label="", headlabel="", taillabel="" ]
+node_1 -> node_2 [ dir="forward", style="normal", arrowHead="normal", fontname="Times-Italic", arrowsize="1", color="#d00000", label="", headlabel="", taillabel="" ]
+node_0 -> node_1 [ dir="forward", style="normal", arrowHead="normal", fontname="Times-Italic", arrowsize="1", color="#d00000", label="", headlabel="", taillabel="" ]
+}

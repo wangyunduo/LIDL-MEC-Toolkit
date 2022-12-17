@@ -1,0 +1,47 @@
+type Number =
+struct
+{
+	act: bool;
+	value: real;
+};
+
+const real_default = 0.0;
+
+type Activation = bool;
+
+type Boolean =
+struct
+{
+	act: bool;
+	value: bool;
+};
+
+type Char =
+struct
+{
+	code: int;
+};
+
+type string = Char^200;
+
+const string_default = Char{code=0}^200;
+
+type Text =
+struct
+{
+	act: bool;
+	value: string;
+};
+
+node addOne(arg0: Number) returns (ret: Number);
+let
+tel
+
+node My_Simple_User_Interface_arg_(theNumber: Number) returns (theInterface: Number);
+var
+ident_y: Number;
+let
+ident_y = ApplyToAndGet_addOne(true, theNumber);
+theInterface = ident_y;
+tel
+
