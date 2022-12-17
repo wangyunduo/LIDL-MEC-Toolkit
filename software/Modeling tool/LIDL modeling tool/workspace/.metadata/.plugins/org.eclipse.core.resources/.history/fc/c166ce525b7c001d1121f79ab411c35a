@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="ASCII"?>
+<LIDLGUI:TableFactory xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:LIDLGUI="http://www.example.org/LIDLGUI">
+  <datatypetable index="1.0" name="DatatypeTable"/>
+</LIDLGUI:TableFactory>

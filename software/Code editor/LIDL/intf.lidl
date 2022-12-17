@@ -1,0 +1,6 @@
+package intf;
+
+interface
+	Behaviour
+is
+	Activation in

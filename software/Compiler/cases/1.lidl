@@ -1,0 +1,11 @@
+interaction
+	(Case 1) : {theNumber: Number in, theResult: Number out}
+is
+(
+	({
+		theNumber: (x),
+		theResult: (y)
+	})
+	With Behaviour
+	(Apply (function addOne) To (x) And Get (y))
+)

@@ -1,0 +1,112 @@
+data
+  PushButton_Signal
+is
+  {
+    pActive: Activation,
+    mActive: Activation,
+    rActive: Activation
+  }
+
+interface
+  Number_Input
+is
+  Number in
+
+interface
+  Number_Output
+is
+  Number out
+
+interface
+  Activation_Input
+is
+  Activation in
+
+interface
+  Activation_Output
+is
+  Activation out
+
+interface
+  Text_Input
+is
+  Text in
+
+interface
+  Signal_Input
+is
+  PushButton_Signal in
+
+interface
+  PushButton_Intf
+is
+  {
+    title: Text out,
+    pushed: Activation in
+  }
+
+interface
+  NumberDisplay_Intf
+is
+  {
+    value: Number out
+  }
+
+interface
+  MainUI_Intf
+is
+  {
+    plusBut: PushButton_Intf,
+    minusBut: PushButton_Intf,
+    resetBut: PushButton_Intf,
+    display: NumberDisplay_Intf
+  }
+
+interaction
+  (NumberDisplay displayed when (activated) with value (theValue)): NumberDisplay_Intf
+is
+  (
+    when (activated) then ((value)=(theValue))
+  )
+
+interaction
+  (Button displayed by (activated) with title (theTitle) triggers (clicked)): PushButton_Intf
+is
+  (
+    when (activated) then (all ((title) = (theTitle)) ((clicked) = (pushed)))
+  )
+
+interaction
+  (Counter initialized to (init) answer click on (btnSignal) buttons and displays (counterDisplay)): Activation_Input
+is
+  (
+    (all
+    ((counterDisplay) = (counter))
+    (if (((btnSignal).pActive) is active)
+    then ((counter) = ((previous (counter))+(1)))
+    else
+    (if (((btnSignal).mActive) is active)
+    then ((counter) = ((previous (counter))-(1)))
+    else
+    (if (((btnSignal).rActive) is active)
+    then ((counter) = (0))
+    else ((counter) = (previous (counter))))))
+    )
+    With Behaviour
+    (make (counter) is a flow initialy (init))
+  )
+
+interaction
+  (MainUI): MainUI_Intf
+is
+  (
+    ({
+    plusBut: (Button displayed by (active) with title ("+") triggers (plusClicked)),
+    minusBut: (Button displayed by (active) with title ("-") triggers (minusClicked)),
+    resetBut: (Button displayed by (active) with title ("reset") triggers (resetClicked)),
+    display: (NumberDisplay displayed when (active) with title (counterDisplay))
+    })
+    With Behaviour
+    (Counter initialized to (0) answer click on (plusClicked) or (minusClicked) or (resetClicked) buttons and displays (counterDisplay))
+  )
+

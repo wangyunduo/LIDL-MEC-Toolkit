@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:LIDLGUI="http://www.example.org/LIDLGUI" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
+  <viewpoint:DAnalysis uid="_LoLWkHxeEe27yOJovBd8Mw" selectedViews="_LoeRgHxeEe27yOJovBd8Mw" version="14.3.1.202003261200">
+    <semanticResources>UI.model</semanticResources>
+    <ownedViews xmi:type="viewpoint:DView" uid="_LoeRgHxeEe27yOJovBd8Mw">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.xxxx.gui.design/description/gui.odesign#//@ownedViewpoints[name='gui']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_L9opMXxeEe27yOJovBd8Mw" name="Interaction architecture diagram1" repPath="#_L9e4MHxeEe27yOJovBd8Mw" changeId="2862e1fa-fe88-416f-ab2e-40fff1f2597c">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.xxxx.gui.design/description/gui.odesign#//@ownedViewpoints[name='gui']/@ownedRepresentations[name='Interaction%20Diagram']"/>
+        <target xmi:type="LIDLGUI:Interaction" href="UI.model#//@interaction_diagram.0"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+  </viewpoint:DAnalysis>
+  <diagram:DSemanticDiagram uid="_L9e4MHxeEe27yOJovBd8Mw">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_L9xzIHxeEe27yOJovBd8Mw" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_L9xzIXxeEe27yOJovBd8Mw" type="Sirius" element="_L9e4MHxeEe27yOJovBd8Mw" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_L-FVIHxeEe27yOJovBd8Mw" type="2002" element="_L9xzI3xeEe27yOJovBd8Mw">
+          <children xmi:type="notation:Node" xmi:id="_L-FVI3xeEe27yOJovBd8Mw" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_L-FVJHxeEe27yOJovBd8Mw" type="7001">
+            <styles xmi:type="notation:SortingStyle" xmi:id="_L-FVJXxeEe27yOJovBd8Mw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_L-FVJnxeEe27yOJovBd8Mw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_L-FVIXxeEe27yOJovBd8Mw" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L-FVInxeEe27yOJovBd8Mw" y="35"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_L9xzInxeEe27yOJovBd8Mw"/>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_L97kInxeEe27yOJovBd8Mw" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_L97kI3xeEe27yOJovBd8Mw"/>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_L9xzI3xeEe27yOJovBd8Mw" name="main : MainUI">
+      <target xmi:type="LIDLGUI:Interaction" href="UI.model#//@interaction_diagram.0"/>
+      <semanticElements xmi:type="LIDLGUI:Interaction" href="UI.model#//@interaction_diagram.0"/>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_L97kIHxeEe27yOJovBd8Mw" labelSize="12" borderSize="1" borderSizeComputationExpression="1">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.xxxx.gui.design/description/gui.odesign#//@ownedViewpoints[name='gui']/@ownedRepresentations[name='Interaction%20Diagram']/@defaultLayer/@containerMappings[name='Interaction']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.xxxx.gui.design/description/gui.odesign#//@ownedViewpoints[name='gui']/@ownedRepresentations[name='Interaction%20Diagram']/@defaultLayer/@containerMappings[name='Interaction']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.xxxx.gui.design/description/gui.odesign#//@ownedViewpoints[name='gui']/@ownedRepresentations[name='Interaction%20Diagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_L9e4MXxeEe27yOJovBd8Mw"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/org.xxxx.gui.design/description/gui.odesign#//@ownedViewpoints[name='gui']/@ownedRepresentations[name='Interaction%20Diagram']/@defaultLayer"/>
+    <target xmi:type="LIDLGUI:Interaction" href="UI.model#//@interaction_diagram.0"/>
+  </diagram:DSemanticDiagram>
+</xmi:XMI>

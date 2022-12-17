@@ -1,0 +1,675 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:LIDLGUI="http://www.example.org/LIDLGUI" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
+  <viewpoint:DAnalysis uid="_LoLWkHxeEe27yOJovBd8Mw" selectedViews="_LoeRgHxeEe27yOJovBd8Mw" version="14.3.1.202003261200">
+    <semanticResources>UI.model</semanticResources>
+    <ownedViews xmi:type="viewpoint:DView" uid="_LoeRgHxeEe27yOJovBd8Mw">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.xxxx.gui.design/description/gui.odesign#//@ownedViewpoints[name='gui']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_L9opMXxeEe27yOJovBd8Mw" name="Interaction architecture diagram1" repPath="#_L9e4MHxeEe27yOJovBd8Mw" changeId="437720f7-1df2-4ed7-96fe-6cae593652a0">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.xxxx.gui.design/description/gui.odesign#//@ownedViewpoints[name='gui']/@ownedRepresentations[name='Interaction%20Diagram']"/>
+        <target xmi:type="LIDLGUI:Interaction" href="UI.model#//@interaction_diagram.0"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+  </viewpoint:DAnalysis>
+  <diagram:DSemanticDiagram uid="_L9e4MHxeEe27yOJovBd8Mw">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_L9xzIHxeEe27yOJovBd8Mw" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_L9xzIXxeEe27yOJovBd8Mw" type="Sirius" element="_L9e4MHxeEe27yOJovBd8Mw" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_L-FVIHxeEe27yOJovBd8Mw" type="2002" element="_L9xzI3xeEe27yOJovBd8Mw">
+          <children xmi:type="notation:Node" xmi:id="_L-FVI3xeEe27yOJovBd8Mw" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_L-FVJHxeEe27yOJovBd8Mw" type="7001">
+            <children xmi:type="notation:Node" xmi:id="_WCXdkXxeEe27yOJovBd8Mw" type="3008" element="_WCXdgnxeEe27yOJovBd8Mw">
+              <children xmi:type="notation:Node" xmi:id="_WCXdlHxeEe27yOJovBd8Mw" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_WCXdlXxeEe27yOJovBd8Mw" type="7002">
+                <styles xmi:type="notation:SortingStyle" xmi:id="_WCXdlnxeEe27yOJovBd8Mw"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_WCXdl3xeEe27yOJovBd8Mw"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_WCXdmHxeEe27yOJovBd8Mw" type="3012" element="_WCXdhXxeEe27yOJovBd8Mw">
+                <children xmi:type="notation:Node" xmi:id="_WCXdm3xeEe27yOJovBd8Mw" type="5010">
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_WCXdnHxeEe27yOJovBd8Mw" x="21" y="-6"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_WC0JcHxeEe27yOJovBd8Mw" type="3003" element="_WCXdhnxeEe27yOJovBd8Mw">
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_WC0JcXxeEe27yOJovBd8Mw" fontName="Segoe UI"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WC0JcnxeEe27yOJovBd8Mw"/>
+                </children>
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_WCXdmXxeEe27yOJovBd8Mw" fontName="Segoe UI" fontHeight="12" italic="true"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WCXdmnxeEe27yOJovBd8Mw" x="-12" y="49" width="20" height="20"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_WCxtMHxeEe27yOJovBd8Mw" type="3012" element="_WCXdiHxeEe27yOJovBd8Mw">
+                <children xmi:type="notation:Node" xmi:id="_WCxtM3xeEe27yOJovBd8Mw" type="5010">
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_WCxtNHxeEe27yOJovBd8Mw" x="-38" y="-33"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_WC0Jc3xeEe27yOJovBd8Mw" type="3003" element="_WCXdiXxeEe27yOJovBd8Mw">
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_WC0JdHxeEe27yOJovBd8Mw" fontName="Segoe UI"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WC0JdXxeEe27yOJovBd8Mw"/>
+                </children>
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_WCxtMXxeEe27yOJovBd8Mw" fontName="Segoe UI" fontHeight="12"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WCxtMnxeEe27yOJovBd8Mw" x="35" y="-12" width="20" height="20"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_WCxtNXxeEe27yOJovBd8Mw" type="3012" element="_WCXdi3xeEe27yOJovBd8Mw">
+                <children xmi:type="notation:Node" xmi:id="_WCxtOHxeEe27yOJovBd8Mw" type="5010">
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_WCxtOXxeEe27yOJovBd8Mw" x="4" y="-33"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_WC0JdnxeEe27yOJovBd8Mw" type="3003" element="_WCXdjHxeEe27yOJovBd8Mw">
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_WC0Jd3xeEe27yOJovBd8Mw" fontName="Segoe UI"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WC0JeHxeEe27yOJovBd8Mw"/>
+                </children>
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_WCxtNnxeEe27yOJovBd8Mw" fontName="Segoe UI" fontHeight="12"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WCxtN3xeEe27yOJovBd8Mw" x="147" y="-12" width="20" height="20"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_WCxtOnxeEe27yOJovBd8Mw" type="3012" element="_WCXdjnxeEe27yOJovBd8Mw">
+                <children xmi:type="notation:Node" xmi:id="_WCxtPXxeEe27yOJovBd8Mw" type="5010">
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_WCxtPnxeEe27yOJovBd8Mw" x="-122" y="-12"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_WC0JeXxeEe27yOJovBd8Mw" type="3003" element="_WCXdj3xeEe27yOJovBd8Mw">
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_WC0JenxeEe27yOJovBd8Mw" fontName="Segoe UI"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WC0Je3xeEe27yOJovBd8Mw"/>
+                </children>
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_WCxtO3xeEe27yOJovBd8Mw" fontName="Segoe UI" fontHeight="12"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WCxtPHxeEe27yOJovBd8Mw" x="126" y="98" width="20" height="20"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_WCXdknxeEe27yOJovBd8Mw" fontName="Segoe UI" fontHeight="12" bold="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WCXdk3xeEe27yOJovBd8Mw" x="44" y="211" width="220" height="108"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_99pOa3xfEe27yOJovBd8Mw" type="3008" element="_99pOVHxfEe27yOJovBd8Mw">
+              <children xmi:type="notation:Node" xmi:id="_99pObnxfEe27yOJovBd8Mw" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_99pOb3xfEe27yOJovBd8Mw" type="7002">
+                <styles xmi:type="notation:SortingStyle" xmi:id="_99pOcHxfEe27yOJovBd8Mw"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_99pOcXxfEe27yOJovBd8Mw"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_99pOcnxfEe27yOJovBd8Mw" type="3012" element="_99pOV3xfEe27yOJovBd8Mw">
+                <children xmi:type="notation:Node" xmi:id="_99pOdXxfEe27yOJovBd8Mw" type="5010">
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_99pOdnxfEe27yOJovBd8Mw" x="21" y="-6"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_99y_X3xfEe27yOJovBd8Mw" type="3003" element="_99pOWHxfEe27yOJovBd8Mw">
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_99y_YHxfEe27yOJovBd8Mw" fontName="Segoe UI"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_99y_YXxfEe27yOJovBd8Mw"/>
+                </children>
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_99pOc3xfEe27yOJovBd8Mw" fontName="Segoe UI" fontHeight="12" italic="true"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_99pOdHxfEe27yOJovBd8Mw" x="-12" y="49" width="20" height="20"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_99y_UHxfEe27yOJovBd8Mw" type="3012" element="_99pOWnxfEe27yOJovBd8Mw">
+                <children xmi:type="notation:Node" xmi:id="_99y_U3xfEe27yOJovBd8Mw" type="5010">
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_99y_VHxfEe27yOJovBd8Mw" x="-21" y="-33"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_99y_YnxfEe27yOJovBd8Mw" type="3003" element="_99pOW3xfEe27yOJovBd8Mw">
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_99y_Y3xfEe27yOJovBd8Mw" fontName="Segoe UI"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_99y_ZHxfEe27yOJovBd8Mw"/>
+                </children>
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_99y_UXxfEe27yOJovBd8Mw" fontName="Segoe UI" fontHeight="12"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_99y_UnxfEe27yOJovBd8Mw" x="35" y="-12" width="20" height="20"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_99y_VXxfEe27yOJovBd8Mw" type="3012" element="_99pOXXxfEe27yOJovBd8Mw">
+                <children xmi:type="notation:Node" xmi:id="_99y_WHxfEe27yOJovBd8Mw" type="5010">
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_99y_WXxfEe27yOJovBd8Mw" x="-4" y="-33"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_99y_ZXxfEe27yOJovBd8Mw" type="3003" element="_99pOXnxfEe27yOJovBd8Mw">
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_99y_ZnxfEe27yOJovBd8Mw" fontName="Segoe UI"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_99y_Z3xfEe27yOJovBd8Mw"/>
+                </children>
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_99y_VnxfEe27yOJovBd8Mw" fontName="Segoe UI" fontHeight="12"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_99y_V3xfEe27yOJovBd8Mw" x="168" y="-12" width="20" height="20"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_99y_WnxfEe27yOJovBd8Mw" type="3012" element="_99pOYHxfEe27yOJovBd8Mw">
+                <children xmi:type="notation:Node" xmi:id="_99y_XXxfEe27yOJovBd8Mw" type="5010">
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_99y_XnxfEe27yOJovBd8Mw" x="21" y="-6"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_99y_aHxfEe27yOJovBd8Mw" type="3003" element="_99pOYXxfEe27yOJovBd8Mw">
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_99y_aXxfEe27yOJovBd8Mw" fontName="Segoe UI"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_99y_anxfEe27yOJovBd8Mw"/>
+                </children>
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_99y_W3xfEe27yOJovBd8Mw" fontName="Segoe UI" fontHeight="12"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_99y_XHxfEe27yOJovBd8Mw" x="112" y="98" width="20" height="20"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_99pObHxfEe27yOJovBd8Mw" fontName="Segoe UI" fontHeight="12" bold="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_99pObXxfEe27yOJovBd8Mw" x="303" y="211" width="241" height="108"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_-fMcVXxfEe27yOJovBd8Mw" type="3008" element="_-fMcNnxfEe27yOJovBd8Mw">
+              <children xmi:type="notation:Node" xmi:id="_-fMcWHxfEe27yOJovBd8Mw" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_-fMcWXxfEe27yOJovBd8Mw" type="7002">
+                <styles xmi:type="notation:SortingStyle" xmi:id="_-fMcWnxfEe27yOJovBd8Mw"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_-fMcW3xfEe27yOJovBd8Mw"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_-fMcXHxfEe27yOJovBd8Mw" type="3012" element="_-fMcOXxfEe27yOJovBd8Mw">
+                <children xmi:type="notation:Node" xmi:id="_-fMcX3xfEe27yOJovBd8Mw" type="5010">
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_-fMcYHxfEe27yOJovBd8Mw" x="21"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_-fMccHxfEe27yOJovBd8Mw" type="3003" element="_-fMcOnxfEe27yOJovBd8Mw">
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_-fMccXxfEe27yOJovBd8Mw" fontName="Segoe UI"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-fMccnxfEe27yOJovBd8Mw"/>
+                </children>
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_-fMcXXxfEe27yOJovBd8Mw" fontName="Segoe UI" fontHeight="12" italic="true"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-fMcXnxfEe27yOJovBd8Mw" x="-12" y="56" width="20" height="20"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_-fMcYXxfEe27yOJovBd8Mw" type="3012" element="_-fMcPHxfEe27yOJovBd8Mw">
+                <children xmi:type="notation:Node" xmi:id="_-fMcZHxfEe27yOJovBd8Mw" type="5010">
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_-fMcZXxfEe27yOJovBd8Mw" x="-21" y="-33"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_-fMcc3xfEe27yOJovBd8Mw" type="3003" element="_-fMcPXxfEe27yOJovBd8Mw">
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_-fMcdHxfEe27yOJovBd8Mw" fontName="Segoe UI"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-fMcdXxfEe27yOJovBd8Mw"/>
+                </children>
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_-fMcYnxfEe27yOJovBd8Mw" fontName="Segoe UI" fontHeight="12"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-fMcY3xfEe27yOJovBd8Mw" x="35" y="-12" width="20" height="20"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_-fMcZnxfEe27yOJovBd8Mw" type="3012" element="_-fMcP3xfEe27yOJovBd8Mw">
+                <children xmi:type="notation:Node" xmi:id="_-fMcaXxfEe27yOJovBd8Mw" type="5010">
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_-fMcanxfEe27yOJovBd8Mw" x="-30" y="-33"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_-fMcdnxfEe27yOJovBd8Mw" type="3003" element="_-fMcQHxfEe27yOJovBd8Mw">
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_-fMcd3xfEe27yOJovBd8Mw" fontName="Segoe UI"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-fMceHxfEe27yOJovBd8Mw"/>
+                </children>
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_-fMcZ3xfEe27yOJovBd8Mw" fontName="Segoe UI" fontHeight="12"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-fMcaHxfEe27yOJovBd8Mw" x="140" y="-12" width="20" height="20"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_-fMca3xfEe27yOJovBd8Mw" type="3012" element="_-fMcQnxfEe27yOJovBd8Mw">
+                <children xmi:type="notation:Node" xmi:id="_-fMcbnxfEe27yOJovBd8Mw" type="5010">
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_-fMcb3xfEe27yOJovBd8Mw" x="21" y="-6"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_-fMceXxfEe27yOJovBd8Mw" type="3003" element="_-fMcQ3xfEe27yOJovBd8Mw">
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_-fMcenxfEe27yOJovBd8Mw" fontName="Segoe UI"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-fMce3xfEe27yOJovBd8Mw"/>
+                </children>
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_-fMcbHxfEe27yOJovBd8Mw" fontName="Segoe UI" fontHeight="12"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-fMcbXxfEe27yOJovBd8Mw" x="63" y="98" width="20" height="20"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_-fMcVnxfEe27yOJovBd8Mw" fontName="Segoe UI" fontHeight="12" bold="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-fMcV3xfEe27yOJovBd8Mw" x="569" y="211" width="220" height="108"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="__qejv3xfEe27yOJovBd8Mw" type="3008" element="__qejmHxfEe27yOJovBd8Mw">
+              <children xmi:type="notation:Node" xmi:id="__qejwnxfEe27yOJovBd8Mw" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="__qejw3xfEe27yOJovBd8Mw" type="7002">
+                <styles xmi:type="notation:SortingStyle" xmi:id="__qejxHxfEe27yOJovBd8Mw"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="__qejxXxfEe27yOJovBd8Mw"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="__qejxnxfEe27yOJovBd8Mw" type="3012" element="__qejm3xfEe27yOJovBd8Mw">
+                <children xmi:type="notation:Node" xmi:id="__qejyXxfEe27yOJovBd8Mw" type="5010">
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="__qejynxfEe27yOJovBd8Mw" x="21" y="-6"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="__qej2nxfEe27yOJovBd8Mw" type="3003" element="__qejnHxfEe27yOJovBd8Mw">
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="__qej23xfEe27yOJovBd8Mw" fontName="Segoe UI"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="__qej3HxfEe27yOJovBd8Mw"/>
+                </children>
+                <styles xmi:type="notation:ShapeStyle" xmi:id="__qejx3xfEe27yOJovBd8Mw" fontName="Segoe UI" fontHeight="12" italic="true"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="__qejyHxfEe27yOJovBd8Mw" x="238" y="49" width="20" height="20"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="__qejy3xfEe27yOJovBd8Mw" type="3012" element="__qejnnxfEe27yOJovBd8Mw">
+                <children xmi:type="notation:Node" xmi:id="__qejznxfEe27yOJovBd8Mw" type="5010">
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="__qejz3xfEe27yOJovBd8Mw" x="21"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="__qej3XxfEe27yOJovBd8Mw" type="3003" element="__qejn3xfEe27yOJovBd8Mw">
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="__qej3nxfEe27yOJovBd8Mw" fontName="Segoe UI"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="__qej33xfEe27yOJovBd8Mw"/>
+                </children>
+                <styles xmi:type="notation:ShapeStyle" xmi:id="__qejzHxfEe27yOJovBd8Mw" fontName="Segoe UI" fontHeight="12"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="__qejzXxfEe27yOJovBd8Mw" x="238" y="21" width="20" height="20"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="__qej0HxfEe27yOJovBd8Mw" type="3012" element="__qejoXxfEe27yOJovBd8Mw">
+                <children xmi:type="notation:Node" xmi:id="__qej03xfEe27yOJovBd8Mw" type="5010">
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="__qej1HxfEe27yOJovBd8Mw" x="-40" y="-33"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="__qej4HxfEe27yOJovBd8Mw" type="3003" element="__qejonxfEe27yOJovBd8Mw">
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="__qej4XxfEe27yOJovBd8Mw" fontName="Segoe UI"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="__qej4nxfEe27yOJovBd8Mw"/>
+                </children>
+                <styles xmi:type="notation:ShapeStyle" xmi:id="__qej0XxfEe27yOJovBd8Mw" fontName="Segoe UI" fontHeight="12"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="__qej0nxfEe27yOJovBd8Mw" x="98" y="-12" width="20" height="20"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="__qej1XxfEe27yOJovBd8Mw" type="3012" element="__qejpHxfEe27yOJovBd8Mw">
+                <children xmi:type="notation:Node" xmi:id="__qej2HxfEe27yOJovBd8Mw" type="5010">
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="__qej2XxfEe27yOJovBd8Mw" x="-160" y="-12"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="__qej43xfEe27yOJovBd8Mw" type="3003" element="__qejpXxfEe27yOJovBd8Mw">
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="__qej5HxfEe27yOJovBd8Mw" fontName="Segoe UI"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="__qej5XxfEe27yOJovBd8Mw"/>
+                </children>
+                <styles xmi:type="notation:ShapeStyle" xmi:id="__qej1nxfEe27yOJovBd8Mw" fontName="Segoe UI" fontHeight="12"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="__qej13xfEe27yOJovBd8Mw" x="-12" y="42" width="20" height="20"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="__qejwHxfEe27yOJovBd8Mw" fontName="Segoe UI" fontHeight="12" bold="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="__qejwXxfEe27yOJovBd8Mw" x="310" y="407" width="248" height="87"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_AhnnJnxgEe27yOJovBd8Mw" type="3008" element="_Ahnm-nxgEe27yOJovBd8Mw">
+              <children xmi:type="notation:Node" xmi:id="_AhnnKXxgEe27yOJovBd8Mw" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_AhnnKnxgEe27yOJovBd8Mw" type="7002">
+                <styles xmi:type="notation:SortingStyle" xmi:id="_AhnnK3xgEe27yOJovBd8Mw"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_AhnnLHxgEe27yOJovBd8Mw"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_AhnnLXxgEe27yOJovBd8Mw" type="3012" element="_Ahnm_XxgEe27yOJovBd8Mw">
+                <children xmi:type="notation:Node" xmi:id="_AhnnMHxgEe27yOJovBd8Mw" type="5010">
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_AhnnMXxgEe27yOJovBd8Mw" x="21" y="-6"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_AhnnPHxgEe27yOJovBd8Mw" type="3003" element="_Ahnm_nxgEe27yOJovBd8Mw">
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_AhnnPXxgEe27yOJovBd8Mw" fontName="Segoe UI"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AhnnPnxgEe27yOJovBd8Mw"/>
+                </children>
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_AhnnLnxgEe27yOJovBd8Mw" fontName="Segoe UI" fontHeight="12" italic="true"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AhnnL3xgEe27yOJovBd8Mw" x="196" y="60" width="20" height="20"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_AhnnMnxgEe27yOJovBd8Mw" type="3012" element="_AhnnAHxgEe27yOJovBd8Mw">
+                <children xmi:type="notation:Node" xmi:id="_AhnnNXxgEe27yOJovBd8Mw" type="5010">
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_AhnnNnxgEe27yOJovBd8Mw" x="-63"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_AhnnP3xgEe27yOJovBd8Mw" type="3003" element="_AhnnAXxgEe27yOJovBd8Mw">
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_AhnnQHxgEe27yOJovBd8Mw" fontName="Segoe UI"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AhnnQXxgEe27yOJovBd8Mw"/>
+                </children>
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_AhnnM3xgEe27yOJovBd8Mw" fontName="Segoe UI" fontHeight="12"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AhnnNHxgEe27yOJovBd8Mw" x="56" y="-12" width="20" height="20"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_AhnnN3xgEe27yOJovBd8Mw" type="3012" element="_AhnnA3xgEe27yOJovBd8Mw">
+                <children xmi:type="notation:Node" xmi:id="_AhnnOnxgEe27yOJovBd8Mw" type="5010">
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_AhnnO3xgEe27yOJovBd8Mw" x="-94" y="-12"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_AhnnQnxgEe27yOJovBd8Mw" type="3003" element="_AhnnBHxgEe27yOJovBd8Mw">
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_AhnnQ3xgEe27yOJovBd8Mw" fontName="Segoe UI"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AhnnRHxgEe27yOJovBd8Mw"/>
+                </children>
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_AhnnOHxgEe27yOJovBd8Mw" fontName="Segoe UI" fontHeight="12"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AhnnOXxgEe27yOJovBd8Mw" x="-12" y="28" width="20" height="20"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_AhnnJ3xgEe27yOJovBd8Mw" fontName="Segoe UI" fontHeight="12" bold="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AhnnKHxgEe27yOJovBd8Mw" x="296" y="57" width="332"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_L-FVJXxeEe27yOJovBd8Mw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_L-FVJnxeEe27yOJovBd8Mw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_L-FVIXxeEe27yOJovBd8Mw" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L-FVInxeEe27yOJovBd8Mw" x="56" y="35" width="822" height="528"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_L9xzInxeEe27yOJovBd8Mw"/>
+        <edges xmi:type="notation:Edge" xmi:id="_XlfyaXxgEe27yOJovBd8Mw" type="4001" element="_XlfyZHxgEe27yOJovBd8Mw" source="__qej1XxfEe27yOJovBd8Mw" target="_AhnnN3xgEe27yOJovBd8Mw">
+          <children xmi:type="notation:Node" xmi:id="_XlfybXxgEe27yOJovBd8Mw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XlfybnxgEe27yOJovBd8Mw" x="18"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Xlfyb3xgEe27yOJovBd8Mw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XlfycHxgEe27yOJovBd8Mw" x="-3" y="-9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_XlfycXxgEe27yOJovBd8Mw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XlfycnxgEe27yOJovBd8Mw" x="29" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_XlfyanxgEe27yOJovBd8Mw"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_Xlfya3xgEe27yOJovBd8Mw" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_XlfybHxgEe27yOJovBd8Mw" points="[0, 0, 9, 345]$[-275, 0, -266, 345]$[-275, -351, -266, -6]$[-14, -351, -5, -6]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Xlo8MHxgEe27yOJovBd8Mw" id="(0.0,0.05)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Xlo8MXxgEe27yOJovBd8Mw" id="(0.25,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_wXQb13xgEe27yOJovBd8Mw" type="4001" element="_wXQb0nxgEe27yOJovBd8Mw" source="_WCxtOnxeEe27yOJovBd8Mw" target="__qej0HxfEe27yOJovBd8Mw">
+          <children xmi:type="notation:Node" xmi:id="_wXQb23xgEe27yOJovBd8Mw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wXQb3HxgEe27yOJovBd8Mw" x="-2" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_wXQb3XxgEe27yOJovBd8Mw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wXQb3nxgEe27yOJovBd8Mw" x="1" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_wXQb33xgEe27yOJovBd8Mw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wXQb4HxgEe27yOJovBd8Mw" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_wXQb2HxgEe27yOJovBd8Mw"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_wXQb2XxgEe27yOJovBd8Mw" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_wXQb2nxgEe27yOJovBd8Mw" points="[0, 0, -218, -91]$[218, 91, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_wXQb4XxgEe27yOJovBd8Mw" id="(1.0,0.35)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_wXQb4nxgEe27yOJovBd8Mw" id="(0.0,0.6)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_xqdwP3xgEe27yOJovBd8Mw" type="4001" element="_xqdwOnxgEe27yOJovBd8Mw" source="_99y_WnxfEe27yOJovBd8Mw" target="__qej0HxfEe27yOJovBd8Mw">
+          <children xmi:type="notation:Node" xmi:id="_xqdwQ3xgEe27yOJovBd8Mw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xqdwRHxgEe27yOJovBd8Mw" x="-11" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_xqdwRXxgEe27yOJovBd8Mw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xqdwRnxgEe27yOJovBd8Mw" x="-3" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_xqdwR3xgEe27yOJovBd8Mw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xqdwSHxgEe27yOJovBd8Mw" x="-18" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_xqdwQHxgEe27yOJovBd8Mw"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_xqdwQXxgEe27yOJovBd8Mw" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_xqdwQnxgEe27yOJovBd8Mw" points="[0, 0, 0, -66]$[0, 66, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_xqdwSXxgEe27yOJovBd8Mw" id="(0.15,1.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_xqdwSnxgEe27yOJovBd8Mw" id="(0.5,0.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_yNryE3xgEe27yOJovBd8Mw" type="4001" element="_yNryDnxgEe27yOJovBd8Mw" source="_-fMca3xfEe27yOJovBd8Mw" target="__qej0HxfEe27yOJovBd8Mw">
+          <children xmi:type="notation:Node" xmi:id="_yNryF3xgEe27yOJovBd8Mw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yNryGHxgEe27yOJovBd8Mw" x="1" y="-9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_yNryGXxgEe27yOJovBd8Mw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yNryGnxgEe27yOJovBd8Mw" x="-2" y="11"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_yNryG3xgEe27yOJovBd8Mw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yNryHHxgEe27yOJovBd8Mw" x="-1" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_yNryFHxgEe27yOJovBd8Mw"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_yNryFXxgEe27yOJovBd8Mw" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_yNryFnxgEe27yOJovBd8Mw" points="[0, 0, 204, -84]$[-204, 84, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yNryHXxgEe27yOJovBd8Mw" id="(0.0,0.35)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yNryHnxgEe27yOJovBd8Mw" id="(1.0,0.25)"/>
+        </edges>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_L97kInxeEe27yOJovBd8Mw" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_L97kI3xeEe27yOJovBd8Mw"/>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_L9xzI3xeEe27yOJovBd8Mw" name="main : MainUI">
+      <target xmi:type="LIDLGUI:Interaction" href="UI.model#//@interaction_diagram.0"/>
+      <semanticElements xmi:type="LIDLGUI:Interaction" href="UI.model#//@interaction_diagram.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_L97kIHxeEe27yOJovBd8Mw" labelSize="12" borderSize="1" borderSizeComputationExpression="1">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.xxxx.gui.design/description/gui.odesign#//@ownedViewpoints[name='gui']/@ownedRepresentations[name='Interaction%20Diagram']/@defaultLayer/@containerMappings[name='Interaction']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.xxxx.gui.design/description/gui.odesign#//@ownedViewpoints[name='gui']/@ownedRepresentations[name='Interaction%20Diagram']/@defaultLayer/@containerMappings[name='Interaction']"/>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_WCXdgnxeEe27yOJovBd8Mw" name="plusBut : Button">
+        <target xmi:type="LIDLGUI:Interaction" href="UI.model#//@interaction_diagram.0/@candidates_interactions.0"/>
+        <semanticElements xmi:type="LIDLGUI:Interaction" href="UI.model#//@interaction_diagram.0/@candidates_interactions.0"/>
+        <ownedBorderedNodes xmi:type="diagram:DNode" uid="_WCXdhXxeEe27yOJovBd8Mw" name="PushButton_Intf" width="2" height="2">
+          <target xmi:type="LIDLGUI:Interface" href="UI.model#//@interaction_diagram.0/@candidates_interactions.0/@signature_interfaces.0"/>
+          <semanticElements xmi:type="LIDLGUI:Interface" href="UI.model#//@interaction_diagram.0/@candidates_interactions.0/@signature_interfaces.0"/>
+          <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+          <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+          <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+          <ownedStyle xmi:type="diagram:Square" uid="_WCXdhnxeEe27yOJovBd8Mw" labelSize="12" showIcon="false" color="77,137,20">
+            <labelFormat>italic</labelFormat>
+            <description xmi:type="style:SquareDescription" href="platform:/plugin/org.xxxx.gui.design/description/gui.odesign#//@ownedViewpoints[name='gui']/@ownedRepresentations[name='Interaction%20Diagram']/@defaultLayer/@containerMappings[name='Interaction']/@subContainerMappings[name='Sub%20Interaction']/@borderedNodeMappings[name='Sub%20Interface']/@conditionnalStyles.0/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.xxxx.gui.design/description/gui.odesign#//@ownedViewpoints[name='gui']/@ownedRepresentations[name='Interaction%20Diagram']/@defaultLayer/@containerMappings[name='Interaction']/@subContainerMappings[name='Sub%20Interaction']/@borderedNodeMappings[name='Sub%20Interface']"/>
+        </ownedBorderedNodes>
+        <ownedBorderedNodes xmi:type="diagram:DNode" uid="_WCXdiHxeEe27yOJovBd8Mw" name="active" width="2" height="2">
+          <target xmi:type="LIDLGUI:Interface" href="UI.model#//@interaction_diagram.0/@candidates_interactions.0/@signature_interfaces.1"/>
+          <semanticElements xmi:type="LIDLGUI:Interface" href="UI.model#//@interaction_diagram.0/@candidates_interactions.0/@signature_interfaces.1"/>
+          <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+          <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+          <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+          <ownedStyle xmi:type="diagram:Square" uid="_WCXdiXxeEe27yOJovBd8Mw" labelSize="12" showIcon="false" color="194,239,255">
+            <description xmi:type="style:SquareDescription" href="platform:/plugin/org.xxxx.gui.design/description/gui.odesign#//@ownedViewpoints[name='gui']/@ownedRepresentations[name='Interaction%20Diagram']/@defaultLayer/@containerMappings[name='Interaction']/@subContainerMappings[name='Sub%20Interaction']/@borderedNodeMappings[name='Sub%20Interface']/@conditionnalStyles.4/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.xxxx.gui.design/description/gui.odesign#//@ownedViewpoints[name='gui']/@ownedRepresentations[name='Interaction%20Diagram']/@defaultLayer/@containerMappings[name='Interaction']/@subContainerMappings[name='Sub%20Interaction']/@borderedNodeMappings[name='Sub%20Interface']"/>
+        </ownedBorderedNodes>
+        <ownedBorderedNodes xmi:type="diagram:DNode" uid="_WCXdi3xeEe27yOJovBd8Mw" name="&quot;+&quot;" width="2" height="2">
+          <target xmi:type="LIDLGUI:Interface" href="UI.model#//@interaction_diagram.0/@candidates_interactions.0/@signature_interfaces.2"/>
+          <semanticElements xmi:type="LIDLGUI:Interface" href="UI.model#//@interaction_diagram.0/@candidates_interactions.0/@signature_interfaces.2"/>
+          <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+          <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+          <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+          <ownedStyle xmi:type="diagram:Square" uid="_WCXdjHxeEe27yOJovBd8Mw" labelSize="12" showIcon="false" color="194,239,255">
+            <description xmi:type="style:SquareDescription" href="platform:/plugin/org.xxxx.gui.design/description/gui.odesign#//@ownedViewpoints[name='gui']/@ownedRepresentations[name='Interaction%20Diagram']/@defaultLayer/@containerMappings[name='Interaction']/@subContainerMappings[name='Sub%20Interaction']/@borderedNodeMappings[name='Sub%20Interface']/@conditionnalStyles.4/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.xxxx.gui.design/description/gui.odesign#//@ownedViewpoints[name='gui']/@ownedRepresentations[name='Interaction%20Diagram']/@defaultLayer/@containerMappings[name='Interaction']/@subContainerMappings[name='Sub%20Interaction']/@borderedNodeMappings[name='Sub%20Interface']"/>
+        </ownedBorderedNodes>
+        <ownedBorderedNodes xmi:type="diagram:DNode" uid="_WCXdjnxeEe27yOJovBd8Mw" name="plusClicked" outgoingEdges="_wXQb0nxgEe27yOJovBd8Mw" width="2" height="2">
+          <target xmi:type="LIDLGUI:Interface" href="UI.model#//@interaction_diagram.0/@candidates_interactions.0/@signature_interfaces.3"/>
+          <semanticElements xmi:type="LIDLGUI:Interface" href="UI.model#//@interaction_diagram.0/@candidates_interactions.0/@signature_interfaces.3"/>
+          <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+          <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+          <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+          <ownedStyle xmi:type="diagram:Square" uid="_WCXdj3xeEe27yOJovBd8Mw" labelSize="12" showIcon="false" color="255,245,181">
+            <description xmi:type="style:SquareDescription" href="platform:/plugin/org.xxxx.gui.design/description/gui.odesign#//@ownedViewpoints[name='gui']/@ownedRepresentations[name='Interaction%20Diagram']/@defaultLayer/@containerMappings[name='Interaction']/@subContainerMappings[name='Sub%20Interaction']/@borderedNodeMappings[name='Sub%20Interface']/@conditionnalStyles.5/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.xxxx.gui.design/description/gui.odesign#//@ownedViewpoints[name='gui']/@ownedRepresentations[name='Interaction%20Diagram']/@defaultLayer/@containerMappings[name='Interaction']/@subContainerMappings[name='Sub%20Interaction']/@borderedNodeMappings[name='Sub%20Interface']"/>
+        </ownedBorderedNodes>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_WCXdg3xeEe27yOJovBd8Mw" labelSize="12" borderSize="1" borderSizeComputationExpression="1" foregroundColor="204,242,166">
+          <labelFormat>bold</labelFormat>
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.xxxx.gui.design/description/gui.odesign#//@ownedViewpoints[name='gui']/@ownedRepresentations[name='Interaction%20Diagram']/@defaultLayer/@containerMappings[name='Interaction']/@subContainerMappings[name='Sub%20Interaction']/@conditionnalStyles.0/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.xxxx.gui.design/description/gui.odesign#//@ownedViewpoints[name='gui']/@ownedRepresentations[name='Interaction%20Diagram']/@defaultLayer/@containerMappings[name='Interaction']/@subContainerMappings[name='Sub%20Interaction']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_99pOVHxfEe27yOJovBd8Mw" name="minusBut : Button">
+        <target xmi:type="LIDLGUI:Interaction" href="UI.model#//@interaction_diagram.0/@candidates_interactions.1"/>
+        <semanticElements xmi:type="LIDLGUI:Interaction" href="UI.model#//@interaction_diagram.0/@candidates_interactions.1"/>
+        <ownedBorderedNodes xmi:type="diagram:DNode" uid="_99pOV3xfEe27yOJovBd8Mw" name="PushButton_Intf" width="2" height="2">
+          <target xmi:type="LIDLGUI:Interface" href="UI.model#//@interaction_diagram.0/@candidates_interactions.1/@signature_interfaces.0"/>
+          <semanticElements xmi:type="LIDLGUI:Interface" href="UI.model#//@interaction_diagram.0/@candidates_interactions.1/@signature_interfaces.0"/>
+          <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+          <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+          <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+          <ownedStyle xmi:type="diagram:Square" uid="_99pOWHxfEe27yOJovBd8Mw" labelSize="12" showIcon="false" color="77,137,20">
+            <labelFormat>italic</labelFormat>
+            <description xmi:type="style:SquareDescription" href="platform:/plugin/org.xxxx.gui.design/description/gui.odesign#//@ownedViewpoints[name='gui']/@ownedRepresentations[name='Interaction%20Diagram']/@defaultLayer/@containerMappings[name='Interaction']/@subContainerMappings[name='Sub%20Interaction']/@borderedNodeMappings[name='Sub%20Interface']/@conditionnalStyles.0/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.xxxx.gui.design/description/gui.odesign#//@ownedViewpoints[name='gui']/@ownedRepresentations[name='Interaction%20Diagram']/@defaultLayer/@containerMappings[name='Interaction']/@subContainerMappings[name='Sub%20Interaction']/@borderedNodeMappings[name='Sub%20Interface']"/>
+        </ownedBorderedNodes>
+        <ownedBorderedNodes xmi:type="diagram:DNode" uid="_99pOWnxfEe27yOJovBd8Mw" name="active" width="2" height="2">
+          <target xmi:type="LIDLGUI:Interface" href="UI.model#//@interaction_diagram.0/@candidates_interactions.1/@signature_interfaces.1"/>
+          <semanticElements xmi:type="LIDLGUI:Interface" href="UI.model#//@interaction_diagram.0/@candidates_interactions.1/@signature_interfaces.1"/>
+          <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+          <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+          <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+          <ownedStyle xmi:type="diagram:Square" uid="_99pOW3xfEe27yOJovBd8Mw" labelSize="12" showIcon="false" color="194,239,255">
+            <description xmi:type="style:SquareDescription" href="platform:/plugin/org.xxxx.gui.design/description/gui.odesign#//@ownedViewpoints[name='gui']/@ownedRepresentations[name='Interaction%20Diagram']/@defaultLayer/@containerMappings[name='Interaction']/@subContainerMappings[name='Sub%20Interaction']/@borderedNodeMappings[name='Sub%20Interface']/@conditionnalStyles.4/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.xxxx.gui.design/description/gui.odesign#//@ownedViewpoints[name='gui']/@ownedRepresentations[name='Interaction%20Diagram']/@defaultLayer/@containerMappings[name='Interaction']/@subContainerMappings[name='Sub%20Interaction']/@borderedNodeMappings[name='Sub%20Interface']"/>
+        </ownedBorderedNodes>
+        <ownedBorderedNodes xmi:type="diagram:DNode" uid="_99pOXXxfEe27yOJovBd8Mw" name="&quot;-&quot;" width="2" height="2">
+          <target xmi:type="LIDLGUI:Interface" href="UI.model#//@interaction_diagram.0/@candidates_interactions.1/@signature_interfaces.2"/>
+          <semanticElements xmi:type="LIDLGUI:Interface" href="UI.model#//@interaction_diagram.0/@candidates_interactions.1/@signature_interfaces.2"/>
+          <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+          <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+          <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+          <ownedStyle xmi:type="diagram:Square" uid="_99pOXnxfEe27yOJovBd8Mw" labelSize="12" showIcon="false" color="194,239,255">
+            <description xmi:type="style:SquareDescription" href="platform:/plugin/org.xxxx.gui.design/description/gui.odesign#//@ownedViewpoints[name='gui']/@ownedRepresentations[name='Interaction%20Diagram']/@defaultLayer/@containerMappings[name='Interaction']/@subContainerMappings[name='Sub%20Interaction']/@borderedNodeMappings[name='Sub%20Interface']/@conditionnalStyles.4/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.xxxx.gui.design/description/gui.odesign#//@ownedViewpoints[name='gui']/@ownedRepresentations[name='Interaction%20Diagram']/@defaultLayer/@containerMappings[name='Interaction']/@subContainerMappings[name='Sub%20Interaction']/@borderedNodeMappings[name='Sub%20Interface']"/>
+        </ownedBorderedNodes>
+        <ownedBorderedNodes xmi:type="diagram:DNode" uid="_99pOYHxfEe27yOJovBd8Mw" name="minusClicked" outgoingEdges="_xqdwOnxgEe27yOJovBd8Mw" width="2" height="2">
+          <target xmi:type="LIDLGUI:Interface" href="UI.model#//@interaction_diagram.0/@candidates_interactions.1/@signature_interfaces.3"/>
+          <semanticElements xmi:type="LIDLGUI:Interface" href="UI.model#//@interaction_diagram.0/@candidates_interactions.1/@signature_interfaces.3"/>
+          <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+          <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+          <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+          <ownedStyle xmi:type="diagram:Square" uid="_99pOYXxfEe27yOJovBd8Mw" labelSize="12" showIcon="false" color="255,245,181">
+            <description xmi:type="style:SquareDescription" href="platform:/plugin/org.xxxx.gui.design/description/gui.odesign#//@ownedViewpoints[name='gui']/@ownedRepresentations[name='Interaction%20Diagram']/@defaultLayer/@containerMappings[name='Interaction']/@subContainerMappings[name='Sub%20Interaction']/@borderedNodeMappings[name='Sub%20Interface']/@conditionnalStyles.5/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.xxxx.gui.design/description/gui.odesign#//@ownedViewpoints[name='gui']/@ownedRepresentations[name='Interaction%20Diagram']/@defaultLayer/@containerMappings[name='Interaction']/@subContainerMappings[name='Sub%20Interaction']/@borderedNodeMappings[name='Sub%20Interface']"/>
+        </ownedBorderedNodes>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_99pOVXxfEe27yOJovBd8Mw" labelSize="12" borderSize="1" borderSizeComputationExpression="1" foregroundColor="204,242,166">
+          <labelFormat>bold</labelFormat>
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.xxxx.gui.design/description/gui.odesign#//@ownedViewpoints[name='gui']/@ownedRepresentations[name='Interaction%20Diagram']/@defaultLayer/@containerMappings[name='Interaction']/@subContainerMappings[name='Sub%20Interaction']/@conditionnalStyles.0/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.xxxx.gui.design/description/gui.odesign#//@ownedViewpoints[name='gui']/@ownedRepresentations[name='Interaction%20Diagram']/@defaultLayer/@containerMappings[name='Interaction']/@subContainerMappings[name='Sub%20Interaction']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_-fMcNnxfEe27yOJovBd8Mw" name="reset : Button">
+        <target xmi:type="LIDLGUI:Interaction" href="UI.model#//@interaction_diagram.0/@candidates_interactions.2"/>
+        <semanticElements xmi:type="LIDLGUI:Interaction" href="UI.model#//@interaction_diagram.0/@candidates_interactions.2"/>
+        <ownedBorderedNodes xmi:type="diagram:DNode" uid="_-fMcOXxfEe27yOJovBd8Mw" name="PushButton_Intf" width="2" height="2">
+          <target xmi:type="LIDLGUI:Interface" href="UI.model#//@interaction_diagram.0/@candidates_interactions.2/@signature_interfaces.0"/>
+          <semanticElements xmi:type="LIDLGUI:Interface" href="UI.model#//@interaction_diagram.0/@candidates_interactions.2/@signature_interfaces.0"/>
+          <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+          <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+          <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+          <ownedStyle xmi:type="diagram:Square" uid="_-fMcOnxfEe27yOJovBd8Mw" labelSize="12" showIcon="false" color="77,137,20">
+            <labelFormat>italic</labelFormat>
+            <description xmi:type="style:SquareDescription" href="platform:/plugin/org.xxxx.gui.design/description/gui.odesign#//@ownedViewpoints[name='gui']/@ownedRepresentations[name='Interaction%20Diagram']/@defaultLayer/@containerMappings[name='Interaction']/@subContainerMappings[name='Sub%20Interaction']/@borderedNodeMappings[name='Sub%20Interface']/@conditionnalStyles.0/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.xxxx.gui.design/description/gui.odesign#//@ownedViewpoints[name='gui']/@ownedRepresentations[name='Interaction%20Diagram']/@defaultLayer/@containerMappings[name='Interaction']/@subContainerMappings[name='Sub%20Interaction']/@borderedNodeMappings[name='Sub%20Interface']"/>
+        </ownedBorderedNodes>
+        <ownedBorderedNodes xmi:type="diagram:DNode" uid="_-fMcPHxfEe27yOJovBd8Mw" name="active" width="2" height="2">
+          <target xmi:type="LIDLGUI:Interface" href="UI.model#//@interaction_diagram.0/@candidates_interactions.2/@signature_interfaces.1"/>
+          <semanticElements xmi:type="LIDLGUI:Interface" href="UI.model#//@interaction_diagram.0/@candidates_interactions.2/@signature_interfaces.1"/>
+          <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+          <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+          <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+          <ownedStyle xmi:type="diagram:Square" uid="_-fMcPXxfEe27yOJovBd8Mw" labelSize="12" showIcon="false" color="194,239,255">
+            <description xmi:type="style:SquareDescription" href="platform:/plugin/org.xxxx.gui.design/description/gui.odesign#//@ownedViewpoints[name='gui']/@ownedRepresentations[name='Interaction%20Diagram']/@defaultLayer/@containerMappings[name='Interaction']/@subContainerMappings[name='Sub%20Interaction']/@borderedNodeMappings[name='Sub%20Interface']/@conditionnalStyles.4/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.xxxx.gui.design/description/gui.odesign#//@ownedViewpoints[name='gui']/@ownedRepresentations[name='Interaction%20Diagram']/@defaultLayer/@containerMappings[name='Interaction']/@subContainerMappings[name='Sub%20Interaction']/@borderedNodeMappings[name='Sub%20Interface']"/>
+        </ownedBorderedNodes>
+        <ownedBorderedNodes xmi:type="diagram:DNode" uid="_-fMcP3xfEe27yOJovBd8Mw" name="&quot;reset&quot;" width="2" height="2">
+          <target xmi:type="LIDLGUI:Interface" href="UI.model#//@interaction_diagram.0/@candidates_interactions.2/@signature_interfaces.2"/>
+          <semanticElements xmi:type="LIDLGUI:Interface" href="UI.model#//@interaction_diagram.0/@candidates_interactions.2/@signature_interfaces.2"/>
+          <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+          <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+          <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+          <ownedStyle xmi:type="diagram:Square" uid="_-fMcQHxfEe27yOJovBd8Mw" labelSize="12" showIcon="false" color="194,239,255">
+            <description xmi:type="style:SquareDescription" href="platform:/plugin/org.xxxx.gui.design/description/gui.odesign#//@ownedViewpoints[name='gui']/@ownedRepresentations[name='Interaction%20Diagram']/@defaultLayer/@containerMappings[name='Interaction']/@subContainerMappings[name='Sub%20Interaction']/@borderedNodeMappings[name='Sub%20Interface']/@conditionnalStyles.4/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.xxxx.gui.design/description/gui.odesign#//@ownedViewpoints[name='gui']/@ownedRepresentations[name='Interaction%20Diagram']/@defaultLayer/@containerMappings[name='Interaction']/@subContainerMappings[name='Sub%20Interaction']/@borderedNodeMappings[name='Sub%20Interface']"/>
+        </ownedBorderedNodes>
+        <ownedBorderedNodes xmi:type="diagram:DNode" uid="_-fMcQnxfEe27yOJovBd8Mw" name="resetClicked" outgoingEdges="_yNryDnxgEe27yOJovBd8Mw" width="2" height="2">
+          <target xmi:type="LIDLGUI:Interface" href="UI.model#//@interaction_diagram.0/@candidates_interactions.2/@signature_interfaces.3"/>
+          <semanticElements xmi:type="LIDLGUI:Interface" href="UI.model#//@interaction_diagram.0/@candidates_interactions.2/@signature_interfaces.3"/>
+          <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+          <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+          <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+          <ownedStyle xmi:type="diagram:Square" uid="_-fMcQ3xfEe27yOJovBd8Mw" labelSize="12" showIcon="false" color="255,245,181">
+            <description xmi:type="style:SquareDescription" href="platform:/plugin/org.xxxx.gui.design/description/gui.odesign#//@ownedViewpoints[name='gui']/@ownedRepresentations[name='Interaction%20Diagram']/@defaultLayer/@containerMappings[name='Interaction']/@subContainerMappings[name='Sub%20Interaction']/@borderedNodeMappings[name='Sub%20Interface']/@conditionnalStyles.5/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.xxxx.gui.design/description/gui.odesign#//@ownedViewpoints[name='gui']/@ownedRepresentations[name='Interaction%20Diagram']/@defaultLayer/@containerMappings[name='Interaction']/@subContainerMappings[name='Sub%20Interaction']/@borderedNodeMappings[name='Sub%20Interface']"/>
+        </ownedBorderedNodes>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_-fMcN3xfEe27yOJovBd8Mw" labelSize="12" borderSize="1" borderSizeComputationExpression="1" foregroundColor="204,242,166">
+          <labelFormat>bold</labelFormat>
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.xxxx.gui.design/description/gui.odesign#//@ownedViewpoints[name='gui']/@ownedRepresentations[name='Interaction%20Diagram']/@defaultLayer/@containerMappings[name='Interaction']/@subContainerMappings[name='Sub%20Interaction']/@conditionnalStyles.0/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.xxxx.gui.design/description/gui.odesign#//@ownedViewpoints[name='gui']/@ownedRepresentations[name='Interaction%20Diagram']/@defaultLayer/@containerMappings[name='Interaction']/@subContainerMappings[name='Sub%20Interaction']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="__qejmHxfEe27yOJovBd8Mw" name="counter : Counter">
+        <target xmi:type="LIDLGUI:Interaction" href="UI.model#//@interaction_diagram.0/@candidates_interactions.3"/>
+        <semanticElements xmi:type="LIDLGUI:Interaction" href="UI.model#//@interaction_diagram.0/@candidates_interactions.3"/>
+        <ownedBorderedNodes xmi:type="diagram:DNode" uid="__qejm3xfEe27yOJovBd8Mw" name="Activation_Input" width="2" height="2">
+          <target xmi:type="LIDLGUI:Interface" href="UI.model#//@interaction_diagram.0/@candidates_interactions.3/@signature_interfaces.0"/>
+          <semanticElements xmi:type="LIDLGUI:Interface" href="UI.model#//@interaction_diagram.0/@candidates_interactions.3/@signature_interfaces.0"/>
+          <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+          <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+          <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+          <ownedStyle xmi:type="diagram:Square" uid="__qejnHxfEe27yOJovBd8Mw" labelSize="12" showIcon="false" color="194,239,255">
+            <labelFormat>italic</labelFormat>
+            <description xmi:type="style:SquareDescription" href="platform:/plugin/org.xxxx.gui.design/description/gui.odesign#//@ownedViewpoints[name='gui']/@ownedRepresentations[name='Interaction%20Diagram']/@defaultLayer/@containerMappings[name='Interaction']/@subContainerMappings[name='Sub%20Interaction']/@borderedNodeMappings[name='Sub%20Interface']/@conditionnalStyles.1/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.xxxx.gui.design/description/gui.odesign#//@ownedViewpoints[name='gui']/@ownedRepresentations[name='Interaction%20Diagram']/@defaultLayer/@containerMappings[name='Interaction']/@subContainerMappings[name='Sub%20Interaction']/@borderedNodeMappings[name='Sub%20Interface']"/>
+        </ownedBorderedNodes>
+        <ownedBorderedNodes xmi:type="diagram:DNode" uid="__qejnnxfEe27yOJovBd8Mw" name="0" width="2" height="2">
+          <target xmi:type="LIDLGUI:Interface" href="UI.model#//@interaction_diagram.0/@candidates_interactions.3/@signature_interfaces.1"/>
+          <semanticElements xmi:type="LIDLGUI:Interface" href="UI.model#//@interaction_diagram.0/@candidates_interactions.3/@signature_interfaces.1"/>
+          <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+          <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+          <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+          <ownedStyle xmi:type="diagram:Square" uid="__qejn3xfEe27yOJovBd8Mw" labelSize="12" showIcon="false" color="194,239,255">
+            <description xmi:type="style:SquareDescription" href="platform:/plugin/org.xxxx.gui.design/description/gui.odesign#//@ownedViewpoints[name='gui']/@ownedRepresentations[name='Interaction%20Diagram']/@defaultLayer/@containerMappings[name='Interaction']/@subContainerMappings[name='Sub%20Interaction']/@borderedNodeMappings[name='Sub%20Interface']/@conditionnalStyles.4/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.xxxx.gui.design/description/gui.odesign#//@ownedViewpoints[name='gui']/@ownedRepresentations[name='Interaction%20Diagram']/@defaultLayer/@containerMappings[name='Interaction']/@subContainerMappings[name='Sub%20Interaction']/@borderedNodeMappings[name='Sub%20Interface']"/>
+        </ownedBorderedNodes>
+        <ownedBorderedNodes xmi:type="diagram:DNode" uid="__qejoXxfEe27yOJovBd8Mw" name="(plusClicked) or (minusClicked) or (resetClicked)" incomingEdges="_wXQb0nxgEe27yOJovBd8Mw _xqdwOnxgEe27yOJovBd8Mw _yNryDnxgEe27yOJovBd8Mw" width="2" height="2">
+          <target xmi:type="LIDLGUI:Interface" href="UI.model#//@interaction_diagram.0/@candidates_interactions.3/@signature_interfaces.2"/>
+          <semanticElements xmi:type="LIDLGUI:Interface" href="UI.model#//@interaction_diagram.0/@candidates_interactions.3/@signature_interfaces.2"/>
+          <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+          <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+          <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+          <ownedStyle xmi:type="diagram:Square" uid="__qejonxfEe27yOJovBd8Mw" labelSize="12" showIcon="false" color="194,239,255">
+            <description xmi:type="style:SquareDescription" href="platform:/plugin/org.xxxx.gui.design/description/gui.odesign#//@ownedViewpoints[name='gui']/@ownedRepresentations[name='Interaction%20Diagram']/@defaultLayer/@containerMappings[name='Interaction']/@subContainerMappings[name='Sub%20Interaction']/@borderedNodeMappings[name='Sub%20Interface']/@conditionnalStyles.4/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.xxxx.gui.design/description/gui.odesign#//@ownedViewpoints[name='gui']/@ownedRepresentations[name='Interaction%20Diagram']/@defaultLayer/@containerMappings[name='Interaction']/@subContainerMappings[name='Sub%20Interaction']/@borderedNodeMappings[name='Sub%20Interface']"/>
+        </ownedBorderedNodes>
+        <ownedBorderedNodes xmi:type="diagram:DNode" uid="__qejpHxfEe27yOJovBd8Mw" name="counterDisplay" outgoingEdges="_XlfyZHxgEe27yOJovBd8Mw" width="2" height="2">
+          <target xmi:type="LIDLGUI:Interface" href="UI.model#//@interaction_diagram.0/@candidates_interactions.3/@signature_interfaces.3"/>
+          <semanticElements xmi:type="LIDLGUI:Interface" href="UI.model#//@interaction_diagram.0/@candidates_interactions.3/@signature_interfaces.3"/>
+          <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+          <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+          <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+          <ownedStyle xmi:type="diagram:Square" uid="__qejpXxfEe27yOJovBd8Mw" labelSize="12" showIcon="false" color="255,245,181">
+            <description xmi:type="style:SquareDescription" href="platform:/plugin/org.xxxx.gui.design/description/gui.odesign#//@ownedViewpoints[name='gui']/@ownedRepresentations[name='Interaction%20Diagram']/@defaultLayer/@containerMappings[name='Interaction']/@subContainerMappings[name='Sub%20Interaction']/@borderedNodeMappings[name='Sub%20Interface']/@conditionnalStyles.5/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.xxxx.gui.design/description/gui.odesign#//@ownedViewpoints[name='gui']/@ownedRepresentations[name='Interaction%20Diagram']/@defaultLayer/@containerMappings[name='Interaction']/@subContainerMappings[name='Sub%20Interaction']/@borderedNodeMappings[name='Sub%20Interface']"/>
+        </ownedBorderedNodes>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="__qejmXxfEe27yOJovBd8Mw" labelSize="12" borderSize="1" borderSizeComputationExpression="1" backgroundColor="255,245,181" foregroundColor="255,245,181">
+          <labelFormat>bold</labelFormat>
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.xxxx.gui.design/description/gui.odesign#//@ownedViewpoints[name='gui']/@ownedRepresentations[name='Interaction%20Diagram']/@defaultLayer/@containerMappings[name='Interaction']/@subContainerMappings[name='Sub%20Interaction']/@conditionnalStyles.2/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.xxxx.gui.design/description/gui.odesign#//@ownedViewpoints[name='gui']/@ownedRepresentations[name='Interaction%20Diagram']/@defaultLayer/@containerMappings[name='Interaction']/@subContainerMappings[name='Sub%20Interaction']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_Ahnm-nxgEe27yOJovBd8Mw" name="display : NumberDisplay">
+        <target xmi:type="LIDLGUI:Interaction" href="UI.model#//@interaction_diagram.0/@candidates_interactions.4"/>
+        <semanticElements xmi:type="LIDLGUI:Interaction" href="UI.model#//@interaction_diagram.0/@candidates_interactions.4"/>
+        <ownedBorderedNodes xmi:type="diagram:DNode" uid="_Ahnm_XxgEe27yOJovBd8Mw" name="NumberDisplay_Intf" width="2" height="2">
+          <target xmi:type="LIDLGUI:Interface" href="UI.model#//@interaction_diagram.0/@candidates_interactions.4/@signature_interfaces.0"/>
+          <semanticElements xmi:type="LIDLGUI:Interface" href="UI.model#//@interaction_diagram.0/@candidates_interactions.4/@signature_interfaces.0"/>
+          <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+          <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+          <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+          <ownedStyle xmi:type="diagram:Square" uid="_Ahnm_nxgEe27yOJovBd8Mw" labelSize="12" showIcon="false" color="255,245,181">
+            <labelFormat>italic</labelFormat>
+            <description xmi:type="style:SquareDescription" href="platform:/plugin/org.xxxx.gui.design/description/gui.odesign#//@ownedViewpoints[name='gui']/@ownedRepresentations[name='Interaction%20Diagram']/@defaultLayer/@containerMappings[name='Interaction']/@subContainerMappings[name='Sub%20Interaction']/@borderedNodeMappings[name='Sub%20Interface']/@conditionnalStyles.2/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.xxxx.gui.design/description/gui.odesign#//@ownedViewpoints[name='gui']/@ownedRepresentations[name='Interaction%20Diagram']/@defaultLayer/@containerMappings[name='Interaction']/@subContainerMappings[name='Sub%20Interaction']/@borderedNodeMappings[name='Sub%20Interface']"/>
+        </ownedBorderedNodes>
+        <ownedBorderedNodes xmi:type="diagram:DNode" uid="_AhnnAHxgEe27yOJovBd8Mw" name="active" width="2" height="2">
+          <target xmi:type="LIDLGUI:Interface" href="UI.model#//@interaction_diagram.0/@candidates_interactions.4/@signature_interfaces.1"/>
+          <semanticElements xmi:type="LIDLGUI:Interface" href="UI.model#//@interaction_diagram.0/@candidates_interactions.4/@signature_interfaces.1"/>
+          <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+          <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+          <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+          <ownedStyle xmi:type="diagram:Square" uid="_AhnnAXxgEe27yOJovBd8Mw" labelSize="12" showIcon="false" color="194,239,255">
+            <description xmi:type="style:SquareDescription" href="platform:/plugin/org.xxxx.gui.design/description/gui.odesign#//@ownedViewpoints[name='gui']/@ownedRepresentations[name='Interaction%20Diagram']/@defaultLayer/@containerMappings[name='Interaction']/@subContainerMappings[name='Sub%20Interaction']/@borderedNodeMappings[name='Sub%20Interface']/@conditionnalStyles.4/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.xxxx.gui.design/description/gui.odesign#//@ownedViewpoints[name='gui']/@ownedRepresentations[name='Interaction%20Diagram']/@defaultLayer/@containerMappings[name='Interaction']/@subContainerMappings[name='Sub%20Interaction']/@borderedNodeMappings[name='Sub%20Interface']"/>
+        </ownedBorderedNodes>
+        <ownedBorderedNodes xmi:type="diagram:DNode" uid="_AhnnA3xgEe27yOJovBd8Mw" name="counterDisplay" incomingEdges="_XlfyZHxgEe27yOJovBd8Mw" width="2" height="2">
+          <target xmi:type="LIDLGUI:Interface" href="UI.model#//@interaction_diagram.0/@candidates_interactions.4/@signature_interfaces.2"/>
+          <semanticElements xmi:type="LIDLGUI:Interface" href="UI.model#//@interaction_diagram.0/@candidates_interactions.4/@signature_interfaces.2"/>
+          <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+          <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+          <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+          <ownedStyle xmi:type="diagram:Square" uid="_AhnnBHxgEe27yOJovBd8Mw" labelSize="12" showIcon="false" color="194,239,255">
+            <description xmi:type="style:SquareDescription" href="platform:/plugin/org.xxxx.gui.design/description/gui.odesign#//@ownedViewpoints[name='gui']/@ownedRepresentations[name='Interaction%20Diagram']/@defaultLayer/@containerMappings[name='Interaction']/@subContainerMappings[name='Sub%20Interaction']/@borderedNodeMappings[name='Sub%20Interface']/@conditionnalStyles.4/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.xxxx.gui.design/description/gui.odesign#//@ownedViewpoints[name='gui']/@ownedRepresentations[name='Interaction%20Diagram']/@defaultLayer/@containerMappings[name='Interaction']/@subContainerMappings[name='Sub%20Interaction']/@borderedNodeMappings[name='Sub%20Interface']"/>
+        </ownedBorderedNodes>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_Ahnm-3xgEe27yOJovBd8Mw" labelSize="12" borderSize="1" borderSizeComputationExpression="1" backgroundColor="217,196,215" foregroundColor="217,196,215">
+          <labelFormat>bold</labelFormat>
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.xxxx.gui.design/description/gui.odesign#//@ownedViewpoints[name='gui']/@ownedRepresentations[name='Interaction%20Diagram']/@defaultLayer/@containerMappings[name='Interaction']/@subContainerMappings[name='Sub%20Interaction']/@conditionnalStyles.1/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.xxxx.gui.design/description/gui.odesign#//@ownedViewpoints[name='gui']/@ownedRepresentations[name='Interaction%20Diagram']/@defaultLayer/@containerMappings[name='Interaction']/@subContainerMappings[name='Sub%20Interaction']"/>
+      </ownedDiagramElements>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_XlfyZHxgEe27yOJovBd8Mw" sourceNode="__qejpHxfEe27yOJovBd8Mw" targetNode="_AhnnA3xgEe27yOJovBd8Mw">
+      <target xmi:type="LIDLGUI:InterfaceConnector" href="UI.model#//@interaction_diagram.0/@interfaceConnectors.0"/>
+      <semanticElements xmi:type="LIDLGUI:InterfaceConnector" href="UI.model#//@interaction_diagram.0/@interfaceConnectors.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_XlfyZXxgEe27yOJovBd8Mw" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.xxxx.gui.design/description/gui.odesign#//@ownedViewpoints[name='gui']/@ownedRepresentations[name='Interaction%20Diagram']/@defaultLayer/@edgeMappings[name='Interface%20Exchange']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_XlfyZnxgEe27yOJovBd8Mw" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.xxxx.gui.design/description/gui.odesign#//@ownedViewpoints[name='gui']/@ownedRepresentations[name='Interaction%20Diagram']/@defaultLayer/@edgeMappings[name='Interface%20Exchange']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_wXQb0nxgEe27yOJovBd8Mw" sourceNode="_WCXdjnxeEe27yOJovBd8Mw" targetNode="__qejoXxfEe27yOJovBd8Mw">
+      <target xmi:type="LIDLGUI:InterfaceConnector" href="UI.model#//@interaction_diagram.0/@interfaceConnectors.1"/>
+      <semanticElements xmi:type="LIDLGUI:InterfaceConnector" href="UI.model#//@interaction_diagram.0/@interfaceConnectors.1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_wXQb03xgEe27yOJovBd8Mw" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.xxxx.gui.design/description/gui.odesign#//@ownedViewpoints[name='gui']/@ownedRepresentations[name='Interaction%20Diagram']/@defaultLayer/@edgeMappings[name='Interface%20Exchange']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_wXQb1HxgEe27yOJovBd8Mw" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.xxxx.gui.design/description/gui.odesign#//@ownedViewpoints[name='gui']/@ownedRepresentations[name='Interaction%20Diagram']/@defaultLayer/@edgeMappings[name='Interface%20Exchange']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_xqdwOnxgEe27yOJovBd8Mw" sourceNode="_99pOYHxfEe27yOJovBd8Mw" targetNode="__qejoXxfEe27yOJovBd8Mw">
+      <target xmi:type="LIDLGUI:InterfaceConnector" href="UI.model#//@interaction_diagram.0/@interfaceConnectors.2"/>
+      <semanticElements xmi:type="LIDLGUI:InterfaceConnector" href="UI.model#//@interaction_diagram.0/@interfaceConnectors.2"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_xqdwO3xgEe27yOJovBd8Mw" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.xxxx.gui.design/description/gui.odesign#//@ownedViewpoints[name='gui']/@ownedRepresentations[name='Interaction%20Diagram']/@defaultLayer/@edgeMappings[name='Interface%20Exchange']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_xqdwPHxgEe27yOJovBd8Mw" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.xxxx.gui.design/description/gui.odesign#//@ownedViewpoints[name='gui']/@ownedRepresentations[name='Interaction%20Diagram']/@defaultLayer/@edgeMappings[name='Interface%20Exchange']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_yNryDnxgEe27yOJovBd8Mw" sourceNode="_-fMcQnxfEe27yOJovBd8Mw" targetNode="__qejoXxfEe27yOJovBd8Mw">
+      <target xmi:type="LIDLGUI:InterfaceConnector" href="UI.model#//@interaction_diagram.0/@interfaceConnectors.3"/>
+      <semanticElements xmi:type="LIDLGUI:InterfaceConnector" href="UI.model#//@interaction_diagram.0/@interfaceConnectors.3"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_yNryD3xgEe27yOJovBd8Mw" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.xxxx.gui.design/description/gui.odesign#//@ownedViewpoints[name='gui']/@ownedRepresentations[name='Interaction%20Diagram']/@defaultLayer/@edgeMappings[name='Interface%20Exchange']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_yNryEHxgEe27yOJovBd8Mw" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.xxxx.gui.design/description/gui.odesign#//@ownedViewpoints[name='gui']/@ownedRepresentations[name='Interaction%20Diagram']/@defaultLayer/@edgeMappings[name='Interface%20Exchange']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.xxxx.gui.design/description/gui.odesign#//@ownedViewpoints[name='gui']/@ownedRepresentations[name='Interaction%20Diagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_L9e4MXxeEe27yOJovBd8Mw"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/org.xxxx.gui.design/description/gui.odesign#//@ownedViewpoints[name='gui']/@ownedRepresentations[name='Interaction%20Diagram']/@defaultLayer"/>
+    <target xmi:type="LIDLGUI:Interaction" href="UI.model#//@interaction_diagram.0"/>
+  </diagram:DSemanticDiagram>
+</xmi:XMI>

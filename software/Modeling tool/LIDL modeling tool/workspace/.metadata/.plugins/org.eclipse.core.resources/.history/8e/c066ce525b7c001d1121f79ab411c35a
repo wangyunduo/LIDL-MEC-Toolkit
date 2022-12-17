@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:LIDLGUI="http://www.example.org/LIDLGUI" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/table/description/1.1.0" xmlns:table="http://www.eclipse.org/sirius/table/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/table/description/1.1.0 http://www.eclipse.org/sirius/table/1.1.0#//description">
+  <viewpoint:DAnalysis uid="_MYI7QHxbEe27yOJovBd8Mw" selectedViews="_McAuoHxbEe27yOJovBd8Mw" version="14.3.1.202003261200">
+    <semanticResources>LIDLTable.model</semanticResources>
+    <ownedViews xmi:type="viewpoint:DView" uid="_McAuoHxbEe27yOJovBd8Mw">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.xxxx.lidltable.design/description/lidltable.odesign#//@ownedViewpoints[name='lidltableViewpoint']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_NG7T6HxbEe27yOJovBd8Mw" name="Data type definition table 1" repPath="#_NGyJ8HxbEe27yOJovBd8Mw" changeId="06207f64-0082-4312-9e7e-c7010539e715">
+        <description xmi:type="description_1:EditionTableDescription" href="platform:/plugin/org.xxxx.lidltable.design/description/lidltable.odesign#//@ownedViewpoints[name='lidltableViewpoint']/@ownedRepresentations[name='Datatype%20Table']"/>
+        <target xmi:type="LIDLGUI:DatatypeTable" href="LIDLTable.model#//@datatypetable.0"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+  </viewpoint:DAnalysis>
+  <table:DTable uid="_NGyJ8HxbEe27yOJovBd8Mw" headerColumnWidth="225">
+    <target xmi:type="LIDLGUI:DatatypeTable" href="LIDLTable.model#//@datatypetable.0"/>
+    <lines xmi:type="table:DLine" uid="_NGyJ8XxbEe27yOJovBd8Mw" label="Composite data types">
+      <target xmi:type="LIDLGUI:DatatypeTable" href="LIDLTable.model#//@datatypetable.0"/>
+      <semanticElements xmi:type="LIDLGUI:DatatypeTable" href="LIDLTable.model#//@datatypetable.0"/>
+      <originMapping xmi:type="description_1:LineMapping" href="platform:/plugin/org.xxxx.lidltable.design/description/lidltable.odesign#//@ownedViewpoints[name='lidltableViewpoint']/@ownedRepresentations[name='Datatype%20Table']/@ownedLineMappings[name='Datatype%20Table%20Line']"/>
+      <cells xmi:type="table:DCell" uid="_NG7T5XxbEe27yOJovBd8Mw" label="" column="_NG7T4nxbEe27yOJovBd8Mw">
+        <target xmi:type="LIDLGUI:DatatypeTable" href="LIDLTable.model#//@datatypetable.0"/>
+        <semanticElements xmi:type="LIDLGUI:DatatypeTable" href="LIDLTable.model#//@datatypetable.0"/>
+      </cells>
+      <currentStyle xmi:type="table:DTableElementStyle" uid="_NGyJ8nxbEe27yOJovBd8Mw" labelSize="10" defaultForegroundStyle="true"/>
+    </lines>
+    <columns xmi:type="table:DFeatureColumn" uid="_NG7T4HxbEe27yOJovBd8Mw" label="Member name" width="131" featureName="label">
+      <originMapping xmi:type="description_1:FeatureColumnMapping" href="platform:/plugin/org.xxxx.lidltable.design/description/lidltable.odesign#//@ownedViewpoints[name='lidltableViewpoint']/@ownedRepresentations[name='Datatype%20Table']/@ownedColumnMappings[name='Candidate%20Datatype%20Label%20Column']"/>
+      <currentStyle xmi:type="table:DTableElementStyle" uid="_NG7T4XxbEe27yOJovBd8Mw" labelSize="10" defaultForegroundStyle="true"/>
+    </columns>
+    <columns xmi:type="table:DFeatureColumn" uid="_NG7T4nxbEe27yOJovBd8Mw" label="Member type" cells="_NG7T5XxbEe27yOJovBd8Mw" width="122" featureName="name">
+      <originMapping xmi:type="description_1:FeatureColumnMapping" href="platform:/plugin/org.xxxx.lidltable.design/description/lidltable.odesign#//@ownedViewpoints[name='lidltableViewpoint']/@ownedRepresentations[name='Datatype%20Table']/@ownedColumnMappings[name='Candidate%20Datatype%20Name%20Column']"/>
+      <currentStyle xmi:type="table:DTableElementStyle" uid="_NG7T43xbEe27yOJovBd8Mw" labelSize="10" defaultForegroundStyle="true"/>
+    </columns>
+    <description xmi:type="description_1:EditionTableDescription" href="platform:/plugin/org.xxxx.lidltable.design/description/lidltable.odesign#//@ownedViewpoints[name='lidltableViewpoint']/@ownedRepresentations[name='Datatype%20Table']"/>
+  </table:DTable>
+</xmi:XMI>

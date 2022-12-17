@@ -1,0 +1,13 @@
+import lidl.lang.*;
+
+interaction
+	(Case 4 (theConst: Number in) (theResult: Number out)): Activation in
+is
+(
+	(All
+		((theResult) = (y))
+		((y) = ((Previous(y)) + (1)))
+	)
+	With Behaviour
+	(Make (y) Is A Flow Initially (theConst))
+)

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="ASCII"?>
+<LIDLGUI:ComboWidgetFactory xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:LIDLGUI="http://www.example.org/LIDLGUI">
+  <interaction_diagram label="main" name="MainUI" signature="MainUI" expression="" index="1.0">
+    <candidates_interactions label="plusBut" name="Button" signature="Button displayed by (activated) with title (theTitle) triggers (clicked)" expression="when (activated) then (all ((title) = (theTitle)) ((clicked) = (pushed)))">
+      <signature_interfaces name="PushButton_Intf" direction="io">
+        <datatype/>
+      </signature_interfaces>
+      <signature_interfaces name="Activation_Input" scope="Local" interface="Atomic" label="activated" actualPar="active">
+        <datatype datatype="Activation"/>
+      </signature_interfaces>
+      <signature_interfaces name="Text_Input" scope="Local" interface="Atomic" label="theTitle" actualPar="&quot;+&quot;">
+        <datatype datatype="Activation"/>
+      </signature_interfaces>
+      <signature_interfaces name="Activation_Output" scope="Local" interface="Atomic" label="clicked" direction="out" actualPar="plusClicked">
+        <datatype datatype="Activation"/>
+      </signature_interfaces>
+    </candidates_interactions>
+    <candidates_interactions label="minusBut" name="Button" signature="Button displayed by (activated) with title (theTitle) triggers (clicked)" expression="when (activated) then (all ((title) = (theTitle)) ((clicked) = (pushed)))">
+      <signature_interfaces name="PushButton_Intf" direction="io">
+        <datatype/>
+      </signature_interfaces>
+      <signature_interfaces name="Activation_Input" scope="Local" interface="Atomic" label="activated" actualPar="active">
+        <datatype datatype="Activation"/>
+      </signature_interfaces>
+      <signature_interfaces name="Text_Input" scope="Local" interface="Atomic" label="theTitle" actualPar="&quot;-&quot;">
+        <datatype datatype="Activation"/>
+      </signature_interfaces>
+      <signature_interfaces name="Activation_Output" scope="Local" interface="Atomic" label="clicked" direction="out" actualPar="minusClicked">
+        <datatype datatype="Activation"/>
+      </signature_interfaces>
+    </candidates_interactions>
+    <candidates_interactions label="reset" name="Button" signature="Button displayed by (activated) with title (theTitle) triggers (clicked)" expression="when (activated) then (all ((title) = (theTitle)) ((clicked) = (pushed)))">
+      <signature_interfaces name="PushButton_Intf" direction="io">
+        <datatype/>
+      </signature_interfaces>
+      <signature_interfaces name="Activation_Input" scope="Local" interface="Atomic" label="activated" actualPar="active">
+        <datatype datatype="Activation"/>
+      </signature_interfaces>
+      <signature_interfaces name="Text_Input" scope="Local" interface="Atomic" label="theTitle" actualPar="&quot;reset&quot;">
+        <datatype datatype="Activation"/>
+      </signature_interfaces>
+      <signature_interfaces name="Activation_Output" scope="Local" interface="Atomic" label="clicked" direction="out" actualPar="resetClicked">
+        <datatype datatype="Activation"/>
+      </signature_interfaces>
+    </candidates_interactions>
+    <candidates_interactions label="counter" name="Counter" signature="Counter initialized to (init) answer click on (btnSignal) buttons and displays (counterDisplay)" expression="(all&#xD;&#xA;((counterDisplay) = (counter))&#xD;&#xA;(if (((btnSignal).pActive) is active)&#xD;&#xA;then ((counter) = ((previous (counter))+(1)))&#xD;&#xA;else&#xD;&#xA;(if (((btnSignal).mActive) is active)&#xD;&#xA;then ((counter) = ((previous (counter))-(1)))&#xD;&#xA;else&#xD;&#xA;(if (((btnSignal).rActive) is active)&#xD;&#xA;then ((counter) = (0))&#xD;&#xA;else ((counter) = (previous (counter))))))&#xD;&#xA;)&#xD;&#xA;With Behaviour&#xD;&#xA;(make (counter) is a flow initialy (init))">
+      <signature_interfaces name="Activation_Input" interface="Atomic">
+        <datatype/>
+      </signature_interfaces>
+      <signature_interfaces name="Number_Input" scope="Local" interface="Atomic" label="init" actualPar="0">
+        <datatype datatype="Activation"/>
+      </signature_interfaces>
+      <signature_interfaces name="Signal_Input" scope="Local" interface="Atomic" label="btnSignal">
+        <datatype datatype="Activation"/>
+      </signature_interfaces>
+      <signature_interfaces name="Number_Output" scope="Local" interface="Atomic" label="counterDisplay" direction="out" from="//@interaction_diagram.0/@interfaceConnectors.0" actualPar="counterDisplay">
+        <datatype datatype="Activation"/>
+      </signature_interfaces>
+    </candidates_interactions>
+    <candidates_interactions label="display" name="NumberDisplay" signature="NumberDisplay displayed when (activated) with value (theValue)" expression="when (activated) then ((value)=(theValue))">
+      <signature_interfaces name="NumberDisplay_Intf" direction="out">
+        <datatype/>
+      </signature_interfaces>
+      <signature_interfaces name="Activation_Input" scope="Local" interface="Atomic" label="activated" actualPar="active">
+        <datatype datatype="Activation"/>
+      </signature_interfaces>
+      <signature_interfaces name="Number_Input" scope="Local" interface="Atomic" label="theValue" to="//@interaction_diagram.0/@interfaceConnectors.0" actualPar="counterDisplay">
+        <datatype datatype="Activation"/>
+      </signature_interfaces>
+    </candidates_interactions>
+    <interfaceConnectors source="//@interaction_diagram.0/@candidates_interactions.3/@signature_interfaces.3" target="//@interaction_diagram.0/@candidates_interactions.4/@signature_interfaces.2"/>
+  </interaction_diagram>
+</LIDLGUI:ComboWidgetFactory>

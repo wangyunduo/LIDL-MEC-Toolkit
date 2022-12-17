@@ -1,0 +1,77 @@
+type Number =
+struct
+{
+	act: bool;
+	value: real;
+};
+
+const real_default = 0.0;
+
+type Activation = bool;
+
+type Boolean =
+struct
+{
+	act: bool;
+	value: bool;
+};
+
+type Char =
+struct
+{
+	code: int;
+};
+
+type string = Char^200;
+
+const string_default = Char{code=0}^200;
+
+type Text =
+struct
+{
+	act: bool;
+	value: string;
+};
+
+node operatorPlus(x: Number; y: Number) returns (z: Number)
+var
+	activated: bool;
+	val: real;
+let
+	activated = x.act and y.act;
+	val = x.value + y.value;
+	z = if activated
+		then Number {act = true ; value = val}
+		else Number {act = false; value = 0.0};
+tel
+
+node ApplyToAndGet_operatorPlus(active_flag: bool; arg0: Number;arg1: Number) returns (ret0: Number);
+let
+    ret0 = if (active_flag) then operatorPlus(arg0, arg1) else Number { act = false; value = 0.0 };
+tel
+
+node Assignment_Number(active_flag: bool; in: Number) returns (out: Number);
+let
+	out = if (active_flag) then (in) else Number { act = false; value = 0.0 };
+tel
+
+node Counter_Start_From_arg_Output_arg_(theConst: Number) returns (theResult: Number);
+var
+ident_y: Number;
+ident_node_173_edge_331: Number;
+ident_edge_329_node_169: Number;
+let
+ident_edge_329_node_169 = _arg_Ox2b_arg_(ident_node_173_edge_331, Number { act = true; value = 1.0 });
+ident_y = theConst -> Assignment_Number(true, ident_edge_329_node_169);
+theResult = Assignment_Number(true, ident_y);
+ident_node_173_edge_331 = pre(ident_y);
+tel
+
+node _arg_Ox2b_arg_(a: Number; b: Number) returns (theInterface: Number);
+var
+ident_APlusBRet: Number;
+let
+ident_APlusBRet = ApplyToAndGet_operatorPlus(true, a,b);
+theInterface = ident_APlusBRet;
+tel
+

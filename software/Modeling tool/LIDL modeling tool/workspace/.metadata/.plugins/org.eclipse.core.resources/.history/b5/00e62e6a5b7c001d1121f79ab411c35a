@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:LIDLGUI="http://www.example.org/LIDLGUI" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/table/description/1.1.0" xmlns:table="http://www.eclipse.org/sirius/table/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/table/description/1.1.0 http://www.eclipse.org/sirius/table/1.1.0#//description">
+  <viewpoint:DAnalysis uid="_MYI7QHxbEe27yOJovBd8Mw" selectedViews="_McAuoHxbEe27yOJovBd8Mw" version="14.3.1.202003261200">
+    <semanticResources>LIDLTable.model</semanticResources>
+    <ownedViews xmi:type="viewpoint:DView" uid="_McAuoHxbEe27yOJovBd8Mw">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.xxxx.lidltable.design/description/lidltable.odesign#//@ownedViewpoints[name='lidltableViewpoint']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_NG7T6HxbEe27yOJovBd8Mw" name="Data type definition table 1" repPath="#_NGyJ8HxbEe27yOJovBd8Mw" changeId="4202a74f-2e5a-4649-bf9f-782c431e30db">
+        <description xmi:type="description_1:EditionTableDescription" href="platform:/plugin/org.xxxx.lidltable.design/description/lidltable.odesign#//@ownedViewpoints[name='lidltableViewpoint']/@ownedRepresentations[name='Datatype%20Table']"/>
+        <target xmi:type="LIDLGUI:DatatypeTable" href="LIDLTable.model#//@datatypetable.0"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+  </viewpoint:DAnalysis>
+  <table:DTable uid="_NGyJ8HxbEe27yOJovBd8Mw" headerColumnWidth="319">
+    <target xmi:type="LIDLGUI:DatatypeTable" href="LIDLTable.model#//@datatypetable.0"/>
+    <lines xmi:type="table:DLine" uid="_NGyJ8XxbEe27yOJovBd8Mw" label="Composite data types">
+      <target xmi:type="LIDLGUI:DatatypeTable" href="LIDLTable.model#//@datatypetable.0"/>
+      <lines xmi:type="table:DLine" uid="_R_4m4HxbEe27yOJovBd8Mw" label="Data type PushButton_Signal">
+        <target xmi:type="LIDLGUI:Datatype" href="LIDLTable.model#//@datatypetable.0/@datatypes.0"/>
+        <lines xmi:type="table:DLine" uid="_UPi8YHxbEe27yOJovBd8Mw" label="Member pActive">
+          <target xmi:type="LIDLGUI:Datatype" href="LIDLTable.model#//@datatypetable.0/@datatypes.0/@candidate_datatypes.0"/>
+          <semanticElements xmi:type="LIDLGUI:Datatype" href="LIDLTable.model#//@datatypetable.0/@datatypes.0/@candidate_datatypes.0"/>
+          <originMapping xmi:type="description_1:LineMapping" href="platform:/plugin/org.xxxx.lidltable.design/description/lidltable.odesign#//@ownedViewpoints[name='lidltableViewpoint']/@ownedRepresentations[name='Datatype%20Table']/@ownedLineMappings[name='Datatype%20Table%20Line']/@ownedSubLines[name='Datatype%20Line']/@ownedSubLines[name='Datatype%20Member%20Line']"/>
+          <cells xmi:type="table:DCell" uid="_UPi8ZnxbEe27yOJovBd8Mw" label="pActive" column="_NG7T4HxbEe27yOJovBd8Mw">
+            <target xmi:type="LIDLGUI:Datatype" href="LIDLTable.model#//@datatypetable.0/@datatypes.0/@candidate_datatypes.0"/>
+            <semanticElements xmi:type="LIDLGUI:Datatype" href="LIDLTable.model#//@datatypetable.0/@datatypes.0/@candidate_datatypes.0"/>
+          </cells>
+          <cells xmi:type="table:DCell" uid="_UPi8aHxbEe27yOJovBd8Mw" label="Activation" column="_NG7T4nxbEe27yOJovBd8Mw">
+            <target xmi:type="LIDLGUI:Datatype" href="LIDLTable.model#//@datatypetable.0/@datatypes.0/@candidate_datatypes.0"/>
+            <semanticElements xmi:type="LIDLGUI:Datatype" href="LIDLTable.model#//@datatypetable.0/@datatypes.0/@candidate_datatypes.0"/>
+          </cells>
+          <currentStyle xmi:type="table:DTableElementStyle" uid="_UPi8YXxbEe27yOJovBd8Mw" labelSize="10" defaultForegroundStyle="true"/>
+        </lines>
+        <lines xmi:type="table:DLine" uid="_WgPzsHxbEe27yOJovBd8Mw" label="Member mActive">
+          <target xmi:type="LIDLGUI:Datatype" href="LIDLTable.model#//@datatypetable.0/@datatypes.0/@candidate_datatypes.1"/>
+          <semanticElements xmi:type="LIDLGUI:Datatype" href="LIDLTable.model#//@datatypetable.0/@datatypes.0/@candidate_datatypes.1"/>
+          <originMapping xmi:type="description_1:LineMapping" href="platform:/plugin/org.xxxx.lidltable.design/description/lidltable.odesign#//@ownedViewpoints[name='lidltableViewpoint']/@ownedRepresentations[name='Datatype%20Table']/@ownedLineMappings[name='Datatype%20Table%20Line']/@ownedSubLines[name='Datatype%20Line']/@ownedSubLines[name='Datatype%20Member%20Line']"/>
+          <cells xmi:type="table:DCell" uid="_WgPzuHxbEe27yOJovBd8Mw" label="mActive" column="_NG7T4HxbEe27yOJovBd8Mw">
+            <target xmi:type="LIDLGUI:Datatype" href="LIDLTable.model#//@datatypetable.0/@datatypes.0/@candidate_datatypes.1"/>
+            <semanticElements xmi:type="LIDLGUI:Datatype" href="LIDLTable.model#//@datatypetable.0/@datatypes.0/@candidate_datatypes.1"/>
+          </cells>
+          <cells xmi:type="table:DCell" uid="_WgPzunxbEe27yOJovBd8Mw" label="Activation" column="_NG7T4nxbEe27yOJovBd8Mw">
+            <target xmi:type="LIDLGUI:Datatype" href="LIDLTable.model#//@datatypetable.0/@datatypes.0/@candidate_datatypes.1"/>
+            <semanticElements xmi:type="LIDLGUI:Datatype" href="LIDLTable.model#//@datatypetable.0/@datatypes.0/@candidate_datatypes.1"/>
+          </cells>
+          <currentStyle xmi:type="table:DTableElementStyle" uid="_WgPzsXxbEe27yOJovBd8Mw" labelSize="10" defaultForegroundStyle="true"/>
+        </lines>
+        <lines xmi:type="table:DLine" uid="_Wjq7IHxbEe27yOJovBd8Mw" label="Member rActive">
+          <target xmi:type="LIDLGUI:Datatype" href="LIDLTable.model#//@datatypetable.0/@datatypes.0/@candidate_datatypes.2"/>
+          <semanticElements xmi:type="LIDLGUI:Datatype" href="LIDLTable.model#//@datatypetable.0/@datatypes.0/@candidate_datatypes.2"/>
+          <originMapping xmi:type="description_1:LineMapping" href="platform:/plugin/org.xxxx.lidltable.design/description/lidltable.odesign#//@ownedViewpoints[name='lidltableViewpoint']/@ownedRepresentations[name='Datatype%20Table']/@ownedLineMappings[name='Datatype%20Table%20Line']/@ownedSubLines[name='Datatype%20Line']/@ownedSubLines[name='Datatype%20Member%20Line']"/>
+          <cells xmi:type="table:DCell" uid="_Wjq7KnxbEe27yOJovBd8Mw" label="rActive" column="_NG7T4HxbEe27yOJovBd8Mw">
+            <target xmi:type="LIDLGUI:Datatype" href="LIDLTable.model#//@datatypetable.0/@datatypes.0/@candidate_datatypes.2"/>
+            <semanticElements xmi:type="LIDLGUI:Datatype" href="LIDLTable.model#//@datatypetable.0/@datatypes.0/@candidate_datatypes.2"/>
+          </cells>
+          <cells xmi:type="table:DCell" uid="_Wjq7LHxbEe27yOJovBd8Mw" label="Activation" column="_NG7T4nxbEe27yOJovBd8Mw">
+            <target xmi:type="LIDLGUI:Datatype" href="LIDLTable.model#//@datatypetable.0/@datatypes.0/@candidate_datatypes.2"/>
+            <semanticElements xmi:type="LIDLGUI:Datatype" href="LIDLTable.model#//@datatypetable.0/@datatypes.0/@candidate_datatypes.2"/>
+          </cells>
+          <currentStyle xmi:type="table:DTableElementStyle" uid="_Wjq7IXxbEe27yOJovBd8Mw" labelSize="10" defaultForegroundStyle="true"/>
+        </lines>
+        <semanticElements xmi:type="LIDLGUI:Datatype" href="LIDLTable.model#//@datatypetable.0/@datatypes.0"/>
+        <originMapping xmi:type="description_1:LineMapping" href="platform:/plugin/org.xxxx.lidltable.design/description/lidltable.odesign#//@ownedViewpoints[name='lidltableViewpoint']/@ownedRepresentations[name='Datatype%20Table']/@ownedLineMappings[name='Datatype%20Table%20Line']/@ownedSubLines[name='Datatype%20Line']"/>
+        <cells xmi:type="table:DCell" uid="_R_4m5HxbEe27yOJovBd8Mw" label="" column="_NG7T4HxbEe27yOJovBd8Mw">
+          <target xmi:type="LIDLGUI:Datatype" href="LIDLTable.model#//@datatypetable.0/@datatypes.0"/>
+          <semanticElements xmi:type="LIDLGUI:Datatype" href="LIDLTable.model#//@datatypetable.0/@datatypes.0"/>
+        </cells>
+        <cells xmi:type="table:DCell" uid="_R_4m5nxbEe27yOJovBd8Mw" label="" column="_NG7T4nxbEe27yOJovBd8Mw">
+          <target xmi:type="LIDLGUI:Datatype" href="LIDLTable.model#//@datatypetable.0/@datatypes.0"/>
+          <semanticElements xmi:type="LIDLGUI:Datatype" href="LIDLTable.model#//@datatypetable.0/@datatypes.0"/>
+        </cells>
+        <currentStyle xmi:type="table:DTableElementStyle" uid="_R_4m4XxbEe27yOJovBd8Mw" labelSize="10" defaultForegroundStyle="true"/>
+      </lines>
+      <semanticElements xmi:type="LIDLGUI:DatatypeTable" href="LIDLTable.model#//@datatypetable.0"/>
+      <originMapping xmi:type="description_1:LineMapping" href="platform:/plugin/org.xxxx.lidltable.design/description/lidltable.odesign#//@ownedViewpoints[name='lidltableViewpoint']/@ownedRepresentations[name='Datatype%20Table']/@ownedLineMappings[name='Datatype%20Table%20Line']"/>
+      <cells xmi:type="table:DCell" uid="_NG7T5XxbEe27yOJovBd8Mw" label="" column="_NG7T4nxbEe27yOJovBd8Mw">
+        <target xmi:type="LIDLGUI:DatatypeTable" href="LIDLTable.model#//@datatypetable.0"/>
+        <semanticElements xmi:type="LIDLGUI:DatatypeTable" href="LIDLTable.model#//@datatypetable.0"/>
+      </cells>
+      <currentStyle xmi:type="table:DTableElementStyle" uid="_NGyJ8nxbEe27yOJovBd8Mw" labelSize="10" defaultForegroundStyle="true"/>
+    </lines>
+    <columns xmi:type="table:DFeatureColumn" uid="_NG7T4HxbEe27yOJovBd8Mw" label="Member name" cells="_R_4m5HxbEe27yOJovBd8Mw _UPi8ZnxbEe27yOJovBd8Mw _WgPzuHxbEe27yOJovBd8Mw _Wjq7KnxbEe27yOJovBd8Mw" width="131" featureName="label">
+      <originMapping xmi:type="description_1:FeatureColumnMapping" href="platform:/plugin/org.xxxx.lidltable.design/description/lidltable.odesign#//@ownedViewpoints[name='lidltableViewpoint']/@ownedRepresentations[name='Datatype%20Table']/@ownedColumnMappings[name='Candidate%20Datatype%20Label%20Column']"/>
+      <currentStyle xmi:type="table:DTableElementStyle" uid="_NG7T4XxbEe27yOJovBd8Mw" labelSize="10" defaultForegroundStyle="true"/>
+    </columns>
+    <columns xmi:type="table:DFeatureColumn" uid="_NG7T4nxbEe27yOJovBd8Mw" label="Member type" cells="_NG7T5XxbEe27yOJovBd8Mw _R_4m5nxbEe27yOJovBd8Mw _UPi8aHxbEe27yOJovBd8Mw _WgPzunxbEe27yOJovBd8Mw _Wjq7LHxbEe27yOJovBd8Mw" width="122" featureName="name">
+      <originMapping xmi:type="description_1:FeatureColumnMapping" href="platform:/plugin/org.xxxx.lidltable.design/description/lidltable.odesign#//@ownedViewpoints[name='lidltableViewpoint']/@ownedRepresentations[name='Datatype%20Table']/@ownedColumnMappings[name='Candidate%20Datatype%20Name%20Column']"/>
+      <currentStyle xmi:type="table:DTableElementStyle" uid="_NG7T43xbEe27yOJovBd8Mw" labelSize="10" defaultForegroundStyle="true"/>
+    </columns>
+    <description xmi:type="description_1:EditionTableDescription" href="platform:/plugin/org.xxxx.lidltable.design/description/lidltable.odesign#//@ownedViewpoints[name='lidltableViewpoint']/@ownedRepresentations[name='Datatype%20Table']"/>
+  </table:DTable>
+</xmi:XMI>

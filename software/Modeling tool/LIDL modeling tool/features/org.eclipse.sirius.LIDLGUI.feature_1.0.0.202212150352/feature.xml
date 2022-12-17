@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.eclipse.sirius.LIDLGUI.feature"
+      label="Feature"
+      version="1.0.0.202212150352">
+
+   <description url="http://www.example.com/description">
+      [Enter Feature Description here.]
+   </description>
+
+   <copyright url="http://www.example.com/copyright">
+      [Enter Copyright Description here.]
+   </copyright>
+
+   <license url="http://www.example.com/license">
+      [Enter License Description here.]
+   </license>
+
+   <requires>
+      <import feature="org.eclipse.gmf.runtime.notation" version="0.0.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.sirius.runtime" version="0.0.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.sirius.runtime.ide.ui" version="0.0.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.sirius.runtime.aql" version="6.5.1.202106111115"/>
+      <import plugin="org.eclipse.sirius.ui.properties" version="0.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.swt" version="0.0.0" match="greaterOrEqual"/>
+   </requires>
+
+   <plugin
+         id="org.eclipse.sirius.LIDLGUI"
+         download-size="299"
+         install-size="1170"
+         version="1.0.0.202212150352"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.sirius.LIDLGUI.edit"
+         download-size="88"
+         install-size="189"
+         version="1.0.0.202212150352"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.sirius.LIDLGUI.editor"
+         download-size="63"
+         install-size="124"
+         version="1.0.0.202212150352"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.sirius.LIDLGUI.branding"
+         download-size="7"
+         install-size="10"
+         version="1.0.0.202212150352"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.sirius.LIDLGUI.ui"
+         download-size="111"
+         install-size="175"
+         version="1.0.0.202212150352"
+         unpack="false"/>
+
+   <plugin
+         id="org.xxxx.lidltable.design"
+         download-size="16"
+         install-size="69"
+         version="1.0.0.202212150352"
+         unpack="false"/>
+
+   <plugin
+         id="org.xxxx.lidltable.ui"
+         download-size="46"
+         install-size="94"
+         version="1.0.0.202212150352"
+         unpack="false"/>
+
+   <plugin
+         id="org.xxxx.gui.design"
+         download-size="59"
+         install-size="130"
+         version="1.0.0.202212150352"
+         unpack="false"/>
+
+   <plugin
+         id="org.xxxx.gui.ui"
+         download-size="38"
+         install-size="75"
+         version="1.0.0.202212150352"
+         unpack="false"/>
+
+</feature>

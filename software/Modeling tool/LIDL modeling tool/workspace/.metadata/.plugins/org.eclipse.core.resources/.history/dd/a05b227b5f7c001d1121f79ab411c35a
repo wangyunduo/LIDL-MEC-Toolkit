@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ASCII"?>
+<LIDLGUI:ComboWidgetFactory xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:LIDLGUI="http://www.example.org/LIDLGUI">
+  <interaction_diagram label="main" name="MainUI" signature="MainUI" expression="" index="1.0">
+    <candidates_interactions label="plusBut" name="Button" signature="Button displayed by (activated) with title (theTitle) triggers (clicked)" expression="when (activated) then (all ((title) = (theTitle)) ((clicked) = (pushed)))">
+      <signature_interfaces name="PushButton_Intf" direction="io">
+        <datatype/>
+      </signature_interfaces>
+      <signature_interfaces name="Activation_Input" scope="Local" interface="Atomic" label="activated" actualPar="active">
+        <datatype datatype="Activation"/>
+      </signature_interfaces>
+      <signature_interfaces name="Text_Input" scope="Local" interface="Atomic" label="theTitle" actualPar="+">
+        <datatype datatype="Activation"/>
+      </signature_interfaces>
+      <signature_interfaces name="Activation_Output" scope="Local" interface="Atomic" label="clicked" direction="out" actualPar="plusClicked">
+        <datatype datatype="Activation"/>
+      </signature_interfaces>
+    </candidates_interactions>
+  </interaction_diagram>
+</LIDLGUI:ComboWidgetFactory>

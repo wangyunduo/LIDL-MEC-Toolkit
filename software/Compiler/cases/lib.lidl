@@ -1,0 +1,14 @@
+package lidl.lang;
+
+data Text
+is Undefined
+
+data Activation
+is Undefined
+
+data Boolean
+is Undefined
+
+data Number
+is Undefined
+

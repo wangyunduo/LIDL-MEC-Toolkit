@@ -1,0 +1,17 @@
+eclipse.preferences.version=1
+repositories/file\:_D\:_A-home_lidl-modeling-tool_default2_org.eclipse.sirius.LIDLGUI.product_target/description=
+repositories/file\:_D\:_A-home_lidl-modeling-tool_default2_org.eclipse.sirius.LIDLGUI.product_target/enabled=true
+repositories/file\:_D\:_A-home_lidl-modeling-tool_default2_org.eclipse.sirius.LIDLGUI.product_target/isSystem=false
+repositories/file\:_D\:_A-home_lidl-modeling-tool_default2_org.eclipse.sirius.LIDLGUI.product_target/name=module-metadata-repository@D\:\\A-home\\lidl-modeling-tool\\default2\\org.eclipse.sirius.LIDLGUI.product\\target
+repositories/file\:_D\:_A-home_lidl-modeling-tool_default2_org.eclipse.sirius.LIDLGUI.product_target/provider=
+repositories/file\:_D\:_A-home_lidl-modeling-tool_default2_org.eclipse.sirius.LIDLGUI.product_target/suffix=p2content.xml
+repositories/file\:_D\:_A-home_lidl-modeling-tool_default2_org.eclipse.sirius.LIDLGUI.product_target/type=org.eclipse.tycho.repository.module.ModuleMetadataRepository
+repositories/file\:_D\:_A-home_lidl-modeling-tool_default2_org.eclipse.sirius.LIDLGUI.product_target/uri=file\:/D\:/A-home/lidl-modeling-tool/default2/org.eclipse.sirius.LIDLGUI.product/target/
+repositories/file\:_D\:_A-home_lidl-modeling-tool_default2_org.eclipse.sirius.LIDLGUI.product_target/version=1.0.0
+repositories/file\:_D\:_A-home_lidl-modeling-tool_default2_org.eclipse.sirius.LIDLGUI.product_target_targetPlatformRepository/enabled=true
+repositories/file\:_D\:_A-home_lidl-modeling-tool_default2_org.eclipse.sirius.LIDLGUI.product_target_targetPlatformRepository/isSystem=false
+repositories/file\:_D\:_A-home_lidl-modeling-tool_default2_org.eclipse.sirius.LIDLGUI.product_target_targetPlatformRepository/name=TychoTargetPlatform
+repositories/file\:_D\:_A-home_lidl-modeling-tool_default2_org.eclipse.sirius.LIDLGUI.product_target_targetPlatformRepository/suffix=content.xml
+repositories/file\:_D\:_A-home_lidl-modeling-tool_default2_org.eclipse.sirius.LIDLGUI.product_target_targetPlatformRepository/type=org.eclipse.equinox.internal.p2.metadata.repository.LocalMetadataRepository
+repositories/file\:_D\:_A-home_lidl-modeling-tool_default2_org.eclipse.sirius.LIDLGUI.product_target_targetPlatformRepository/uri=file\:/D\:/A-home/lidl-modeling-tool/default2/org.eclipse.sirius.LIDLGUI.product/target/targetPlatformRepository/
+repositories/file\:_D\:_A-home_lidl-modeling-tool_default2_org.eclipse.sirius.LIDLGUI.product_target_targetPlatformRepository/version=0.0.1

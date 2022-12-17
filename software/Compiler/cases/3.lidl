@@ -1,0 +1,7 @@
+interaction
+	(Case 3 (theFlag: Activation in) (theResult: Number out)): Activation in
+is
+(
+	When(theFlag)
+	Then ((theResult) = (1))
+)

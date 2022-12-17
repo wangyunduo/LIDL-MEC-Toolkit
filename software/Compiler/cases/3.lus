@@ -1,0 +1,46 @@
+type Number =
+struct
+{
+	act: bool;
+	value: real;
+};
+
+const real_default = 0.0;
+
+type Activation = bool;
+
+type Boolean =
+struct
+{
+	act: bool;
+	value: bool;
+};
+
+type Char =
+struct
+{
+	code: int;
+};
+
+type string = Char^200;
+
+const string_default = Char{code=0}^200;
+
+type Text =
+struct
+{
+	act: bool;
+	value: string;
+};
+
+node Assignment_Number(active_flag: bool; in: Number) returns (out: Number);
+let
+	out = if (active_flag) then (in) else Number { act = false; value = 0.0 };
+tel
+
+node Case_3_arg__arg_(theFlag: Activation) returns (theResult: Number);
+
+let
+theResult = Assignment_Number(theFlag, Number { act = true; value = 1.0 });
+tel
+

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config date="1671076420117" transient="false">
+	<site updateable="true" url="platform:/base/" enabled="true" policy="USER-EXCLUDE">
+		<feature id="org.eclipse.emf.edit" version="2.16.0.v20190920-0401" url="features/org.eclipse.emf.edit_2.16.0.v20190920-0401/">
+		</feature>
+		<feature id="org.eclipse.equinox.p2.extras.feature" version="1.4.900.v20200828-0839" url="features/org.eclipse.equinox.p2.extras.feature_1.4.900.v20200828-0839/">
+		</feature>
+		<feature id="org.eclipse.equinox.p2.rcp.feature" version="1.4.900.v20200813-0739" url="features/org.eclipse.equinox.p2.rcp.feature_1.4.900.v20200813-0739/">
+		</feature>
+		<feature id="org.eclipse.gmf.runtime.thirdparty" version="1.13.0.202004160913" url="features/org.eclipse.gmf.runtime.thirdparty_1.13.0.202004160913/">
+		</feature>
+		<feature id="org.eclipse.ecf.filetransfer.feature" version="3.14.1400.v20200812-2314" url="features/org.eclipse.ecf.filetransfer.feature_3.14.1400.v20200812-2314/">
+		</feature>
+		<feature id="org.eclipse.emf.ecore" version="2.23.0.v20200630-0516" url="features/org.eclipse.emf.ecore_2.23.0.v20200630-0516/">
+		</feature>
+		<feature id="org.eclipse.gmf" version="1.13.0.202004160913" url="features/org.eclipse.gmf_1.13.0.202004160913/">
+		</feature>
+		<feature id="org.eclipse.emf.workspace" version="1.12.0.201805140824" url="features/org.eclipse.emf.workspace_1.12.0.201805140824/">
+		</feature>
+		<feature id="org.eclipse.ecf.filetransfer.ssl.feature" version="1.1.400.v20200812-2314" url="features/org.eclipse.ecf.filetransfer.ssl.feature_1.1.400.v20200812-2314/">
+		</feature>
+		<feature id="org.eclipse.equinox.p2.core.feature" version="1.6.700.v20200813-0739" url="features/org.eclipse.equinox.p2.core.feature_1.6.700.v20200813-0739/">
+		</feature>
+		<feature id="org.eclipse.emf.ecore.edit" version="2.14.0.v20190822-1451" url="features/org.eclipse.emf.ecore.edit_2.14.0.v20190822-1451/">
+		</feature>
+		<feature id="org.eclipse.emf.transaction" version="1.12.0.201805140824" url="features/org.eclipse.emf.transaction_1.12.0.201805140824/">
+		</feature>
+		<feature id="org.eclipse.e4.rcp" version="4.17.0.v20200831-1002" url="features/org.eclipse.e4.rcp_4.17.0.v20200831-1002/">
+		</feature>
+		<feature id="org.eclipse.draw2d" version="3.10.100.201606061308" url="features/org.eclipse.draw2d_3.10.100.201606061308/">
+		</feature>
+		<feature id="org.eclipse.emf.common" version="2.20.0.v20200822-0801" url="features/org.eclipse.emf.common_2.20.0.v20200822-0801/">
+		</feature>
+		<feature id="org.eclipse.equinox.p2.user.ui" version="2.4.900.v20200828-0839" url="features/org.eclipse.equinox.p2.user.ui_2.4.900.v20200828-0839/">
+		</feature>
+		<feature id="org.eclipse.emf.validation" version="1.12.2.202008210805" url="features/org.eclipse.emf.validation_1.12.2.202008210805/">
+		</feature>
+		<feature id="org.eclipse.sirius.runtime.aql" version="6.3.4.202009070953" url="features/org.eclipse.sirius.runtime.aql_6.3.4.202009070953/" plugin-identifier="org.eclipse.sirius.common.acceleo.aql">
+		</feature>
+		<feature id="org.eclipse.ecf.core.ssl.feature" version="1.1.500.v20200812-2314" url="features/org.eclipse.ecf.core.ssl.feature_1.1.500.v20200812-2314/">
+		</feature>
+		<feature id="org.eclipse.platform" version="4.17.0.v20200902-1800" url="features/org.eclipse.platform_4.17.0.v20200902-1800/">
+		</feature>
+		<feature id="org.eclipse.help" version="2.3.300.v20200902-1800" url="features/org.eclipse.help_2.3.300.v20200902-1800/" plugin-identifier="org.eclipse.help.base">
+		</feature>
+		<feature id="org.eclipse.sirius.runtime.ide.ui" version="6.3.4.202009070953" url="features/org.eclipse.sirius.runtime.ide.ui_6.3.4.202009070953/" plugin-identifier="org.eclipse.sirius.common.ui">
+		</feature>
+		<feature id="org.eclipse.gmf.runtime.notation" version="1.13.0.202004160913" url="features/org.eclipse.gmf.runtime.notation_1.13.0.202004160913/">
+		</feature>
+		<feature id="org.eclipse.rcp" version="4.17.0.v20200902-1800" url="features/org.eclipse.rcp_4.17.0.v20200902-1800/">
+		</feature>
+		<feature id="org.eclipse.sirius.LIDLGUI.feature" version="1.0.0.202212150352" url="features/org.eclipse.sirius.LIDLGUI.feature_1.0.0.202212150352/">
+		</feature>
+		<feature id="org.eclipse.sirius.runtime" version="6.3.4.202009070953" url="features/org.eclipse.sirius.runtime_6.3.4.202009070953/" plugin-identifier="org.eclipse.sirius">
+		</feature>
+		<feature id="org.eclipse.ecf.filetransfer.httpclient45.feature" version="1.0.600.v20200816-1842" url="features/org.eclipse.ecf.filetransfer.httpclient45.feature_1.0.600.v20200816-1842/">
+		</feature>
+		<feature id="org.eclipse.ecf.core.feature" version="1.5.700.v20200812-2314" url="features/org.eclipse.ecf.core.feature_1.5.700.v20200812-2314/">
+		</feature>
+		<feature id="org.eclipse.gef" version="3.11.0.201606061308" url="features/org.eclipse.gef_3.11.0.201606061308/">
+		</feature>
+	</site>
+</config>
